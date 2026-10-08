@@ -16,7 +16,17 @@ python -m nhl.backtest --seasons 2024 2025
 ```
 Writes `model.json`. Adds what the first backtest was missing: real PP TOI (from the stats API — the boxscore endpoint has none), opponent starting goalie's rolling save%, a D flag, and calibration for 2+/3+/4+ shot lines. Prints the same bucket tables plus a goalie split and a PP split among 3+ shot players.
 
-## 2. Daily
+## Automated (GitHub Actions + Pages)
+`.github/workflows/board.yml` runs at 10:30am and 6pm ET (and on demand from the Actions tab):
+grades yesterday's picks from `picks.csv`, fetches today's boxscores into `nhl_cache/`, scores the slate,
+and commits `docs/index.html` (+ a dated copy in `docs/boards/`). Enable Pages once: repo Settings → Pages →
+Source "Deploy from a branch" → `main` / `/docs`. The board is then at https://jamesjholee.github.io/the-ice/
+with the running record at the top.
+
+Logging a pick: on the board, type the price, click **copy**, paste the line at the bottom of `picks.csv`, push.
+(Or `python -m nhl.pick ...` locally, then push.) The next run grades it.
+
+## 2. Daily (manual, if you'd rather run it yourself)
 ```
 python -m nhl.board                          # today's slate -> board.html, board.csv
 python -m nhl.board --goalie LAK=Kuemper     # once starters are confirmed, override the projection

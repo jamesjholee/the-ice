@@ -1,45 +1,79 @@
-"""SQLite pick log."""
-import sqlite3, os
+"""Pick log as a CSV in the repo (git-friendly; the Action grades it)."""
+import csv, os
 
-DB = os.environ.get("NHL_DB", "picks.db")
-
-
-def conn():
-    c = sqlite3.connect(DB)
-    c.execute("""CREATE TABLE IF NOT EXISTS picks (
-        id INTEGER PRIMARY KEY, date TEXT, pid INTEGER, name TEXT, team TEXT, opp TEXT,
-        market TEXT, line REAL, odds INTEGER, stake REAL, model_p REAL, book_p REAL,
-        close_odds INTEGER, result INTEGER, pnl REAL, note TEXT)""")
-    return c
+PICKS = os.environ.get("NHL_PICKS", "picks.csv")
+FIELDS = ["id", "date", "pid", "name", "team", "opp", "market", "line", "odds", "stake",
+          "model_p", "book_p", "close_odds", "result", "pnl", "note"]
 
 
-def add_pick(date, pid, name, team, opp, market, line, odds, stake, model_p, book_p, note=""):
-    c = conn()
-    c.execute("INSERT INTO picks(date,pid,name,team,opp,market,line,odds,stake,model_p,book_p,note) "
-              "VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
-              (date, pid, name, team, opp, market, line, odds, stake, model_p, book_p, note))
-    c.commit(); c.close()
-
-
-def ungraded(date=None):
-    c = conn()
-    q = "SELECT id,date,pid,name,team,opp,market,line,odds,stake,model_p,book_p FROM picks WHERE result IS NULL"
-    rows = c.execute(q + (" AND date=?" if date else ""), (date,) if date else ()).fetchall()
-    c.close()
+def _read():
+    if not os.path.exists(PICKS):
+        return []
+    with open(PICKS, newline="") as fh:
+        rows = [r for r in csv.DictReader(fh) if any((v or "").strip() for v in r.values())]
+    # rows pasted from the board's "copy" button have no id; assign the next free one
+    used = [int(r["id"]) for r in rows if (r.get("id") or "").strip()]
+    nxt = 1 + max(used or [0])
+    for r in rows:
+        if not (r.get("id") or "").strip():
+            r["id"] = str(nxt); nxt += 1
     return rows
 
 
+def _write(rows):
+    with open(PICKS, "w", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=FIELDS)
+        w.writeheader()
+        for r in rows:
+            w.writerow({k: r.get(k, "") for k in FIELDS})
+
+
+def add_pick(date, pid, name, team, opp, market, line, odds, stake, model_p, book_p, note=""):
+    rows = _read()
+    nid = 1 + max([int(r["id"]) for r in rows if r.get("id")] or [0])
+    rows.append(dict(id=nid, date=date, pid=pid, name=name, team=team, opp=opp, market=market,
+                     line=line, odds=odds, stake=stake, model_p=f"{model_p:.4f}", book_p=f"{book_p:.4f}",
+                     close_odds="", result="", pnl="", note=note))
+    _write(rows)
+    return nid
+
+
+def ungraded(date=None):
+    out = []
+    for r in _read():
+        if r.get("result", "") != "":
+            continue
+        if date and r["date"] != date:
+            continue
+        out.append((int(r["id"]), r["date"], int(r["pid"]), r["name"], r["team"], r["opp"], r["market"],
+                    float(r["line"]), int(r["odds"]), float(r["stake"]), float(r["model_p"]), float(r["book_p"])))
+    return out
+
+
 def grade(pick_id, result, pnl, close_odds=None):
-    c = conn()
-    c.execute("UPDATE picks SET result=?, pnl=?, close_odds=COALESCE(?, close_odds) WHERE id=?",
-              (result, pnl, close_odds, pick_id))
-    c.commit(); c.close()
+    rows = _read()
+    for r in rows:
+        if int(r["id"]) == pick_id:
+            r["result"] = result
+            r["pnl"] = f"{pnl:.4f}"
+            if close_odds is not None:
+                r["close_odds"] = close_odds
+    _write(rows)
 
 
 def record():
-    c = conn()
-    rows = c.execute("SELECT market, COUNT(*), SUM(result), SUM(pnl), SUM(stake), AVG(model_p), AVG(book_p) "
-                     "FROM picks WHERE result IS NOT NULL GROUP BY market").fetchall()
-    tot = c.execute("SELECT COUNT(*), SUM(result), SUM(pnl), SUM(stake) FROM picks WHERE result IS NOT NULL").fetchone()
-    c.close()
+    """Return (per-market rows, total) matching the old SQLite shape."""
+    g = [r for r in _read() if r.get("result", "") != ""]
+    by = {}
+    for r in g:
+        m = by.setdefault(r["market"], [0, 0, 0.0, 0.0, 0.0, 0.0])
+        m[0] += 1; m[1] += int(r["result"]); m[2] += float(r["pnl"]); m[3] += float(r["stake"])
+        m[4] += float(r["model_p"]); m[5] += float(r["book_p"])
+    rows = [(k, v[0], v[1], v[2], v[3], v[4] / v[0], v[5] / v[0]) for k, v in sorted(by.items())]
+    tot = (len(g), sum(int(r["result"]) for r in g), sum(float(r["pnl"]) for r in g),
+           sum(float(r["stake"]) for r in g)) if g else None
     return rows, tot
+
+
+def graded_rows():
+    return [r for r in _read() if r.get("result", "") != ""]

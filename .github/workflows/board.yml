@@ -1,0 +1,37 @@
+name: daily board
+
+on:
+  schedule:
+    - cron: "30 14 * * *"   # 10:30am ET — morning board + grade yesterday
+    - cron: "0 22 * * *"    # 6:00pm ET — re-score after rosters/lineups settle
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: board
+  cancel-in-progress: false
+
+jobs:
+  board:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: grade ungraded picks
+        run: python -m nhl.grade || true
+      - name: build board
+        run: python -m nhl.board --out docs
+      - name: commit
+        run: |
+          git config user.name "the-ice bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs nhl_cache picks.csv
+          git diff --cached --quiet || git commit -m "board $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git pull --rebase --autostash origin ${GITHUB_REF_NAME}
+          git push
