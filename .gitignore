@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.db
+board.html
+board.csv
+.DS_Store

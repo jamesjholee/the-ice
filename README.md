@@ -39,4 +39,12 @@ Grades every ungraded pick from final boxscores, prints hit/miss per pick and th
 - No linemate / line-slot data. Rookies and newly promoted wingers are underrated.
 - Rosters come from `/roster/TEAM/current`; a scratched player still shows. Check the lineup.
 - Odds are typed by hand; there's no feed. Closing-line value isn't tracked yet (column exists in the DB).
-# the-ice
+
+## Backtest findings (2024-25 train → 2025-26 test, 83k player-games)
+- Shots/game is the predictor. Top-5 by shots alone score 35–38% vs a 15% baseline. Nothing else comes close standalone.
+- Position is the second thing: defensemen score ~7%. Once `is_d` is in the model, ice time flips to a strong positive (among forwards, minutes matter). The earlier "TOI is useless" read was a D confound.
+- Opponent goalie: no measurable effect on anytime-goal rate. Among 3+ shot players, scoring is flat across goalie sv% buckets (32–35% everywhere). Weight −0.025. Do not pick players by goalie matchup.
+- Hot streak (goals last 5): redundant with shots and finishing %. Weight +0.015.
+- Finishing % (shrunk): real but small, +0.07. PP share (PP-goals proxy here; real PP TOI needs the stats API): small positive, unverified.
+- Anytime-goal model is calibrated: top decile predicts 35%, actual 34%. That's roughly what books charge for second-tier scorers and well under what they charge for stars — a box-score model does not beat the ATG market on its own.
+- Shot lines: raw Poisson is overconfident at the high end (says 75%, reality 64%). Platt calibration fixes it; every 2+/3+/4+ bucket now lands within a few points. Shot props are where the model's number is most trustworthy.
