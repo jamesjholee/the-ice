@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+/board.html
+/board.csv
+*.db
+.DS_Store
+backtest_progress.log

@@ -108,14 +108,32 @@ def fit(train, test):
         m = (p >= dec[i]) & (p <= dec[i + 1])
         if m.sum():
             print(f"{dec[i]:.2f}-{dec[i+1]:.2f}   {m.sum():>7}{yte[m].mean():>9.3f}{p[m].mean():>11.3f}")
-    # SOG calibration factor: ratio of actual to predicted P(SOG>=3) on test
-    pred3 = np.mean([p_sog_at_least(s["f"], 3) for s in test])
-    act3 = np.mean([1 if s["sog"] >= 3 else 0 for s in test])
+    # SOG calibration: Platt scaling per line, fitted on TRAIN, reported on TEST
+    platt = {}
+    print("\n=== SOG line calibration (Platt, fitted on train, shown on test) ===")
+    for k in (2, 3, 4):
+        def logit(p): p = np.clip(p, 1e-4, 1 - 1e-4); return np.log(p / (1 - p))
+        xtr = logit(np.array([p_sog_at_least(s["f"], k) for s in train]))
+        ytr_k = np.array([1 if s["sog"] >= k else 0 for s in train], dtype=float)
+        a, b = 0.0, 1.0
+        for _ in range(500):
+            p = 1 / (1 + np.exp(-(a + b * xtr)))
+            ga, gb = np.mean(p - ytr_k), np.mean((p - ytr_k) * xtr)
+            a -= 0.5 * ga; b -= 0.5 * gb
+        platt[str(k)] = [float(a), float(b)]
+        cal_model = {"sog_platt": platt}
+        pte = np.array([p_sog_at_least(s["f"], k, cal_model) for s in test])
+        yte_k = np.array([1 if s["sog"] >= k else 0 for s in test])
+        print(f"SOG>={k}: a={a:+.3f} b={b:.3f}")
+        for lo, hi in ((0, .3), (.3, .5), (.5, .7), (.7, 1.01)):
+            m = (pte >= lo) & (pte < hi)
+            if m.sum():
+                print(f"   pred {lo:.1f}-{hi:.1f}: n={m.sum():>6} actual {yte_k[m].mean():.3f} (pred {pte[m].mean():.3f})")
     model = dict(bias=float(w[0]), w={k: float(v) for k, v in zip(FEATS, w[1:])},
                  mu={k: float(v) for k, v in zip(FEATS, mu)}, sd={k: float(v) for k, v in zip(FEATS, sd)},
-                 sog_calib=float(np.clip(act3 / max(pred3, 1e-6), 0.8, 1.2)))
+                 sog_platt=platt)
     json.dump(model, open("model.json", "w"), indent=1)
-    print("\nmodel.json written (used by board.py). sog_calib =", round(model["sog_calib"], 3))
+    print("\nmodel.json written (used by board.py)")
 
 
 def main():

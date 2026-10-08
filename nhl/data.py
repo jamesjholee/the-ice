@@ -35,8 +35,11 @@ def season_of(d):
 
 def _get(url, cache=True):
     key = os.path.join(CACHE, url.replace("https://", "").replace("/", "_").replace(":", "")[:200] + ".json")
-    if cache and os.path.exists(key):
-        return json.load(open(key))
+    legacy = os.path.join(CACHE, url.replace("/", "_").replace(":", "") + ".json")  # first backtest's naming
+    if cache:
+        for k in (key, legacy):
+            if os.path.exists(k):
+                return json.load(open(k))
     last = None
     for attempt in range(5):
         try:

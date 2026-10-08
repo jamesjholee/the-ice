@@ -103,9 +103,14 @@ def p_sog_at_least(f, k, model=None):
     """P(SOG >= k) from a Poisson on the player's rolling shot rate, lightly adjusted for
     opponent goalie (worse goalie -> more rebounds/shots is small; we ignore) and D flag."""
     lam = f["sog_pg"]
-    if model and "sog_calib" in model:   # optional multiplicative calibration from backtest
-        lam *= model["sog_calib"]
-    return 1 - sum(math.exp(-lam) * lam ** i / math.factorial(i) for i in range(k))
+    p = 1 - sum(math.exp(-lam) * lam ** i / math.factorial(i) for i in range(k))
+    # Platt-style calibration fitted in backtest: logit(actual) = a + b*logit(poisson)
+    cal = (model or {}).get("sog_platt", {}).get(str(k))
+    if cal:
+        p = min(max(p, 1e-4), 1 - 1e-4)
+        z = cal[0] + cal[1] * math.log(p / (1 - p))
+        p = 1 / (1 + math.exp(-z))
+    return p
 
 
 def american(p):
