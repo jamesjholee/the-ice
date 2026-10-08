@@ -50,6 +50,10 @@ def _get(url, cache=True):
                     json.dump(js, open(key, "w"))
                 return js
             last = r.status_code
+            if r.status_code == 429:   # NHL API rate limit: back off hard, honor Retry-After
+                wait = int(r.headers.get("Retry-After", 0) or 0) or 15 * (attempt + 1)
+                print(f"[429] {url[-60:]} waiting {wait}s", file=sys.stderr)
+                time.sleep(wait); continue
         except requests.RequestException as e:
             last = str(e)
         time.sleep(2 * (attempt + 1))
@@ -152,12 +156,20 @@ def pp_toi_by_game(season):
     if not out:
         print("[pp_toi] WARNING: no PP TOI rows parsed; pp_share will fall back to PP goals proxy.",
               file=sys.stderr)
+        return out            # don't cache an empty result
     json.dump({f"{k[0]}|{k[1]}": v for k, v in out.items()}, open(key, "w"))
     return out
 
 
 def roster(team):
-    js = _get(f"{WEB}/roster/{team}/current", cache=False)
+    # cache per day so the two daily runs don't hammer the endpoint (rate-limits at ~30 calls)
+    key = os.path.join(CACHE, f"roster_{team}_{date.today().isoformat()}.json")
+    if os.path.exists(key):
+        js = json.load(open(key))
+    else:
+        js = _get(f"{WEB}/roster/{team}/current", cache=False)
+        json.dump(js, open(key, "w"))
+        time.sleep(1.5)
     out = []
     for grp in ("forwards", "defensemen"):
         for p in js.get(grp, []):
