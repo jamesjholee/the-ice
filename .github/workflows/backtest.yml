@@ -1,0 +1,31 @@
+name: backtest (refit model)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: run backtest
+        run: python -m nhl.backtest --seasons 2024 2025 > backtest_results.txt 2> backtest_progress.log
+      - name: show results
+        run: cat backtest_results.txt
+      - name: commit model + results + cache
+        run: |
+          git config user.name "the-ice bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add model.json backtest_results.txt nhl_cache
+          git diff --cached --quiet || git commit -m "backtest: refit model.json $(date -u +'%Y-%m-%d')"
+          git pull --rebase --autostash origin ${GITHUB_REF_NAME}
+          git push
