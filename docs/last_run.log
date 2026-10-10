@@ -1,38 +1,38 @@
-== grade Sat Oct 10 01:25:25 UTC 2026 ==
+== grade Sat Oct 10 18:47:27 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== board Sat Oct 10 01:25:25 UTC 2026 ==
+== board Sat Oct 10 18:47:27 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g    sh%   toi   P(G)   fair   P2+   P3+
-1  K. Connor               WPG  ANA  F    3.93  0.138  21.2  0.499   +100  0.83 0.638
-2  C. Gauthier             ANA  WPG  F    4.33  0.122  17.0  0.436   +129 0.864 0.691
-3  D. Larkin               DET  SEA  F     3.5   0.12  19.9  0.422   +137 0.786 0.573
-4  A. DeBrincat            DET  SEA  F     3.5  0.121  19.6  0.413   +142 0.786 0.573
-5  R. Rakell               PIT  CBJ  F    3.29  0.137  19.0  0.379   +164 0.761 0.539
-6  B. McMann               SEA  DET  F    3.56  0.115  17.7  0.363   +176 0.793 0.583
-7  L. Carlsson             ANA  WPG  F    3.07  0.105  19.5  0.353   +183 0.733 0.503
-8  M. Granlund             ANA  WPG  F    2.21  0.122  20.8  0.324   +209 0.595 0.346
-9  A. Tuch                 WSH  NYR  F    2.85  0.109  19.5  0.322   +211 0.701 0.464
-10 M. Zibanejad            NYR  WSH  F     2.5  0.104  20.6  0.314   +219 0.647 0.401
-11 M. Scheifele            WPG  ANA  F    2.07  0.115  21.1  0.308   +225 0.566 0.318
-12 E. Malkin               PIT  CBJ  F    2.78   0.12  18.0  0.306   +227 0.691 0.452
-13 A. Ovechkin             WSH  NYR  F    3.23  0.113  16.4  0.305   +227 0.754  0.53
-14 A. Lafrenière           NYR  WSH  F    2.29  0.129  18.8    0.3   +234 0.609  0.36
-15 B. Sennecke             ANA  WPG  F    2.71  0.101  17.4  0.287   +248 0.681  0.44
-16 L. Raymond              DET  SEA  F    2.36  0.098  19.2  0.285   +251 0.622 0.374
-17 P. Dorofeyev            NYR  WSH  F    2.69  0.096  17.9  0.283   +253 0.678 0.436
-18 A. Fantilli             CBJ  PIT  F    2.15  0.102  19.6  0.281   +256 0.584 0.335
-19 V. Arvidsson            DET  SEA  F    2.46  0.136  15.3  0.275   +264  0.64 0.394
-20 T. Wilson               WSH  NYR  F    1.92  0.128  18.6  0.259   +286 0.537 0.289
-21 B. Rust                 PIT  CBJ  F     2.0  0.117  19.0  0.257   +289 0.553 0.305
-22 J. Miller               NYR  WSH  F     2.0  0.109  18.4  0.248   +304 0.553 0.305
-23 S. Crosby               PIT  CBJ  F     2.5  0.085  17.6  0.245   +308 0.647 0.401
-24 C. Perfetti             WPG  ANA  F    1.73  0.127  17.1  0.241   +315 0.495 0.252
-25 M. Samoskevich          SEA  DET  F     2.0  0.141  15.6  0.238   +320 0.553 0.305
-26 E. Chinakhov            PIT  CBJ  F    2.14  0.115  16.5  0.232   +330 0.582 0.333
-27 R. Leonard              WSH  NYR  F    2.54   0.12  14.3   0.23   +334 0.653 0.408
-28 J. McCann               SEA  DET  F    2.27  0.104  15.6  0.228   +338 0.606 0.358
-29 C. Coyle                CBJ  PIT  F    1.31  0.111  18.7  0.226   +343 0.391 0.167
-30 J. Eberle               SEA  DET  F    1.44  0.122  17.9  0.224   +346 0.424 0.193
+1  C. McDavid              EDM  SJS  F    4.15  0.143  22.9  0.545   -120  0.85 0.668
+2  J. Hughes               NJD  VAN  F     4.4  0.114  22.1  0.533   -114 0.869   0.7
+3  B. Hagel                TBL  NYI  F     4.6  0.103  21.2   0.51   -104 0.883 0.724
+4  N. MacKinnon            COL  TOR  F    3.73  0.122  21.6   0.47   +113 0.811 0.609
+5  J. Robertson            DAL  PIT  F    3.93  0.119  20.4  0.447   +124  0.83 0.638
+6  T. Thompson             BUF  UTA  F     4.0  0.105  19.7  0.431   +132 0.836 0.647
+7  M. Celebrini            SJS  EDM  F    3.53  0.131  21.0  0.429   +133  0.79 0.578
+8  C. Caufield             MTL  DET  F    3.75  0.125  18.8  0.421   +138 0.813 0.611
+9  N. Schmaltz             UTA  BUF  F     3.4  0.139  19.6  0.413   +142 0.775 0.557
+10 M. Necas                COL  TOR  F    2.93  0.125  21.2  0.402   +149 0.714 0.479
+11 A. DeBrincat            DET  MTL  F    3.47  0.118  19.4    0.4   +150 0.782 0.568
+12 J. Guentzel             TBL  NYI  F    3.07  0.123  20.9  0.399   +151 0.733 0.502
+13 D. Larkin               DET  MTL  F    3.31  0.119  19.7  0.396   +152 0.764 0.542
+14 C. Gauthier             ANA  CGY  F     4.0  0.121  17.1  0.395   +153 0.836 0.647
+15 J. Eichel               VGK  LAK  F    3.29  0.103  21.1  0.392   +155 0.761 0.539
+16 K. Kaprizov             MIN  FLA  F    2.75  0.143  20.7   0.39   +156 0.687 0.447
+17 B. Horvat               NYI  TBL  F    3.29   0.11  20.3   0.39   +157 0.761 0.539
+18 J. DeBrusk              VAN  NJD  F    3.43  0.142  16.9  0.388   +158 0.778 0.562
+19 A. Kempe                LAK  VGK  F    3.07  0.147  19.6  0.385   +160 0.733 0.503
+20 W. Nylander             TOR  COL  F    3.07  0.119  21.3  0.384   +161 0.733 0.503
+21 Q. Byfield              LAK  VGK  F    2.79  0.144  20.5  0.383   +161 0.692 0.453
+22 T. Meier                NJD  VAN  F    3.67  0.097  18.4  0.373   +168 0.804 0.599
+23 S. Stamkos              NSH  OTT  F    3.13  0.143  18.5  0.368   +171 0.742 0.513
+24 M. Boldy                MIN  FLA  F    3.58  0.098  19.0  0.363   +176 0.795 0.586
+25 R. Rakell               PIT  DAL  F    3.07  0.137  19.1  0.363   +176 0.733 0.502
+26 N. Suzuki               MTL  DET  F    2.38   0.13  21.0  0.361   +177 0.625 0.377
+27 M. Stone                VGK  LAK  F    2.71  0.138  19.6  0.355   +182 0.681  0.44
+28 S. Aho                  CAR  CHI  F     3.0   0.11  18.8  0.353   +183 0.724 0.491
+29 A. Svechnikov           CAR  CHI  F    2.92  0.141  16.6  0.347   +188 0.712 0.476
+30 D. Pastrnak             BOS  PHI  F    3.07  0.089  20.4  0.344   +191 0.733 0.502
 
-130 players, 4 games -> docs/index.html
+460 players, 14 games -> docs/index.html
