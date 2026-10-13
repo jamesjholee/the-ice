@@ -1,38 +1,38 @@
-== grade Tue Oct 13 02:47:28 UTC 2026 ==
+== grade Tue Oct 13 18:17:32 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== board Tue Oct 13 02:47:28 UTC 2026 ==
+== board Tue Oct 13 18:17:32 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g    sh%   toi   P(G)   fair   P2+   P3+
-1  J. Hughes               NJD  OTT  F     4.4  0.102  21.9  0.492   +103 0.869   0.7
-2  T. Thompson             BUF  FLA  F    4.23   0.11  19.8  0.451   +122 0.856 0.678
-3  K. Kaprizov             MIN  VGK  F    2.92  0.163  20.6  0.415   +141 0.712 0.476
-4  J. Eichel               VGK  MIN  F    3.29  0.103  21.2  0.386   +159 0.761 0.539
-5  M. Boldy                MIN  VGK  F    3.75  0.103  18.9  0.373   +168 0.813 0.611
-6  T. Meier                NJD  OTT  F    3.73   0.09  18.3   0.35   +186 0.811 0.609
-7  M. Marner               VGK  MIN  F    2.71  0.123  20.1  0.346   +189 0.681  0.44
-8  M. Stone                VGK  MIN  F    2.64  0.139  19.4   0.34   +194  0.67 0.427
-9  M. Tkachuk              FLA  BUF  F    2.55  0.125  19.1  0.334   +199 0.654 0.409
-10 T. Stützle              OTT  NJD  F    2.36   0.12  20.4  0.328   +205 0.622 0.374
-11 N. Hischier             NJD  OTT  F    2.33  0.119  20.3  0.322   +210 0.617 0.369
-12 J. Quinn                BUF  FLA  F     3.5  0.094  17.5  0.321   +211 0.786 0.573
-13 C. Verhaeghe            FLA  BUF  F    2.58  0.115  19.3  0.312   +220  0.66 0.416
-14 S. Bennett              FLA  BUF  F     2.8  0.086  19.3  0.307   +225 0.695 0.456
-15 B. Tkachuk              FLA  BUF  F    2.92  0.089  16.7  0.284   +253 0.712 0.476
-16 D. Cozens               OTT  NJD  F    2.75  0.097  17.6  0.279   +259 0.687 0.447
-17 B. Coleman              MIN  VGK  F    2.64  0.109  17.8   0.27   +270  0.67 0.427
-18 J. Bratt                NJD  OTT  F    2.13  0.114  18.3  0.266   +276  0.58 0.331
-19 J. Eriksson Ek          MIN  VGK  F    2.64  0.093  17.8  0.264   +279 0.669 0.426
-20 D. Batherson            OTT  NJD  F    1.81  0.147  16.8  0.258   +288 0.513 0.267
-21 L. Evangelista          NJD  OTT  F     2.5  0.104  16.1  0.256   +291 0.647 0.401
-22 D. Mercer               NJD  OTT  F    2.33  0.111  17.9  0.249   +302 0.617 0.369
-23 C. Brown                NJD  OTT  F    1.67  0.117  19.8  0.241   +314  0.48 0.238
-24 S. Pinto                OTT  NJD  F    1.81  0.109  19.0  0.241   +315 0.513 0.267
-25 Z. Benson               BUF  FLA  F    2.29  0.098  17.2  0.237   +322 0.609  0.36
-26 A. Mantha               NJD  OTT  F    1.92  0.136  15.3  0.225   +345 0.537 0.289
-27 R. Hartman              MIN  VGK  F    2.17  0.135  15.4  0.223   +348 0.586 0.337
-28 T. Hertl                VGK  MIN  F    2.21  0.092  15.4  0.213   +370 0.595 0.346
-29 W. Eklund               OTT  NJD  F    1.82  0.107  15.8  0.203   +391 0.515  0.27
-30 C. Giroux               OTT  NJD  F    1.94  0.092  15.7  0.197   +408  0.54 0.292
+1  B. Hagel                TBL  NYR  F     5.0  0.117  21.4  0.561   -128 0.907 0.768
+2  C. McDavid              EDM  LAK  F    4.33  0.125  23.2  0.534   -115 0.864 0.691
+3  K. Connor               WPG  MIN  F    4.14  0.139  21.1  0.491   +104 0.849 0.666
+4  J. Hughes               NJD  DET  F    4.07  0.106  21.8  0.483   +107 0.842 0.656
+5  N. MacKinnon            COL  DAL  F    3.93  0.116  21.7  0.479   +109  0.83 0.637
+6  K. Kaprizov             MIN  WPG  F    3.17  0.159  20.7  0.453   +121 0.746 0.519
+7  N. Schmaltz             UTA  TOR  F    3.64  0.146  19.3  0.449   +123 0.802 0.595
+8  M. Celebrini            SJS  BOS  F     3.5  0.141  21.0  0.444   +125 0.786 0.573
+9  C. Caufield             MTL  BUF  F    4.07  0.118  19.0  0.429   +133 0.842 0.656
+10 A. DeBrincat            DET  NJD  F    3.67  0.116  19.4  0.423   +136 0.804 0.599
+11 T. Thompson             BUF  MTL  F     4.0  0.115  19.7  0.423   +136 0.836 0.647
+12 M. Boldy                MIN  WPG  F    3.92  0.109  19.3  0.421   +138 0.829 0.635
+13 A. Kempe                LAK  EDM  F    3.54  0.144  19.7  0.419   +138  0.79 0.579
+14 W. Nylander             TOR  UTA  F    3.08  0.129  21.2  0.413   +142 0.734 0.504
+15 M. Necas                COL  DAL  F    3.14  0.111  21.9  0.407   +146 0.743 0.515
+16 J. Guentzel             TBL  NYR  F    3.14  0.125  21.0  0.406   +146 0.743 0.515
+17 J. Robertson            DAL  COL  F    3.43  0.122  20.2  0.404   +147 0.778 0.562
+18 D. Larkin               DET  NJD  F    3.23  0.113  19.7  0.385   +160 0.754  0.53
+19 J. DeBrusk              VAN  NYI  F     3.5  0.141  16.7  0.385   +160 0.786 0.573
+20 J. Eichel               VGK  NSH  F    3.14  0.104  20.8  0.383   +161 0.743 0.515
+21 S. Aho                  CAR  WSH  F    3.23   0.12  18.6  0.374   +167 0.754  0.53
+22 B. Horvat               NYI  VAN  F    2.85  0.109  20.1  0.371   +169 0.701 0.464
+23 N. Suzuki               MTL  BUF  F    2.53   0.13  21.4  0.363   +175 0.652 0.407
+24 Q. Byfield              LAK  EDM  F    2.69  0.126  20.7  0.354   +183 0.678 0.436
+25 D. Pastrnak             BOS  SJS  F    3.14  0.083  20.1  0.352   +184 0.743 0.515
+26 M. Marner               VGK  NSH  F    2.64  0.124  20.0   0.35   +186  0.67 0.427
+27 T. Meier                NJD  DET  F    3.53  0.085  18.1  0.342   +192  0.79 0.578
+28 B. McMann               SEA  PHI  F    3.56  0.102  17.2  0.341   +194 0.793 0.583
+29 S. Stamkos              NSH  VGK  F    2.79  0.137  19.0  0.341   +193 0.692 0.453
+30 A. Svechnikov           CAR  WSH  F    2.92  0.145  16.4  0.339   +195 0.713 0.477
 
-87 players, 3 games -> docs/index.html
+529 players, 16 games -> docs/index.html
