@@ -1,38 +1,33 @@
-== grade Wed Oct 14 00:47:10 UTC 2026 ==
+== grade Wed Oct 14 18:49:35 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== board Wed Oct 14 00:47:11 UTC 2026 ==
-#  player                  tm   opp  G   SOG/g    sh%   toi   P(G)   fair   P2+   P3+
-1  B. Hagel                TBL  NYR  F     5.0  0.117  21.4  0.561   -128 0.907 0.768
-2  C. McDavid              EDM  LAK  F    4.33  0.125  23.2  0.534   -115 0.864 0.691
-3  K. Connor               WPG  MIN  F    4.14  0.139  21.1  0.491   +104 0.849 0.666
-4  J. Hughes               NJD  DET  F    4.07  0.106  21.8  0.483   +107 0.842 0.656
-5  N. MacKinnon            COL  DAL  F    3.93  0.116  21.7  0.479   +109  0.83 0.637
-6  K. Kaprizov             MIN  WPG  F    3.17  0.159  20.7  0.453   +121 0.746 0.519
-7  N. Schmaltz             UTA  TOR  F    3.64  0.146  19.3  0.449   +123 0.802 0.595
-8  M. Celebrini            SJS  BOS  F     3.5  0.141  21.0  0.444   +125 0.786 0.573
-9  C. Caufield             MTL  BUF  F    4.07  0.118  19.0  0.429   +133 0.842 0.656
-10 A. DeBrincat            DET  NJD  F    3.67  0.116  19.4  0.423   +136 0.804 0.599
-11 T. Thompson             BUF  MTL  F     4.0  0.115  19.7  0.423   +136 0.836 0.647
-12 M. Boldy                MIN  WPG  F    3.92  0.109  19.3  0.421   +138 0.829 0.635
-13 A. Kempe                LAK  EDM  F    3.54  0.144  19.7  0.419   +138  0.79 0.579
-14 W. Nylander             TOR  UTA  F    3.08  0.129  21.2  0.413   +142 0.734 0.504
-15 M. Necas                COL  DAL  F    3.14  0.111  21.9  0.407   +146 0.743 0.515
-16 J. Guentzel             TBL  NYR  F    3.14  0.125  21.0  0.406   +146 0.743 0.515
-17 J. Robertson            DAL  COL  F    3.43  0.122  20.2  0.404   +147 0.778 0.562
-18 D. Larkin               DET  NJD  F    3.23  0.113  19.7  0.385   +160 0.754  0.53
-19 J. DeBrusk              VAN  NYI  F     3.5  0.141  16.7  0.385   +160 0.786 0.573
-20 J. Eichel               VGK  NSH  F    3.14  0.104  20.8  0.383   +161 0.743 0.515
-21 S. Aho                  CAR  WSH  F    3.23   0.12  18.6  0.374   +167 0.754  0.53
-22 B. Horvat               NYI  VAN  F    2.85  0.109  20.1  0.371   +169 0.701 0.464
-23 N. Suzuki               MTL  BUF  F    2.53   0.13  21.4  0.363   +175 0.652 0.407
-24 Q. Byfield              LAK  EDM  F    2.69  0.126  20.7  0.354   +183 0.678 0.436
-25 D. Pastrnak             BOS  SJS  F    3.14  0.083  20.1  0.352   +184 0.743 0.515
-26 M. Marner               VGK  NSH  F    2.64  0.124  20.0   0.35   +186  0.67 0.427
-27 T. Meier                NJD  DET  F    3.53  0.085  18.1  0.342   +192  0.79 0.578
-28 B. McMann               SEA  PHI  F    3.56  0.102  17.2  0.341   +194 0.793 0.583
-29 S. Stamkos              NSH  VGK  F    2.79  0.137  19.0  0.341   +193 0.692 0.453
-30 A. Svechnikov           CAR  WSH  F    2.92  0.145  16.4  0.339   +195 0.713 0.477
+== board Wed Oct 14 18:49:35 UTC 2026 ==
+#  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
+1  C. Caufield             MTL  WSH  F    4.12  19.1  0.389   +157        0.657       
+2  N. MacKinnon            COL  DAL  F     3.8  21.6  0.356   +181        0.562       
+3  N. Suzuki               MTL  WSH  F    2.69  21.5  0.333   +200        0.428       
+4  M. Necas                COL  DAL  F    3.07  22.0  0.327   +206         0.45       
+5  J. Robertson            DAL  COL  F    3.33  20.3  0.325   +208        0.518       
+6  J. Slafkovský           MTL  WSH  F    2.75  20.0  0.284   +252        0.439       
+7  A. Tuch                 WSH  MTL  F     2.5  19.8  0.263   +280        0.399       
+8  T. Wilson               WSH  MTL  F    1.93  19.4  0.249   +302        0.289       
+9  A. Ovechkin             WSH  MTL  F     3.0  16.0  0.244   +310        0.489       
+10 B. Jenner               WSH  MTL  F    2.53  16.2   0.23   +335        0.405       
+11 W. Johnston             DAL  COL  F    1.93  19.9   0.23   +335         0.27       
+12 M. Rantanen             DAL  COL  F    1.67  20.1  0.225   +344        0.221       
+13 R. Leonard              WSH  MTL  F    2.71  14.2  0.216   +363        0.439       
+14 I. Demidov              MTL  WSH  F    2.08  16.6  0.212   +371        0.315       
+15 N. Kadri                COL  DAL  F    2.64  17.1  0.196   +410        0.378       
+16 B. Nelson               COL  DAL  F    1.87  18.9   0.19   +426        0.241       
+17 G. Landeskog            COL  DAL  F    1.93  16.0  0.185   +440        0.254       
+18 D. Strome               WSH  MTL  F    1.43  16.7  0.183   +445         0.19       
+19 C. Kreider              MTL  WSH  F    1.57  16.4  0.182   +448        0.214       
+20 M. Duchene              DAL  COL  F     1.7  17.2  0.178   +462        0.227       
+21 A. Lehkonen             COL  DAL  F    1.33  18.1  0.176   +468        0.146       
+22 P. Dubois               WSH  MTL  F    1.36  16.2  0.175   +472        0.177       
+23 A. Newhook              MTL  WSH  F    1.44  15.5  0.175   +473        0.188       
+24 A. Protas               WSH  MTL  F     1.5  15.6  0.168   +494        0.204       
+25 J. Kyrou                WSH  MTL  F    1.56  14.1  0.162   +518        0.216       
 
-529 players, 16 games -> docs/index.html
+69 players, 2 games -> docs/index.html
