@@ -82,7 +82,7 @@ class History:
             pp = min(0.35, 0.4 * sum(x["ppg"] for x in h) / n)
         opp = self.goalie_sv(opp_goalie_pid) if opp_goalie_pid else LEAGUE_SV
         return dict(sog_pg=sog, sh_pct=sh, pp_share=pp, goals_l5=g5, toi_pg=toi,
-                    opp_gsv=opp, is_d=1.0 if self.pos.get(pid) == "D" else 0.0)
+                    opp_gsv=opp, is_d=1.0 if self.pos.get(pid) == "D" else 0.0, n_games=n)
 
 
 # ---- probability model ----
@@ -96,7 +96,16 @@ def p_goal(f, model):
     z = model["bias"]
     for k in FEATS:
         z += model["w"][k] * (f[k] - model["mu"][k]) / model["sd"][k]
-    return 1 / (1 + math.exp(-z))
+    p = 1 / (1 + math.exp(-z))
+    # Early-window shrinkage: with fewer than the full lookback of games the rolling
+    # inputs are noisy and the live Oct-2026 check showed the top end ~6 pts hot.
+    # Blend toward the position baseline with weight (lookback - n) / lookback.
+    n = f.get("n_games", 20)
+    if n < 20:
+        base = 0.07 if f.get("is_d") else 0.17
+        w = (20 - n) / 20
+        p = (1 - w) * p + w * base
+    return p
 
 
 def p_sog_at_least(f, k, model=None):

@@ -27,10 +27,18 @@ jobs:
         run: |
           mkdir -p docs
           { echo "== grade $(date -u) =="; python -m nhl.grade; } > docs/last_run.log 2>&1 || true
+      - name: fetch book prices (6pm run only — ~15 credits/day on the free tier)
+        if: github.event.schedule == '0 22 * * *' || github.event_name == 'workflow_dispatch'
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: |
+          { echo "== odds $(date -u) =="; python -m nhl.odds --out docs; } >> docs/last_run.log 2>&1 || true
       - name: build board
         run: |
-          { echo "== board $(date -u) =="; python -m nhl.board --out docs; } >> docs/last_run.log 2>&1 \
+          FLAG=""; [ -s docs/odds.json ] && FLAG="--auto-pick"
+          { echo "== board $(date -u) =="; python -m nhl.board --out docs $FLAG; } >> docs/last_run.log 2>&1 \
             || { echo "BOARD FAILED"; tail -40 docs/last_run.log; exit 1; }
+          rm -f docs/odds.json
       - name: commit
         if: always()
         run: |

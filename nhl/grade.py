@@ -30,7 +30,12 @@ def main():
         for (pid_, dt, pid, name, team, opp, market, line, odds, stake, mp, bp) in ps:
             r = stats.get(pid)
             if r is None:
-                print(f"  {dt} {name}: game not final or player did not play (left ungraded)"); continue
+                # game final but player absent => scratched/injured: void the pick (0 P&L)
+                if any(s["team"] in (team, opp) for s in stats.values()):
+                    grade(pid_, 0, 0.0); print(f"  {dt} {name}: did not play — voided")
+                else:
+                    print(f"  {dt} {name}: game not final (left ungraded)")
+                continue
             val = r["goals"] if market == "goal" else r["sog"]
             hit = 1 if val > line else 0
             pnl = payout(odds, stake) if hit else -stake

@@ -23,8 +23,11 @@ and commits `docs/index.html` (+ a dated copy in `docs/boards/`). Enable Pages o
 Source "Deploy from a branch" → `main` / `/docs`. The board is then at https://jamesjholee.github.io/the-ice/
 with the running record at the top.
 
-Logging a pick: on the board, type the price, click **copy**, paste the line at the bottom of `picks.csv`, push.
-(Or `python -m nhl.pick ...` locally, then push.) The next run grades it.
+Book prices + auto picks: add a repo secret `ODDS_API_KEY` (The Odds API; free tier = 500 credits/month).
+The 6pm run fetches anytime-goal and shots-on-goal prices for every game (~2 credits/game, ~15/day),
+shows the best price per row on the board, and appends up to 8 picks/day to `picks.csv` where the model
+beats the book by the market's bar (+6 pts goals, +4 pts shots). The next morning's run grades them and
+the record at the top of the board is real. Manual picks still work: `python -m nhl.pick ...` or edit `picks.csv`.
 
 ## 2. Daily (manual, if you'd rather run it yourself)
 ```
