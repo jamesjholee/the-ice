@@ -32,7 +32,7 @@ def collect(season, hist, warmup=14):
                 starters = {g["team"]: g["pid"] for g in goalies if g["starter"]}
                 slate = []
                 for r in skaters:
-                    f = hist.skater_feats(r["pid"], opp_goalie_pid=starters.get(r["opp"]))
+                    f = hist.skater_feats(r["pid"], opp_goalie_pid=starters.get(r["opp"]), opp_team=r["opp"])
                     if f:
                         slate.append(dict(f=f, hit=1 if r["goals"] >= 1 else 0, sog=r["sog"],
                                           date=d.isoformat(), name=r["name"]))
@@ -68,6 +68,12 @@ def bucket_report(samples, label):
         g = [s["hit"] for s in strong if lo <= s["f"]["opp_gsv"] < hi]
         if g:
             print(f"  gsv {lo:.3f}-{hi:.3f} n={len(g):>5} scored {np.mean(g):.3f}  fair {american(np.mean(g))}")
+    print("3+ shots/game players by opponent shots allowed/game:")
+    for lo, hi in ((0, 26.5), (26.5, 28.5), (28.5, 30.5), (30.5, 99)):
+        g = [s["hit"] for s in strong if lo <= s["f"]["opp_sa"] < hi]
+        g3 = [1 if s["sog"] >= 3 else 0 for s in strong if lo <= s["f"]["opp_sa"] < hi]
+        if g:
+            print(f"  oppSA {lo:>4}-{hi:<4} n={len(g):>5} scored {np.mean(g):.3f}  hit3+ {np.mean(g3):.3f}")
     print("3+ shots/game players by pp_share:")
     for lo, hi in ((0, 0.05), (0.05, 0.12), (0.12, 0.2), (0.2, 1)):
         g = [s["hit"] for s in strong if lo <= s["f"]["pp_share"] < hi]

@@ -37,7 +37,7 @@ def score_slate(d, overrides, min_games):
             except Exception as e:
                 print("[roster]", team, e, file=sys.stderr); continue
             for p in ros:
-                f = hist.skater_feats(p["pid"], opp_goalie_pid=gpid, min_games=min_games)
+                f = hist.skater_feats(p["pid"], opp_goalie_pid=gpid, min_games=min_games, opp_team=opp)
                 if not f:
                     continue
                 pg = p_goal(f, model)
@@ -45,7 +45,11 @@ def score_slate(d, overrides, min_games):
                     pid=p["pid"], name=hist.names.get(p["pid"], p["name"]), full_name=p["name"],
                     team=team, opp=opp, pos=p["pos"], game=f"{g['away']}@{g['home']}", start=g.get("start") or "",
                     opp_goalie=gname, opp_gsv=round(gsv, 3),
-                    sog_pg=round(f["sog_pg"], 2), sh_pct=round(f["sh_pct"], 3), pp_share=round(f["pp_share"], 2),
+                    opp_sa=round(f["opp_sa"], 1), team_sf=round(hist.team_shots_for(team), 1),
+                    sog_pg=round(f["sog_pg"], 2), sog_l5=round(f["sog_l5"], 2), sog_l10=round(f["sog_l10"], 2),
+                    hit2_l10=round(f["hit2_l10"], 2), hit3_l10=round(f["hit3_l10"], 2), goal_l10=round(f["goal_l10"], 2),
+                    toi_l5=round(f["toi_l5"], 1),
+                    sh_pct=round(f["sh_pct"], 3), pp_share=round(f["pp_share"], 2),
                     goals_l5=int(f["goals_l5"]), toi=round(f["toi_pg"], 1), n_games=f.get("n_games", 0),
                     p_goal=round(pg, 3), fair_goal=american(pg),
                     p_sog2=round(p_sog_at_least(f, 2, model), 3), p_sog3=round(p_sog_at_least(f, 3, model), 3),
@@ -177,11 +181,22 @@ def render(rows, games, d, odds_meta, todays_picks):
     else:
         picks_html = "<p class='sub'>No book prices this run (odds are fetched on the 6pm run).</p>"
 
-    games_html = " · ".join(f"{g['away']}@{g['home']}" for g in games) or "no games"
+    def et(iso):
+        try:
+            t = datetime.fromisoformat(iso.replace("Z", "+00:00")) - timedelta(hours=4)
+            return t.strftime("%-I:%M %p")
+        except Exception:
+            return ""
+    games_sorted = sorted(games, key=lambda g: g.get("start") or "")
+    games_html = " · ".join(f"{g['away']}@{g['home']} {et(g.get('start') or '')}" for g in games_sorted) or "no games"
+    gmeta = {f"{g['away']}@{g['home']}": dict(start=g.get("start") or "", et=et(g.get("start") or "")) for g in games}
+    for r in rows:
+        r["et"] = gmeta.get(r["game"], {}).get("et", "")
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     odds_note = (f"book prices: best of {odds_meta.get('events', 0)} games fetched {odds_meta.get('fetched', '')[:16]}Z · "
                  f"{odds_meta.get('credits_remaining', '?')} API credits left") if odds_meta else "no book prices this run"
     data = json.dumps(rows)
+    gdata = json.dumps(gmeta)
     tabs = "".join(f"<button {'class=on' if i==0 else ''} data-m='{m}'>{lbl}</button>" for i, (m, lbl, _) in enumerate(MARKETS))
     return f"""<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>the-ice — {d}</title>
@@ -196,32 +211,47 @@ input{{width:64px;background:#0f1115;color:var(--fg);border:1px solid var(--line
 .tabs{{margin:10px 0}} .tabs button{{background:var(--card);color:var(--fg);border:1px solid var(--line);padding:6px 10px;border-radius:6px;margin:0 6px 6px 0;cursor:pointer}} .tabs button.on{{border-color:var(--acc)}}
 .wrap{{overflow:auto;max-height:75vh;border:1px solid var(--line);border-radius:6px}} .note{{color:var(--mut);font-size:12px;margin-top:8px}} code{{background:#0f1115;padding:1px 4px;border-radius:3px}}
 details summary{{cursor:pointer;color:var(--mut)}}
+.lbl{{color:var(--mut);font-size:12px;margin:0 8px 0 4px}} .mut{{color:var(--mut)}} .good{{color:var(--acc)}} .bad{{color:var(--bad)}} .up{{color:var(--acc)}} .dn{{color:var(--bad)}} .fl{{color:var(--mut)}}
+.game{{margin:14px 0 22px}} .gh{{font-size:16px;font-weight:600;margin-bottom:8px}} .sides{{display:grid;grid-template-columns:1fr 1fr;gap:12px}} @media(max-width:1000px){{.sides{{grid-template-columns:1fr}}}}
+.side{{border:1px solid var(--line);border-radius:6px;overflow:auto}} .side .th{{padding:6px 8px;background:#1c2029;border-bottom:1px solid var(--line)}} .side table{{font-size:13px}} .side th,.side td{{padding:4px 6px}}
 </style></head><body>
 <h1>the-ice <span style="color:var(--mut);font-weight:400">· NHL props board · {d}</span></h1>
 <div class="sub">{games_html} &nbsp;·&nbsp; built {stamp} &nbsp;·&nbsp; {odds_note}</div>
 <h2>Record</h2>{rec_html}
 <h2>Model picks today</h2>{picks_html}
 <h2>Board</h2>
-<div class="sub">Model = rolling shots/game, finishing %, ice time, position, PP share (last 20 games). Book = best available price across US books for that market; type your own to override. Edge = model − implied, in points. Bar: +4 shots, +6 goals.</div>
-<div class="tabs">{tabs}</div>
-<div class="wrap"><table id="t"><thead></thead><tbody></tbody></table></div>
-<div class="note">Rows: {len(rows)}. Shots prices are only shown for the line the book posted (a 2.5 line fills the 3+ tab).</div>
+<div class="sub">Model = rolling shots/game, finishing %, ice time, position, PP share, <b>opponent shots allowed</b> (last 20 games). Form = last 5 / last 10. Matchup = opponent's shots allowed per game (league ~28; higher = softer). Book = best US price; type your own to override. Edge = model − implied, in points.</div>
+<div class="tabs"><span class="lbl">Market</span>{tabs}<span class="lbl">View</span><button class="on" data-v="games">By game</button><button data-v="edge">By edge</button><button data-v="model">By model</button></div>
+<div id="board"></div>
+<div class="note">Rows: {len(rows)}. Shots prices are shown for the line the book posted (a 2.5 line fills the 3+ tab). Form hit-rates are the player's last-10 rate for that line.</div>
 <script>
-const rows={data};const MK={{goal:'p_goal',sog2:'p_sog2',sog3:'p_sog3',sog4:'p_sog4'}};
-let market='goal';const manual=JSON.parse(localStorage.getItem('odds_{d}')||'{{}}');
+const rows={data};const G={gdata};const MK={{goal:'p_goal',sog2:'p_sog2',sog3:'p_sog3',sog4:'p_sog4'}};const FORM={{goal:'goal_l10',sog2:'hit2_l10',sog3:'hit3_l10',sog4:null}};
+let market='goal',view='games';const manual=JSON.parse(localStorage.getItem('odds_{d}')||'{{}}');
 function implied(o){{o=parseInt(String(o).replace('+',''));if(isNaN(o))return null;return o>0?100/(o+100):(-o)/(-o+100)}}
 function fair(p){{return p<0.5?'+'+Math.round(100*(1-p)/p):'-'+Math.round(100*p/(1-p))}}
 function am(o){{return o===''||o==null?'':(o>0?'+'+o:String(o))}}
+function saCls(v){{return v>=30?'good':v<=26.5?'bad':''}}
+function trend(r){{const d=r.sog_l5-r.sog_pg;return d>=0.6?'<span class="up">▲</span>':d<=-0.6?'<span class="dn">▼</span>':'<span class="fl">–</span>'}}
+function prep(){{const k=MK[market];rows.forEach(r=>{{const key=r.pid+market;const o=manual[key]!==undefined&&manual[key]!==''?manual[key]:r['book_'+market];const ip=(o!==''&&o!=null)?implied(o):null;r._o=o;r._e=ip==null?null:(r[k]-ip)*100;r._p=r[k]}})}}
+function head(){{return '<tr><th class="l">Player</th><th>Pos</th><th>TOI</th><th>SOG/g</th><th>L5</th><th></th><th>Form</th><th>sh%</th><th>PP</th><th>Opp SA</th><th>Model</th><th>Fair</th><th>Book</th><th>Edge</th></tr>'}}
+function row(r){{const e=r._e;const bk=(manual[r.pid+market]?'you':(r['book_'+market+'_bk']||''));const f=FORM[market];const form=f?Math.round(r[f]*100)+'%':'';
+ return `<tr><td class="l">${{r.name}} <span class="mut">${{r.team}}</span></td><td>${{r.pos}}</td><td>${{r.toi}}</td><td>${{r.sog_pg}}</td><td>${{r.sog_l5}}</td><td>${{trend(r)}}</td><td>${{form}}</td><td>${{(r.sh_pct*100).toFixed(1)}}</td><td>${{(r.pp_share*100).toFixed(0)}}%</td><td class="${{saCls(r.opp_sa)}}">${{r.opp_sa}}</td><td><b>${{(r._p*100).toFixed(1)}}%</b></td><td>${{fair(r._p)}}</td><td><input value="${{am(r._o)}}" data-k="${{r.pid+market}}" placeholder="—"> <span class="bk">${{bk}}</span></td><td class="${{e==null?'':e>=0?'edge-pos':'edge-neg'}}">${{e==null?'':(e>0?'+':'')+e.toFixed(1)}}</td></tr>`}}
 function render(){{
- const k=MK[market];
- rows.forEach(r=>{{const key=r.pid+market;const o=manual[key]!==undefined&&manual[key]!==''?manual[key]:r['book_'+market];const ip=(o!==''&&o!=null)?implied(o):null;r._o=o;r._e=ip==null?null:(r[k]-ip)*100}});
- rows.sort((a,b)=>(b._e==null?-999:b._e)-(a._e==null?-999:a._e)||b[k]-a[k]);
- document.querySelector('#t thead').innerHTML='<tr><th class="l">#</th><th class="l">Player</th><th class="l">Game</th><th>Pos</th><th>SOG/g</th><th>sh%</th><th>TOI</th><th>PP</th><th>G L5</th><th>Model</th><th>Fair</th><th>Book</th><th>Edge</th></tr>';
- document.querySelector('#t tbody').innerHTML=rows.map((r,i)=>{{const p=r[k];const e=r._e;const bk=(manual[r.pid+market]?'you':(r['book_'+market+'_bk']||''));
-  return `<tr><td class="l">${{i+1}}</td><td class="l">${{r.name}} <span style="color:var(--mut)">${{r.team}}</span></td><td class="l">${{r.game}}</td><td>${{r.pos}}</td><td>${{r.sog_pg}}</td><td>${{(r.sh_pct*100).toFixed(1)}}</td><td>${{r.toi}}</td><td>${{(r.pp_share*100).toFixed(0)}}%</td><td>${{r.goals_l5}}</td><td><b>${{(p*100).toFixed(1)}}%</b></td><td>${{fair(p)}}</td><td><input value="${{am(r._o)}}" data-k="${{r.pid+market}}" placeholder="—"> <span class="bk">${{bk}}</span></td><td class="${{e==null?'':e>=0?'edge-pos':'edge-neg'}}">${{e==null?'':(e>0?'+':'')+e.toFixed(1)}}</td></tr>`}}).join('');
- document.querySelectorAll('#t input').forEach(el=>el.addEventListener('change',ev=>{{manual[ev.target.dataset.k]=ev.target.value;localStorage.setItem('odds_{d}',JSON.stringify(manual));render()}}));
+ prep();const el=document.getElementById('board');
+ if(view==='games'){{
+  const games=Object.keys(G).sort((a,b)=>(G[a].start||'').localeCompare(G[b].start||''));
+  el.innerHTML=games.map(g=>{{const [away,home]=g.split('@');const gr=rows.filter(r=>r.game===g);
+   const side=t=>{{const rs=gr.filter(r=>r.team===t).sort((a,b)=>b._p-a._p).slice(0,9);const opp=t===home?away:home;const sa=rs[0]?rs[0].opp_sa:'';const sf=rs[0]?rs[0].team_sf:'';
+     return `<div class="side"><div class="th"><b>${{t}}</b> <span class="mut">shots for ${{sf}}/g · vs ${{opp}} allows <span class="${{saCls(sa)}}">${{sa}}</span>/g</span></div><table><thead>${{head()}}</thead><tbody>${{rs.map(row).join('')}}</tbody></table></div>`}};
+   return `<div class="game"><div class="gh">${{away}} @ ${{home}} <span class="mut">${{G[g].et}} ET</span></div><div class="sides">${{side(away)}}${{side(home)}}</div></div>`}}).join('');
+ }} else {{
+  const sorted=rows.slice().sort(view==='edge'?((a,b)=>(b._e==null?-999:b._e)-(a._e==null?-999:a._e)||b._p-a._p):((a,b)=>b._p-a._p));
+  el.innerHTML=`<div class="wrap"><table id="t"><thead>${{head().replace('<th class="l">Player','<th class="l">#</th><th class="l">Player').replace('<th>Pos>','<th class="l">Game</th><th>Pos>')}}</thead><tbody>${{sorted.map((r,i)=>row(r).replace('<tr><td class="l">',`<tr><td class="l">${{i+1}}</td><td class="l">`).replace('</td><td>'+r.pos+'</td>',`</td><td class="l">${{r.game}} ${{r.et}}</td><td>${{r.pos}}</td>`)).join('')}}</tbody></table></div>`;
+ }}
+ document.querySelectorAll('#board input').forEach(x=>x.addEventListener('change',ev=>{{manual[ev.target.dataset.k]=ev.target.value;localStorage.setItem('odds_{d}',JSON.stringify(manual));render()}}));
 }}
-document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{{document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('on'));b.classList.add('on');market=b.dataset.m;render()}});
+document.querySelectorAll('.tabs button[data-m]').forEach(b=>b.onclick=()=>{{document.querySelectorAll('.tabs button[data-m]').forEach(x=>x.classList.remove('on'));b.classList.add('on');market=b.dataset.m;render()}});
+document.querySelectorAll('.tabs button[data-v]').forEach(b=>b.onclick=()=>{{document.querySelectorAll('.tabs button[data-v]').forEach(x=>x.classList.remove('on'));b.classList.add('on');view=b.dataset.v;render()}});
 render();
 </script></body></html>"""
 

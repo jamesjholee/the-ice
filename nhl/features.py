@@ -5,14 +5,14 @@ Everything here is computed from games strictly BEFORE the game being predicted.
 import json, math, os
 from collections import defaultdict
 
-FEATS = ["sog_pg", "sh_pct", "pp_share", "goals_l5", "toi_pg", "opp_gsv", "is_d"]
+FEATS = ["sog_pg", "sh_pct", "pp_share", "goals_l5", "toi_pg", "opp_gsv", "is_d", "opp_sa"]
 DEFAULT_MODEL = {  # fallback weights if model.json hasn't been fitted yet (standardized inputs)
     "bias": -1.82, "w": {"sog_pg": 0.40, "sh_pct": 0.18, "pp_share": 0.05, "goals_l5": 0.0,
                           "toi_pg": -0.08, "opp_gsv": -0.05, "is_d": -0.10},
     "mu": {"sog_pg": 1.7, "sh_pct": 0.10, "pp_share": 0.08, "goals_l5": 0.8, "toi_pg": 16.7,
-           "opp_gsv": 0.905, "is_d": 0.33},
+           "opp_gsv": 0.905, "is_d": 0.33, "opp_sa": 28.0},
     "sd": {"sog_pg": 1.0, "sh_pct": 0.02, "pp_share": 0.09, "goals_l5": 1.0, "toi_pg": 3.5,
-           "opp_gsv": 0.012, "is_d": 0.47},
+           "opp_gsv": 0.012, "is_d": 0.47, "opp_sa": 2.5},
 }
 LEAGUE_SV = 0.905
 
@@ -28,11 +28,23 @@ class History:
         self.pos = {}
         self.names = {}
         self.pptoi = {}                    # (pid, game_id) -> minutes
+        self.team_sa = defaultdict(list)   # team -> shots allowed per game (chronological)
+        self.team_sf = defaultdict(list)   # team -> shots for per game
 
     def add_pptoi(self, mapping):
         self.pptoi.update(mapping)
 
     def add_game(self, skaters, goalies):
+        by_team = defaultdict(int)
+        for r in skaters:
+            by_team[r["team"]] += r["sog"]
+        for r in skaters[:1]:
+            pass
+        teams = list(by_team)
+        if len(teams) == 2:
+            a, b = teams
+            self.team_sf[a].append(by_team[a]); self.team_sa[a].append(by_team[b])
+            self.team_sf[b].append(by_team[b]); self.team_sa[b].append(by_team[a])
         for r in skaters:
             r = dict(r)
             r["pptoi"] = self.pptoi.get((r["pid"], r["game_id"]), None)
@@ -53,6 +65,14 @@ class History:
         # shrink toward league average with a 300-shot prior
         return (saves + LEAGUE_SV * 300) / (shots + 300)
 
+    def team_shots_allowed(self, team, n=20):
+        h = self.team_sa[team][-n:]
+        return sum(h) / len(h) if h else 28.0
+
+    def team_shots_for(self, team, n=20):
+        h = self.team_sf[team][-n:]
+        return sum(h) / len(h) if h else 28.0
+
     def likely_starter(self, team):
         """Most frequent starter over the team's last 6 games (pre-game guess)."""
         h = self.team_goalies[team][-6:]
@@ -64,7 +84,7 @@ class History:
         return max(cnt, key=cnt.get)
 
     # ---- skater ----
-    def skater_feats(self, pid, opp_goalie_pid=None, min_games=8):
+    def skater_feats(self, pid, opp_goalie_pid=None, min_games=8, opp_team=None):
         h = self.sk[pid][-self.lookback:]
         if len(h) < min_games:
             return None
@@ -81,8 +101,17 @@ class History:
         else:  # proxy: PP goals per game scaled to a share-like range
             pp = min(0.35, 0.4 * sum(x["ppg"] for x in h) / n)
         opp = self.goalie_sv(opp_goalie_pid) if opp_goalie_pid else LEAGUE_SV
+        opp_sa = self.team_shots_allowed(opp_team) if opp_team else 28.0
+        l5 = h[-5:]
         return dict(sog_pg=sog, sh_pct=sh, pp_share=pp, goals_l5=g5, toi_pg=toi,
-                    opp_gsv=opp, is_d=1.0 if self.pos.get(pid) == "D" else 0.0, n_games=n)
+                    opp_gsv=opp, is_d=1.0 if self.pos.get(pid) == "D" else 0.0, opp_sa=opp_sa, n_games=n,
+                    # form / trend columns for the dashboard (not model inputs)
+                    sog_l5=sum(x["sog"] for x in l5) / len(l5),
+                    sog_l10=sum(x["sog"] for x in h[-10:]) / len(h[-10:]),
+                    hit3_l10=sum(1 for x in h[-10:] if x["sog"] >= 3) / len(h[-10:]),
+                    hit2_l10=sum(1 for x in h[-10:] if x["sog"] >= 2) / len(h[-10:]),
+                    goal_l10=sum(1 for x in h[-10:] if x["goals"] >= 1) / len(h[-10:]),
+                    toi_l5=sum(x["toi"] for x in l5) / len(l5))
 
 
 # ---- probability model ----
@@ -111,7 +140,7 @@ def p_goal(f, model):
 def p_sog_at_least(f, k, model=None):
     """P(SOG >= k) from a Poisson on the player's rolling shot rate, lightly adjusted for
     opponent goalie (worse goalie -> more rebounds/shots is small; we ignore) and D flag."""
-    lam = f["sog_pg"]
+    lam = f["sog_pg"] * (f.get("opp_sa", 28.0) / 28.0) ** 0.5   # half-elastic to opp shots allowed
     p = 1 - sum(math.exp(-lam) * lam ** i / math.factorial(i) for i in range(k))
     # Platt-style calibration fitted in backtest: logit(actual) = a + b*logit(poisson)
     cal = (model or {}).get("sog_platt", {}).get(str(k))

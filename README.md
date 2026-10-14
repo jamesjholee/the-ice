@@ -56,6 +56,7 @@ Grades every ungraded pick from final boxscores, prints hit/miss per pick and th
 ## Backtest findings (2024-25 train → 2025-26 test, 83k player-games)
 - Shots/game is the predictor. Top-5 by shots alone score 35–38% vs a 15% baseline. Nothing else comes close standalone.
 - Position is the second thing: defensemen score ~7%. Once `is_d` is in the model, ice time flips to a strong positive (among forwards, minutes matter). The earlier "TOI is useless" read was a D confound.
+- Opponent team defense (shots allowed/game, rolling 20): real. 3+ SOG/g forwards hit 3+ shots 50–52% vs stingy defenses (<26.5 allowed) and 62–65% vs leaky ones (>30.5); score 30% vs 35%. Weight +0.086, third-largest positive. This is the "matchup" column on the board.
 - Opponent goalie: no measurable effect on anytime-goal rate. Among 3+ shot players, scoring is flat across goalie sv% buckets (32–35% everywhere). Weight −0.025. Do not pick players by goalie matchup.
 - Hot streak (goals last 5): redundant with shots and finishing %. Weight +0.015.
 - Finishing % (shrunk): real but small, +0.07. PP share (PP-goals proxy here; real PP TOI needs the stats API): small positive, unverified.
