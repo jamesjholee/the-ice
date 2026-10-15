@@ -1,8 +1,10 @@
-== grade Wed Oct 14 18:49:35 UTC 2026 ==
+== grade Thu Oct 15 00:13:11 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== board Wed Oct 14 18:49:35 UTC 2026 ==
+== odds Thu Oct 15 00:13:11 UTC 2026 ==
+[odds] ODDS_API_KEY not set; skipping
+== board Thu Oct 15 00:13:11 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  C. Caufield             MTL  WSH  F    4.12  19.1  0.389   +157        0.657       
 2  N. MacKinnon            COL  DAL  F     3.8  21.6  0.356   +181        0.562       
