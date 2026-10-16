@@ -1,8 +1,10 @@
-== grade Thu Oct 15 18:33:28 UTC 2026 ==
+== grade Thu Oct 15 23:59:29 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== board Thu Oct 15 18:33:28 UTC 2026 ==
+== odds Thu Oct 15 23:59:29 UTC 2026 ==
+[odds] ODDS_API_KEY not set; skipping
+== board Thu Oct 15 23:59:29 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  K. Connor               WPG  CHI  F    4.14  20.8   0.41   +144         0.66       
 2  J. Hughes               NJD  NYR  F     4.4  21.9  0.396   +152        0.663       
@@ -30,4 +32,4 @@ nothing to grade
 24 B. Horvat               NYI  OTT  F    2.77  20.0  0.267   +274        0.429       
 25 C. Verhaeghe            FLA  VAN  F    2.42  19.0  0.267   +275        0.407       
 
-364 players, 11 games -> docs/index.html
+363 players, 11 games -> docs/index.html
