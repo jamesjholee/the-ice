@@ -1,8 +1,10 @@
-== grade Sat Oct 17 17:28:37 UTC 2026 ==
+== grade Sat Oct 17 23:41:13 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== board Sat Oct 17 17:28:37 UTC 2026 ==
+== odds Sat Oct 17 23:41:13 UTC 2026 ==
+[odds] ODDS_API_KEY not set; skipping
+== board Sat Oct 17 23:41:14 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  J. Hughes               NJD  WSH  F    4.07  21.6  0.389   +157        0.649       
 2  C. McDavid              EDM  UTA  F    3.85  23.4   0.38   +163        0.596       
@@ -30,4 +32,4 @@ nothing to grade
 24 Q. Byfield              LAK  BOS  F    2.69  20.9   0.29   +244        0.431       
 25 J. DeBrusk              VAN  TBL  F     3.5  17.0  0.286   +250        0.536       
 
-475 players, 14 games -> docs/index.html
+476 players, 14 games -> docs/index.html
