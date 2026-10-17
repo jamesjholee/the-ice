@@ -1,8 +1,10 @@
-== grade Fri Oct 16 18:17:17 UTC 2026 ==
+== grade Sat Oct 17 00:05:09 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== board Fri Oct 16 18:17:17 UTC 2026 ==
+== odds Sat Oct 17 00:05:09 UTC 2026 ==
+[odds] ODDS_API_KEY not set; skipping
+== board Sat Oct 17 00:05:10 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  N. MacKinnon            COL  PIT  F    3.87  21.8  0.412   +143        0.628       
 2  M. Necas                COL  PIT  F     3.0  21.9  0.366   +173        0.491       
