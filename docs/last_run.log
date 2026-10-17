@@ -1,35 +1,33 @@
-== grade Sat Oct 17 00:05:09 UTC 2026 ==
+== grade Sat Oct 17 17:28:37 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== odds Sat Oct 17 00:05:09 UTC 2026 ==
-[odds] ODDS_API_KEY not set; skipping
-== board Sat Oct 17 00:05:10 UTC 2026 ==
+== board Sat Oct 17 17:28:37 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
-1  N. MacKinnon            COL  PIT  F    3.87  21.8  0.412   +143        0.628       
-2  M. Necas                COL  PIT  F     3.0  21.9  0.366   +173        0.491       
-3  L. Carlsson             ANA  BOS  F    3.07  19.6  0.294   +240        0.497       
-4  D. Pastrnak             BOS  ANA  F    3.15  19.6  0.268   +273        0.479       
-5  R. Rakell               PIT  COL  F    2.86  18.8  0.266   +275         0.44       
-6  B. Sennecke             ANA  BOS  F    2.79  18.8  0.264   +279        0.448       
-7  E. Malkin               PIT  COL  F    2.75  18.3  0.241   +315        0.421       
-8  M. Granlund             ANA  BOS  F    2.07  20.6  0.241   +315        0.314       
-9  N. Kadri                COL  PIT  F    2.82  17.9  0.237   +322        0.459       
-10 G. Landeskog            COL  PIT  F    1.93  16.1  0.226   +342        0.291       
-11 B. Nelson               COL  PIT  F     1.8  19.1  0.226   +343        0.264       
-12 C. Gauthier             ANA  BOS  F    3.38  14.9  0.225   +344        0.547       
-13 S. Crosby               PIT  COL  F    2.23  18.9  0.222   +351        0.327       
-14 A. Lehkonen             COL  PIT  F     1.4  18.5  0.213   +368        0.185       
-15 M. Geekie               BOS  ANA  F    1.69  17.3  0.205   +389        0.219       
-16 A. Killorn              ANA  BOS  F    1.79  17.2   0.19   +427        0.258       
-17 F. Minten               BOS  ANA  F    1.85  16.0   0.19   +425        0.248       
-18 B. Rust                 PIT  COL  F     1.4  18.2  0.187   +436        0.171       
-19 E. Chinakhov            PIT  COL  F    1.93  15.9  0.186   +437        0.271       
-20 J. Schwartz             COL  PIT  F    1.43  14.6  0.183   +446         0.19       
-21 J. Peterka              BOS  ANA  F    1.92  15.8  0.183   +446        0.262       
-22 T. Novak                PIT  COL  F    1.73  15.6  0.181   +452        0.234       
-23 B. Kindel               PIT  COL  F    1.77  15.7  0.177   +464         0.24       
-24 P. Zacha                BOS  ANA  F    1.08  16.5  0.173   +478         0.11       
-25 A. Greer                ANA  BOS  F    1.69  14.5  0.171   +485        0.239       
+1  J. Hughes               NJD  WSH  F    4.07  21.6  0.389   +157        0.649       
+2  C. McDavid              EDM  UTA  F    3.85  23.4   0.38   +163        0.596       
+3  K. Connor               WPG  CAR  F     4.2  20.8  0.379   +164        0.608       
+4  B. Hagel                TBL  VAN  F    4.89  21.4  0.373   +168        0.784       
+5  A. DeBrincat            DET  SJS  F    3.53  19.5  0.372   +169        0.582       
+6  M. Celebrini            SJS  DET  F    3.29  21.2  0.353   +183        0.532       
+7  J. Guentzel             TBL  VAN  F    2.93  21.0  0.352   +184        0.505       
+8  T. Thompson             BUF  MTL  F    3.86  19.5  0.341   +193        0.621       
+9  C. Caufield             MTL  BUF  F    3.93  19.5   0.34   +194        0.608       
+10 N. Kucherov             TBL  VAN  F     2.8  20.9  0.338   +196        0.482       
+11 A. Kempe                LAK  BOS  F    3.54  20.0  0.329   +204        0.574       
+12 N. Schmaltz             UTA  EDM  F    3.53  19.3  0.328   +205        0.545       
+13 J. Eichel               VGK  PIT  F    3.36  19.9  0.328   +205        0.556       
+14 D. Larkin               DET  SJS  F    3.23  19.9  0.324   +209        0.533       
+15 B. Horvat               NYI  TOR  F    2.85  20.4  0.317   +216        0.497       
+16 J. Robertson            DAL  CHI  F    3.07  20.4  0.316   +217        0.493       
+17 B. Tkachuk              FLA  SEA  F    3.15  16.7  0.311   +221         0.54       
+18 W. Nylander             TOR  NYI  F    3.15  21.3  0.307   +225        0.485       
+19 S. Stamkos              NSH  STL  F    2.79  19.4  0.305   +228        0.455       
+20 M. Stone                VGK  PIT  F    2.64  18.3  0.296   +238        0.432       
+21 N. Suzuki               MTL  BUF  F    2.47  21.7  0.294   +241         0.37       
+22 S. Aho                  CAR  WPG  F    3.42  18.8  0.293   +241        0.545       
+23 D. Pastrnak             BOS  LAK  F    3.21  19.7  0.293   +242        0.508       
+24 Q. Byfield              LAK  BOS  F    2.69  20.9   0.29   +244        0.431       
+25 J. DeBrusk              VAN  TBL  F     3.5  17.0  0.286   +250        0.536       
 
-67 players, 2 games -> docs/index.html
+475 players, 14 games -> docs/index.html
