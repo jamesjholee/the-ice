@@ -1,35 +1,33 @@
-== grade Sat Oct 17 23:41:13 UTC 2026 ==
+== grade Sun Oct 18 17:29:34 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== odds Sat Oct 17 23:41:13 UTC 2026 ==
-[odds] ODDS_API_KEY not set; skipping
-== board Sat Oct 17 23:41:14 UTC 2026 ==
+== board Sun Oct 18 17:29:35 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
-1  J. Hughes               NJD  WSH  F    4.07  21.6  0.389   +157        0.649       
-2  C. McDavid              EDM  UTA  F    3.85  23.4   0.38   +163        0.596       
-3  K. Connor               WPG  CAR  F     4.2  20.8  0.379   +164        0.608       
-4  B. Hagel                TBL  VAN  F    4.89  21.4  0.373   +168        0.784       
-5  A. DeBrincat            DET  SJS  F    3.53  19.5  0.372   +169        0.582       
-6  M. Celebrini            SJS  DET  F    3.29  21.2  0.353   +183        0.532       
-7  J. Guentzel             TBL  VAN  F    2.93  21.0  0.352   +184        0.505       
-8  T. Thompson             BUF  MTL  F    3.86  19.5  0.341   +193        0.621       
-9  C. Caufield             MTL  BUF  F    3.93  19.5   0.34   +194        0.608       
-10 N. Kucherov             TBL  VAN  F     2.8  20.9  0.338   +196        0.482       
-11 A. Kempe                LAK  BOS  F    3.54  20.0  0.329   +204        0.574       
-12 N. Schmaltz             UTA  EDM  F    3.53  19.3  0.328   +205        0.545       
-13 J. Eichel               VGK  PIT  F    3.36  19.9  0.328   +205        0.556       
-14 D. Larkin               DET  SJS  F    3.23  19.9  0.324   +209        0.533       
-15 B. Horvat               NYI  TOR  F    2.85  20.4  0.317   +216        0.497       
-16 J. Robertson            DAL  CHI  F    3.07  20.4  0.316   +217        0.493       
-17 B. Tkachuk              FLA  SEA  F    3.15  16.7  0.311   +221         0.54       
-18 W. Nylander             TOR  NYI  F    3.15  21.3  0.307   +225        0.485       
-19 S. Stamkos              NSH  STL  F    2.79  19.4  0.305   +228        0.455       
-20 M. Stone                VGK  PIT  F    2.64  18.3  0.296   +238        0.432       
-21 N. Suzuki               MTL  BUF  F    2.47  21.7  0.294   +241         0.37       
-22 S. Aho                  CAR  WPG  F    3.42  18.8  0.293   +241        0.545       
-23 D. Pastrnak             BOS  LAK  F    3.21  19.7  0.293   +242        0.508       
-24 Q. Byfield              LAK  BOS  F    2.69  20.9   0.29   +244        0.431       
-25 J. DeBrusk              VAN  TBL  F     3.5  17.0  0.286   +250        0.536       
+1  K. Kaprizov             MIN  CBJ  F    3.38  20.9  0.358   +179        0.531       
+2  M. Boldy                MIN  CBJ  F    3.92  19.9  0.342   +192        0.612       
+3  S. Aho                  CAR  CGY  F    3.17  19.0  0.305   +228        0.538       
+4  A. Svechnikov           CAR  CGY  F    3.17  17.0  0.304   +229        0.538       
+5  L. Stankoven            CAR  CGY  F    2.64  16.7   0.27   +270        0.444       
+6  J. Blake                CAR  CGY  F    2.36  17.4  0.243   +312         0.39       
+7  A. Fantilli             CBJ  MIN  F     2.5  20.5  0.237   +322        0.395       
+8  J. Eriksson Ek          MIN  CBJ  F    2.75  18.7  0.235   +326        0.425       
+9  N. Ehlers               CAR  CGY  F    2.07  15.9  0.219   +356        0.332       
+10 C. Coyle                CBJ  MIN  F    2.17  19.3  0.216   +364        0.332       
+11 B. Coleman              MIN  CBJ  F    2.21  17.5  0.211   +374        0.327       
+12 T. Hall                 CAR  CGY  F    2.17  14.5   0.21   +377        0.352       
+13 J. Farabee              CGY  CAR  F    2.43  17.9    0.2   +400        0.333       
+14 M. Jankowski            CAR  CGY  F    1.57  13.4  0.199   +404         0.23       
+15 M. Backlund             CGY  CAR  F     2.5  18.4  0.197   +407        0.345       
+16 M. Coronato             CGY  CAR  F    2.38  17.6  0.195   +413        0.325       
+17 M. Frost                CGY  CAR  F    2.14  16.7  0.194   +416        0.283       
+18 K. Johnson              CBJ  MIN  F    2.09  14.1  0.184   +442        0.317       
+19 V. Nichushkin           CBJ  MIN  F    1.85  16.3  0.183   +446        0.269       
+20 M. Knies                CBJ  MIN  F    1.25  18.3  0.179   +457        0.152       
+21 J. Staal                CAR  CGY  F    1.38  16.2  0.176   +467         0.19       
+22 J. Martinook            CAR  CGY  F    1.46  15.1  0.174   +475        0.207       
+23 R. Hartman              MIN  CBJ  F    1.62  15.1  0.173   +478        0.214       
+24 S. Monahan              CBJ  MIN  F    1.58  16.2  0.167   +497        0.217       
+25 M. Shabanov             MIN  CBJ  F    1.33  14.8  0.166   +501         0.16       
 
-476 players, 14 games -> docs/index.html
+68 players, 2 games -> docs/index.html
