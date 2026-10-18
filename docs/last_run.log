@@ -1,8 +1,10 @@
-== grade Sun Oct 18 17:29:34 UTC 2026 ==
+== grade Sun Oct 18 23:50:07 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== board Sun Oct 18 17:29:35 UTC 2026 ==
+== odds Sun Oct 18 23:50:07 UTC 2026 ==
+[odds] ODDS_API_KEY not set; skipping
+== board Sun Oct 18 23:50:07 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  K. Kaprizov             MIN  CBJ  F    3.38  20.9  0.358   +179        0.531       
 2  M. Boldy                MIN  CBJ  F    3.92  19.9  0.342   +192        0.612       
