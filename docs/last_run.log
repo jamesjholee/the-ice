@@ -1,35 +1,33 @@
-== grade Sun Oct 18 23:50:07 UTC 2026 ==
+== grade Mon Oct 19 20:07:26 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== odds Sun Oct 18 23:50:07 UTC 2026 ==
-[odds] ODDS_API_KEY not set; skipping
-== board Sun Oct 18 23:50:07 UTC 2026 ==
+== board Mon Oct 19 20:07:27 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
-1  K. Kaprizov             MIN  CBJ  F    3.38  20.9  0.358   +179        0.531       
-2  M. Boldy                MIN  CBJ  F    3.92  19.9  0.342   +192        0.612       
-3  S. Aho                  CAR  CGY  F    3.17  19.0  0.305   +228        0.538       
-4  A. Svechnikov           CAR  CGY  F    3.17  17.0  0.304   +229        0.538       
-5  L. Stankoven            CAR  CGY  F    2.64  16.7   0.27   +270        0.444       
-6  J. Blake                CAR  CGY  F    2.36  17.4  0.243   +312         0.39       
-7  A. Fantilli             CBJ  MIN  F     2.5  20.5  0.237   +322        0.395       
-8  J. Eriksson Ek          MIN  CBJ  F    2.75  18.7  0.235   +326        0.425       
-9  N. Ehlers               CAR  CGY  F    2.07  15.9  0.219   +356        0.332       
-10 C. Coyle                CBJ  MIN  F    2.17  19.3  0.216   +364        0.332       
-11 B. Coleman              MIN  CBJ  F    2.21  17.5  0.211   +374        0.327       
-12 T. Hall                 CAR  CGY  F    2.17  14.5   0.21   +377        0.352       
-13 J. Farabee              CGY  CAR  F    2.43  17.9    0.2   +400        0.333       
-14 M. Jankowski            CAR  CGY  F    1.57  13.4  0.199   +404         0.23       
-15 M. Backlund             CGY  CAR  F     2.5  18.4  0.197   +407        0.345       
-16 M. Coronato             CGY  CAR  F    2.38  17.6  0.195   +413        0.325       
-17 M. Frost                CGY  CAR  F    2.14  16.7  0.194   +416        0.283       
-18 K. Johnson              CBJ  MIN  F    2.09  14.1  0.184   +442        0.317       
-19 V. Nichushkin           CBJ  MIN  F    1.85  16.3  0.183   +446        0.269       
-20 M. Knies                CBJ  MIN  F    1.25  18.3  0.179   +457        0.152       
-21 J. Staal                CAR  CGY  F    1.38  16.2  0.176   +467         0.19       
-22 J. Martinook            CAR  CGY  F    1.46  15.1  0.174   +475        0.207       
-23 R. Hartman              MIN  CBJ  F    1.62  15.1  0.173   +478        0.214       
-24 S. Monahan              CBJ  MIN  F    1.58  16.2  0.167   +497        0.217       
-25 M. Shabanov             MIN  CBJ  F    1.33  14.8  0.166   +501         0.16       
+1  N. MacKinnon            COL  PHI  F    3.93  21.9   0.39   +157        0.628       
+2  M. Celebrini            SJS  TOR  F     3.5  21.5   0.38   +163        0.601       
+3  N. Schmaltz             UTA  PIT  F    3.44  19.1  0.372   +169        0.566       
+4  W. Nylander             TOR  SJS  F     3.0  21.2  0.339   +195        0.492       
+5  M. Necas                COL  PHI  F    2.79  21.9  0.329   +204        0.444       
+6  K. Marchenko            TOR  SJS  F     2.5  19.2  0.281   +255        0.401       
+7  D. Guenther             UTA  PIT  F    2.73  17.2  0.275   +263        0.446       
+8  C. Keller               UTA  PIT  F    2.12  18.5  0.275   +264        0.331       
+9  R. Rakell               PIT  UTA  F     3.0  19.1  0.265   +277        0.461       
+10 B. Sennecke             ANA  NYR  F    2.69  19.7  0.259   +286         0.41       
+11 W. Smith                SJS  TOR  F    2.19  18.6  0.258   +288        0.363       
+12 A. Lafrenière           NYR  ANA  F     2.0  19.2  0.255   +293        0.274       
+13 J. Roslovic             TOR  SJS  F    2.93  16.6  0.255   +292        0.479       
+14 L. Carlsson             ANA  NYR  F    2.69  19.7   0.25   +300         0.41       
+15 E. Malkin               PIT  UTA  F    2.46  17.9  0.245   +307        0.367       
+16 P. Dorofeyev            NYR  ANA  F    2.79  17.8  0.244   +311        0.415       
+17 C. Gauthier             ANA  NYR  F    3.75  17.2  0.237   +322        0.582       
+18 J. Tavares              TOR  SJS  F    1.83  18.2  0.233   +330        0.272       
+19 S. Crosby               PIT  UTA  F    2.15  19.1  0.231   +334         0.31       
+20 M. Granlund             ANA  NYR  F    2.25  20.3  0.227   +341         0.33       
+21 T. Foerster             PHI  COL  F    2.44  17.2  0.224   +347        0.367       
+22 L. Cooley               UTA  PIT  F    1.44  17.9  0.224   +346        0.194       
+23 M. Zibanejad            NYR  ANA  F    1.64  21.3  0.222   +351        0.208       
+24 N. Kadri                COL  PHI  F     2.7  18.1  0.217   +361        0.429       
+25 A. Wennberg             SJS  TOR  F     1.2  19.9  0.216   +363        0.158       
 
-68 players, 2 games -> docs/index.html
+135 players, 4 games -> docs/index.html
