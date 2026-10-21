@@ -1,35 +1,33 @@
-== grade Wed Oct 21 00:17:11 UTC 2026 ==
+== grade Wed Oct 21 18:50:05 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== odds Wed Oct 21 00:17:12 UTC 2026 ==
-[odds] ODDS_API_KEY not set; skipping
-== board Wed Oct 21 00:17:12 UTC 2026 ==
+== board Wed Oct 21 18:50:06 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
-1  K. Connor               WPG  STL  F    4.07  20.6  0.396   +153        0.658       
-2  N. MacKinnon            COL  NJD  F    3.73  22.0   0.38   +163         0.58       
-3  A. DeBrincat            DET  SEA  F    3.36  19.6  0.359   +179        0.581       
-4  K. Kaprizov             MIN  EDM  F    3.38  21.1  0.354   +182        0.528       
-5  M. Celebrini            SJS  MTL  F    3.64  21.5  0.352   +184        0.584       
-6  C. Caufield             MTL  SJS  F    3.79  19.8  0.348   +187        0.625       
-7  C. McDavid              EDM  MIN  F    3.42  23.5  0.348   +187        0.541       
-8  J. Hughes               NJD  COL  F     4.0  21.5  0.346   +189        0.619       
-9  B. Hagel                TBL  VGK  F    4.89  21.1  0.336   +198        0.734       
-10 M. Boldy                MIN  EDM  F    3.92  20.3   0.33   +203        0.609       
-11 S. Aho                  CAR  VAN  F    3.33  19.4  0.329   +204        0.573       
-12 M. Necas                COL  NJD  F    2.73  21.6  0.328   +204        0.418       
-13 D. Larkin               DET  SEA  F    3.08  20.8  0.321   +211        0.535       
-14 W. Nylander             TOR  CBJ  F     3.0  21.4  0.318   +215        0.478       
-15 J. Robertson            DAL  BOS  F    3.38  20.0  0.318   +214        0.559       
-16 A. Svechnikov           CAR  VAN  F    3.17  17.0  0.309   +224        0.545       
-17 N. Suzuki               MTL  SJS  F    2.36  21.7  0.295   +239         0.38       
-18 A. Kempe                LAK  WSH  F    3.17  20.2   0.29   +245        0.515       
-19 B. Horvat               NYI  ANA  F    2.77  20.7  0.285   +251        0.416       
-20 A. Fantilli             CBJ  TOR  F    2.67  20.9  0.285   +251         0.46       
-21 N. Kucherov             TBL  VGK  F    2.79  20.8  0.285   +251        0.431       
-22 J. Eichel               VGK  TBL  F    3.14  19.6  0.283   +253        0.473       
-23 J. Guentzel             TBL  VGK  F    2.62  20.8  0.279   +259        0.401       
-24 L. Raymond              DET  SEA  F    2.64  19.5  0.278   +260        0.455       
-25 A. Matthews             TOR  CBJ  F    3.25  21.7  0.276   +262         0.52       
+1  T. Thompson             BUF  PHI  F    4.15  19.5  0.341   +193        0.667       
+2  B. Tkachuk              FLA  OTT  F    3.67  16.2  0.279   +258        0.574       
+3  J. Quinn                BUF  PHI  F    2.86  18.3  0.268   +273        0.464       
+4  T. Stützle              OTT  FLA  F     2.0  20.7  0.255   +292        0.282       
+5  C. Verhaeghe            FLA  OTT  F    2.36  18.9  0.238   +320        0.355       
+6  Z. Benson               BUF  PHI  F    2.43  18.6  0.234   +327        0.386       
+7  T. Zegras               PHI  BUF  F    1.93  18.5  0.228   +338        0.274       
+8  S. Bennett              FLA  OTT  F    2.73  18.3  0.228   +338        0.421       
+9  T. Foerster             PHI  BUF  F    2.36  17.4  0.222   +351        0.354       
+10 M. Michkov              PHI  BUF  F    1.93  14.9  0.221   +353        0.275       
+11 D. Batherson            OTT  FLA  F    1.94  17.0   0.22   +355        0.271       
+12 D. Cozens               OTT  FLA  F     2.5  17.5   0.22   +355        0.375       
+13 S. Pinto                OTT  FLA  F    1.75  19.0  0.212   +372        0.235       
+14 N. Ostlund              BUF  PHI  F    2.12  19.1  0.204   +391        0.328       
+15 M. Tkachuk              FLA  OTT  F     1.8  18.4  0.194   +415        0.249       
+16 P. Martone              PHI  BUF  F    1.87  14.9  0.189   +430        0.262       
+17 C. Giroux               OTT  FLA  F    1.81  16.4  0.187   +435        0.247       
+18 J. Norris               BUF  PHI  F    1.71  14.9  0.183   +447        0.246       
+19 O. Tippett              PHI  BUF  F    1.92  16.6  0.182   +450        0.271       
+20 R. Greig                OTT  FLA  F    1.79  17.1  0.181   +453        0.242       
+21 W. Eklund               OTT  FLA  F    1.83  15.5  0.179   +460        0.251       
+22 C. Dvorak               PHI  BUF  F    1.14  17.6  0.177   +464        0.126       
+23 T. Konecny              PHI  BUF  F    1.38  17.0  0.172   +481        0.168       
+24 J. Doan                 BUF  PHI  F    1.29  15.1  0.164   +508        0.162       
+25 S. Couturier            PHI  BUF  F    1.29  16.3  0.162   +518        0.152       
 
-369 players, 11 games -> docs/index.html
+63 players, 2 games -> docs/index.html
