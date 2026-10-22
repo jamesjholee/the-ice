@@ -1,8 +1,10 @@
-== grade Wed Oct 21 18:50:05 UTC 2026 ==
+== grade Thu Oct 22 00:20:50 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== board Wed Oct 21 18:50:06 UTC 2026 ==
+== odds Thu Oct 22 00:20:50 UTC 2026 ==
+[odds] ODDS_API_KEY not set; skipping
+== board Thu Oct 22 00:20:50 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  T. Thompson             BUF  PHI  F    4.15  19.5  0.341   +193        0.667       
 2  B. Tkachuk              FLA  OTT  F    3.67  16.2  0.279   +258        0.574       
