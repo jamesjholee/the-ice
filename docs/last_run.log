@@ -1,35 +1,33 @@
-== grade Fri Oct 23 00:18:09 UTC 2026 ==
+== grade Fri Oct 23 18:38:51 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== odds Fri Oct 23 00:18:10 UTC 2026 ==
-[odds] ODDS_API_KEY not set; skipping
-== board Fri Oct 23 00:18:10 UTC 2026 ==
+== board Fri Oct 23 18:38:51 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
-1  K. Kaprizov             MIN  CGY  F    3.46  21.4  0.396   +152        0.582       
-2  A. DeBrincat            DET  VAN  F    3.64  19.7  0.376   +166        0.634       
-3  M. Boldy                MIN  CGY  F     4.0  20.7   0.37   +170        0.662       
-4  N. Schmaltz             UTA  SEA  F    3.33  19.0  0.364   +175        0.573       
-5  K. Connor               WPG  DAL  F    4.21  20.6  0.348   +187        0.621       
-6  M. Celebrini            SJS  OTT  F    3.71  21.5  0.343   +191        0.579       
-7  C. McDavid              EDM  CAR  F    3.33  23.7  0.337   +196          0.5       
-8  J. Hughes               NJD  ANA  F    3.86  20.9   0.33   +203        0.589       
-9  J. Robertson            DAL  WPG  F    3.31  19.9  0.317   +215        0.551       
-10 D. Larkin               DET  VAN  F    2.92  21.0  0.311   +222        0.512       
-11 J. Eichel               VGK  STL  F     3.0  19.7  0.306   +227        0.495       
-12 W. Nylander             TOR  NYR  F    2.93  21.0  0.298   +236         0.45       
-13 B. Tkachuk              FLA  PIT  F    3.33  15.9  0.294   +240        0.551       
-14 T. Stützle              OTT  SJS  F     2.0  20.9  0.293   +241         0.31       
-15 M. Stone                VGK  STL  F    2.43  18.1  0.291   +244        0.391       
-16 J. Eriksson Ek          MIN  CGY  F    3.25  19.6   0.29   +244        0.547       
-17 L. Raymond              DET  VAN  F    2.79  19.8   0.29   +245        0.488       
-18 D. Pastrnak             BOS  NSH  F     3.0  19.6  0.289   +247        0.504       
-19 B. Horvat               NYI  LAK  F    2.83  20.6   0.28   +258         0.45       
-20 S. Stamkos              NSH  BOS  F    2.69  19.4  0.278   +259        0.441       
-21 A. Svechnikov           CAR  EDM  F     3.5  17.2  0.277   +260        0.544       
-22 F. Forsberg             NSH  BOS  F    2.85  20.2  0.275   +264        0.469       
-23 A. Matthews             TOR  NYR  F    3.22  21.2  0.275   +263        0.499       
-24 A. Lafrenière           NYR  TOR  F    1.92  19.1  0.274   +265         0.31       
-25 B. Sennecke             ANA  NJD  F    2.92  19.8  0.272   +268        0.454       
+1  N. MacKinnon            COL  TBL  F    3.86  22.1  0.353   +183        0.592       
+2  B. Hagel                TBL  COL  F     4.7  20.9  0.352   +184        0.723       
+3  C. Caufield             MTL  CHI  F    3.69  19.6  0.337   +196        0.589       
+4  N. Suzuki               MTL  CHI  F    2.69  21.5  0.306   +227        0.424       
+5  M. Necas                COL  TBL  F    2.64  21.4  0.296   +238        0.397       
+6  N. Kucherov             TBL  COL  F    2.71  20.9  0.289   +246        0.428       
+7  J. Guentzel             TBL  COL  F    2.54  20.6  0.277   +261        0.396       
+8  J. Slafkovský           MTL  CHI  F    2.85  19.5  0.269   +271        0.451       
+9  C. Bedard               CHI  MTL  F     3.0  20.7  0.228   +339        0.479       
+10 A. Frondell             CHI  MTL  F    2.75  17.6  0.223   +347        0.436       
+11 A. Lehkonen             COL  TBL  F    1.57  18.9  0.217   +360          0.2       
+12 G. Landeskog            COL  TBL  F     2.0  16.5  0.209   +379         0.28       
+13 B. Point                TBL  COL  F     2.0  18.6  0.208   +381        0.295       
+14 N. Kadri                COL  TBL  F     2.5  19.2  0.205   +387        0.371       
+15 B. Nelson               COL  TBL  F    1.86  18.6  0.195   +413        0.253       
+16 F. Nazar                CHI  MTL  F     1.8  17.3  0.192   +420        0.257       
+17 P. Kane                 CHI  MTL  F    1.67  18.5  0.188   +431        0.231       
+18 T. Hughes               COL  TBL  F    2.11  15.0   0.18   +456          0.3       
+19 T. Bertuzzi             CHI  MTL  F    1.25  18.1  0.179   +459         0.15       
+20 A. Cirelli              TBL  COL  F    1.27  17.3  0.176   +470        0.154       
+21 P. Danault              MTL  CHI  F    1.75  15.4  0.173   +479        0.246       
+22 Z. Bolduc               MTL  CHI  F    1.45  14.3  0.172   +483        0.188       
+23 I. Mikheyev             TBL  COL  F    1.46  16.1  0.172   +480         0.19       
+24 J. Anderson             MTL  CHI  F    1.58  14.0  0.171   +485        0.213       
+25 A. Newhook              MTL  CHI  F    1.23  16.1  0.168   +494        0.146       
 
-406 players, 12 games -> docs/index.html
+69 players, 2 games -> docs/index.html
