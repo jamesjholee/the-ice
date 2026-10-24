@@ -1,8 +1,10 @@
-== grade Fri Oct 23 18:38:51 UTC 2026 ==
+== grade Sat Oct 24 00:10:19 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== board Fri Oct 23 18:38:51 UTC 2026 ==
+== odds Sat Oct 24 00:10:19 UTC 2026 ==
+[odds] ODDS_API_KEY not set; skipping
+== board Sat Oct 24 00:10:20 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  N. MacKinnon            COL  TBL  F    3.86  22.1  0.353   +183        0.592       
 2  B. Hagel                TBL  COL  F     4.7  20.9  0.352   +184        0.723       
