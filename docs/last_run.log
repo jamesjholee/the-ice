@@ -1,8 +1,10 @@
-== grade Sun Oct 25 17:46:50 UTC 2026 ==
+== grade Sun Oct 25 23:41:49 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== board Sun Oct 25 17:46:50 UTC 2026 ==
+== odds Sun Oct 25 23:41:49 UTC 2026 ==
+[odds] ODDS_API_KEY not set; skipping
+== board Sun Oct 25 23:41:49 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  M. Boldy                MIN  VAN  F    4.62  21.4  0.427   +134        0.764       
 2  K. Kaprizov             MIN  VAN  F    3.31  21.6  0.408   +145        0.581       
