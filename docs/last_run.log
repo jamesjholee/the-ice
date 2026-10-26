@@ -1,35 +1,33 @@
-== grade Sun Oct 25 23:41:49 UTC 2026 ==
+== grade Mon Oct 26 20:04:33 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== odds Sun Oct 25 23:41:49 UTC 2026 ==
-[odds] ODDS_API_KEY not set; skipping
-== board Sun Oct 25 23:41:49 UTC 2026 ==
+== board Mon Oct 26 20:04:33 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
-1  M. Boldy                MIN  VAN  F    4.62  21.4  0.427   +134        0.764       
-2  K. Kaprizov             MIN  VAN  F    3.31  21.6  0.408   +145        0.581       
-3  N. MacKinnon            COL  NSH  F    4.14  21.9  0.406   +147        0.679       
-4  K. Connor               WPG  MTL  F    4.21  20.7  0.366   +174        0.654       
-5  C. Caufield             MTL  WPG  F    3.85  19.3  0.348   +187        0.644       
-6  J. Eriksson Ek          MIN  VAN  F     3.5  20.1  0.334   +200        0.613       
-7  M. Necas                COL  NSH  F    2.43  21.1   0.31   +222        0.397       
-8  N. Suzuki               MTL  WPG  F    2.67  21.7  0.299   +235        0.448       
-9  S. Reinhart             FLA  CHI  F    3.44  19.9  0.282   +255        0.555       
-10 S. Stamkos              NSH  COL  F    2.77  19.0  0.275   +264        0.447       
-11 B. Tkachuk              FLA  CHI  F    3.18  15.9  0.272   +268        0.512       
-12 J. Robertson            DAL  NYI  F    3.15  19.7   0.27   +270        0.468       
-13 B. Horvat               NYI  DAL  F     3.0  20.7  0.266   +275         0.44       
-14 J. Slafkovský           MTL  WPG  F    2.69  19.2  0.265   +277        0.452       
-15 B. Coleman              MIN  VAN  F     2.2  16.7  0.253   +295        0.374       
-16 F. Forsberg             NSH  COL  F    2.46  20.2  0.249   +302         0.39       
-17 A. Lehkonen             COL  NSH  F    1.57  18.9  0.247   +305        0.226       
-18 S. Bennett              FLA  CHI  F     2.8  17.9  0.243   +312        0.447       
-19 R. O'Reilly             NSH  COL  F    1.85  21.0   0.24   +317        0.271       
-20 N. Kadri                COL  NSH  F     2.6  20.1  0.239   +318        0.429       
-21 J. DeBrusk              VAN  MIN  F     3.0  16.8  0.237   +323        0.468       
-22 M. Rantanen             DAL  NYI  F     2.0  20.0  0.227   +340        0.269       
-23 M. Scheifele            WPG  MTL  F    1.86  20.5  0.227   +340        0.261       
-24 G. Landeskog            COL  NSH  F    1.86  16.2  0.225   +344        0.284       
-25 C. Verhaeghe            FLA  CHI  F     1.8  18.3  0.222   +350        0.258       
+1  W. Nylander             TOR  CGY  F    2.93  20.6  0.359   +178        0.501       
+2  C. McDavid              EDM  DET  F    2.83  24.0  0.338   +196        0.445       
+3  A. DeBrincat            DET  EDM  F    3.71  19.7  0.338   +196        0.588       
+4  L. Draisaitl            EDM  DET  F    3.67  21.8  0.324   +208        0.581       
+5  A. Matthews             TOR  CGY  F    3.18  20.7  0.322   +210        0.544       
+6  K. Marchenko            TOR  CGY  F    2.67  18.8  0.302   +231        0.452       
+7  A. Kempe                LAK  NYR  F    3.23  20.1  0.299   +234        0.509       
+8  A. Panarin              LAK  NYR  F    2.69  20.8  0.284   +252        0.417       
+9  D. Larkin               DET  EDM  F    3.08  20.9  0.281   +256        0.488       
+10 L. Raymond              DET  EDM  F    2.86  19.8  0.274   +264        0.449       
+11 A. Lafrenière           NYR  LAK  F    2.23  19.5  0.266   +275        0.346       
+12 J. Roslovic             TOR  CGY  F    2.86  16.7  0.259   +286        0.487       
+13 J. Farabee              CGY  TOR  F    2.36  18.4  0.258   +288        0.401       
+14 P. Dorofeyev            NYR  LAK  F    2.86  17.9  0.257   +289        0.462       
+15 M. Coronato             CGY  TOR  F    2.54  18.0  0.252   +296        0.437       
+16 V. Arvidsson            DET  EDM  F    2.58  18.4  0.243   +312          0.4       
+17 M. Backlund             CGY  TOR  F    2.83  17.3  0.241   +315        0.493       
+18 A. Laferriere           LAK  NYR  F    2.31  19.9  0.236   +324        0.347       
+19 M. Zibanejad            NYR  LAK  F    1.77  21.3  0.235   +326        0.256       
+20 Q. Byfield              LAK  NYR  F    2.36  19.2  0.232   +331        0.357       
+21 M. Frost                CGY  TOR  F    2.14  16.2  0.228   +338        0.358       
+22 G. Perreault            NYR  LAK  F    2.38  17.1  0.221   +353        0.376       
+23 E. Cowan                TOR  CGY  F    1.93  16.3  0.219   +356        0.307       
+24 V. Podkolzin            EDM  DET  F    1.75  18.9  0.218   +359        0.243       
+25 J. Tavares              TOR  CGY  F    1.89  17.7  0.211   +373        0.298       
 
-177 players, 5 games -> docs/index.html
+100 players, 3 games -> docs/index.html
