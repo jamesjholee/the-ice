@@ -1,35 +1,33 @@
-== grade Wed Oct 28 00:51:26 UTC 2026 ==
+== grade Wed Oct 28 19:47:15 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== odds Wed Oct 28 00:51:26 UTC 2026 ==
-[odds] ODDS_API_KEY not set; skipping
-== board Wed Oct 28 00:51:26 UTC 2026 ==
+== board Wed Oct 28 19:47:15 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
-1  M. Boldy                MIN  UTA  F    4.54  21.6  0.366   +173         0.68       
-2  K. Connor               WPG  FLA  F    4.14  21.0   0.36   +178        0.624       
-3  K. Kaprizov             MIN  UTA  F    3.15  21.5  0.342   +192        0.482       
-4  M. Celebrini            SJS  BUF  F    3.54  21.5  0.338   +196        0.558       
-5  T. Thompson             BUF  SJS  F    4.27  19.5  0.332   +201        0.706       
-6  A. Kempe                LAK  CHI  F    3.62  20.1  0.323   +209        0.591       
-7  C. Caufield             MTL  STL  F    3.46  19.2  0.313   +219         0.57       
-8  B. Horvat               NYI  NSH  F     3.0  20.6  0.305   +228        0.498       
-9  A. Panarin              LAK  CHI  F    2.62  20.9  0.304   +228        0.422       
-10 J. Robertson            DAL  NJD  F    3.23  19.9  0.298   +236        0.495       
-11 B. Sennecke             ANA  VAN  F    2.54  20.0  0.294   +240        0.446       
-12 J. Eichel               VGK  OTT  F    3.21  19.7  0.291   +243        0.501       
-13 C. Gauthier             ANA  VAN  F    3.58  17.4  0.291   +243         0.63       
-14 N. Suzuki               MTL  STL  F    2.82  21.6  0.288   +247        0.461       
-15 S. Reinhart             FLA  WPG  F     3.3  20.0  0.288   +248        0.558       
-16 S. Aho                  CAR  BOS  F    3.08  19.8  0.286   +250        0.499       
-17 J. Eriksson Ek          MIN  UTA  F    3.42  20.3  0.285   +251        0.524       
-18 N. Schmaltz             UTA  MIN  F     3.0  18.7  0.282   +255        0.466       
-19 S. Stamkos              NSH  NYI  F    2.85  19.1  0.279   +258        0.434       
-20 D. Pastrnak             BOS  CAR  F    3.23  19.2  0.275   +263        0.478       
-21 T. Stützle              OTT  VGK  F    1.92  21.8  0.269   +272        0.271       
-22 J. Quinn                BUF  SJS  F    2.75  18.9  0.269   +272        0.466       
-23 B. Tkachuk              FLA  WPG  F    3.18  15.7  0.268   +273        0.539       
-24 L. Carlsson             ANA  VAN  F    2.23  19.7  0.266   +275        0.384       
-25 L. Stankoven            CAR  BOS  F    3.31  17.0  0.265   +278        0.536       
+1  W. Nylander             TOR  SEA  F    3.07  20.4  0.375   +167        0.533       
+2  C. McDavid              EDM  CGY  F    2.77  24.2  0.356   +181        0.464       
+3  N. MacKinnon            COL  NJD  F    3.86  21.7  0.353   +184        0.585       
+4  L. Draisaitl            EDM  CGY  F     3.6  22.2  0.343   +192        0.604       
+5  A. Matthews             TOR  SEA  F     3.0  20.5  0.327   +206        0.521       
+6  J. Hughes               NJD  COL  F    3.43  20.3  0.319   +213        0.562       
+7  K. Marchenko            TOR  SEA  F     2.6  17.8  0.288   +247        0.447       
+8  N. Hischier             NJD  COL  F     2.5  18.5   0.28   +257        0.401       
+9  A. Tuch                 WSH  PHI  F    2.55  19.7  0.264   +279         0.41       
+10 M. Necas                COL  NJD  F    2.14  21.0  0.264   +279        0.302       
+11 J. Roslovic             TOR  SEA  F    2.73  16.8  0.263   +280        0.472       
+12 T. Meier                NJD  COL  F     3.5  16.6  0.257   +289        0.574       
+13 M. Michkov              PHI  WSH  F     2.2  15.8  0.251   +298        0.327       
+14 T. Zegras               PHI  WSH  F    2.29  19.0  0.248   +304        0.343       
+15 B. McMann               SEA  TOR  F     2.6  16.8  0.248   +302        0.444       
+16 J. Farabee              CGY  EDM  F    2.43  18.8  0.239   +318        0.373       
+17 A. Lehkonen             COL  NJD  F    1.79  18.8  0.238   +321        0.236       
+18 T. Wilson               WSH  PHI  F     2.5  18.5  0.234   +328        0.401       
+19 L. Evangelista          NJD  COL  F    2.64  17.1  0.234   +327        0.426       
+20 V. Podkolzin            EDM  CGY  F    1.69  19.1  0.232   +331        0.252       
+21 J. Eberle               SEA  TOR  F     2.0  16.7  0.226   +343        0.324       
+22 N. Kadri                COL  NJD  F    2.64  19.7  0.224   +346         0.39       
+23 J. Bratt                NJD  COL  F    2.07  17.3  0.221   +353        0.319       
+24 E. Cowan                TOR  SEA  F    1.93  16.0  0.221   +353        0.314       
+25 D. Strome               WSH  PHI  F    2.17  17.7  0.219   +357        0.338       
 
-380 players, 11 games -> docs/index.html
+138 players, 4 games -> docs/index.html
