@@ -1,8 +1,10 @@
-== grade Wed Oct 28 19:47:15 UTC 2026 ==
+== grade Thu Oct 29 01:27:56 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== board Wed Oct 28 19:47:15 UTC 2026 ==
+== odds Thu Oct 29 01:27:56 UTC 2026 ==
+[odds] ODDS_API_KEY not set; skipping
+== board Thu Oct 29 01:27:56 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  W. Nylander             TOR  SEA  F    3.07  20.4  0.375   +167        0.533       
 2  C. McDavid              EDM  CGY  F    2.77  24.2  0.356   +181        0.464       
