@@ -1,8 +1,10 @@
-== grade Thu Oct 29 19:46:59 UTC 2026 ==
+== grade Fri Oct 30 01:28:54 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== board Thu Oct 29 19:46:59 UTC 2026 ==
+== odds Fri Oct 30 01:28:54 UTC 2026 ==
+[odds] ODDS_API_KEY not set; skipping
+== board Fri Oct 30 01:28:54 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  B. Hagel                TBL  WPG  F    4.73  21.3   0.38   +163        0.757       
 2  M. Celebrini            SJS  VAN  F    3.46  21.7  0.369   +171        0.606       
@@ -23,11 +25,11 @@ nothing to grade
 17 L. Raymond              DET  CHI  F    2.92  20.1  0.289   +246        0.476       
 18 J. Guentzel             TBL  WPG  F    2.55  19.9  0.284   +252        0.425       
 19 F. Forsberg             NSH  WSH  F    2.92  20.6  0.284   +252        0.469       
-20 D. Larkin               DET  CHI  F     3.0  21.3   0.28   +257        0.489       
-21 T. Stützle              OTT  LAK  F    1.92  22.0   0.28   +257        0.287       
-22 S. Stamkos              NSH  WSH  F    2.69  19.1  0.277   +261        0.428       
-23 C. Caufield             MTL  DAL  F    3.62  19.1  0.277   +261        0.531       
-24 W. Smith                SJS  VAN  F     2.6  18.7  0.276   +262        0.453       
-25 A. Panarin              LAK  OTT  F    2.54  21.3  0.274   +265        0.389       
+20 T. Stützle              OTT  LAK  F    1.92  22.0   0.28   +257        0.287       
+21 S. Stamkos              NSH  WSH  F    2.69  19.1  0.277   +261        0.428       
+22 C. Caufield             MTL  DAL  F    3.62  19.1  0.277   +261        0.531       
+23 W. Smith                SJS  VAN  F     2.6  18.7  0.276   +262        0.453       
+24 A. Panarin              LAK  OTT  F    2.54  21.3  0.274   +265        0.389       
+25 J. Blake                CAR  CBJ  F    3.07  17.7  0.268   +274         0.49       
 
-381 players, 11 games -> docs/index.html
+380 players, 11 games -> docs/index.html
