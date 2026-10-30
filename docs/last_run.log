@@ -1,35 +1,33 @@
-== grade Fri Oct 30 01:28:54 UTC 2026 ==
+== grade Fri Oct 30 19:37:43 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== odds Fri Oct 30 01:28:54 UTC 2026 ==
-[odds] ODDS_API_KEY not set; skipping
-== board Fri Oct 30 01:28:54 UTC 2026 ==
+== board Fri Oct 30 19:37:43 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
-1  B. Hagel                TBL  WPG  F    4.73  21.3   0.38   +163        0.757       
-2  M. Celebrini            SJS  VAN  F    3.46  21.7  0.369   +171        0.606       
-3  K. Connor               WPG  TBL  F    4.21  21.1  0.364   +175        0.639       
-4  K. Kaprizov             MIN  NYI  F    3.46  21.8  0.362   +176        0.541       
-5  M. Boldy                MIN  NYI  F    4.31  21.8  0.354   +182        0.662       
-6  A. DeBrincat            DET  CHI  F    3.85  19.9  0.348   +188        0.624       
-7  T. Thompson             BUF  ANA  F    4.42  19.3  0.338   +196        0.683       
-8  N. Schmaltz             UTA  PIT  F     3.0  18.4  0.307   +225        0.492       
-9  D. Pastrnak             BOS  STL  F    3.15  19.5  0.301   +233        0.511       
-10 J. Eriksson Ek          MIN  NYI  F    3.46  20.3    0.3   +233        0.541       
-11 S. Aho                  CAR  CBJ  F    3.08  20.0  0.296   +238        0.492       
-12 J. Robertson            DAL  MTL  F    3.31  19.8  0.295   +239        0.543       
-13 A. Tuch                 WSH  NSH  F    2.75  19.6  0.294   +240        0.457       
-14 A. Kempe                LAK  OTT  F    3.46  20.4  0.293   +242        0.545       
-15 B. Horvat               NYI  MIN  F     3.0  20.9  0.292   +242         0.47       
-16 N. Kucherov             TBL  WPG  F    2.83  20.5  0.289   +246        0.478       
-17 L. Raymond              DET  CHI  F    2.92  20.1  0.289   +246        0.476       
-18 J. Guentzel             TBL  WPG  F    2.55  19.9  0.284   +252        0.425       
-19 F. Forsberg             NSH  WSH  F    2.92  20.6  0.284   +252        0.469       
-20 T. Stützle              OTT  LAK  F    1.92  22.0   0.28   +257        0.287       
-21 S. Stamkos              NSH  WSH  F    2.69  19.1  0.277   +261        0.428       
-22 C. Caufield             MTL  DAL  F    3.62  19.1  0.277   +261        0.531       
-23 W. Smith                SJS  VAN  F     2.6  18.7  0.276   +262        0.453       
-24 A. Panarin              LAK  OTT  F    2.54  21.3  0.274   +265        0.389       
-25 J. Blake                CAR  CBJ  F    3.07  17.7  0.268   +274         0.49       
+1  K. Connor               WPG  FLA  F     4.2  21.0   0.38   +163        0.636       
+2  S. Reinhart             FLA  WPG  F    3.18  19.8  0.301   +232         0.54       
+3  J. Eichel               VGK  NJD  F     3.0  19.7  0.295   +239        0.461       
+4  J. Hughes               NJD  VGK  F    3.38  20.0  0.284   +252        0.524       
+5  J. Farabee              CGY  SEA  F    2.77  19.0  0.279   +258        0.476       
+6  B. Tkachuk              FLA  WPG  F    3.18  16.3  0.278   +260         0.54       
+7  C. Verhaeghe            FLA  WPG  F    2.18  18.2  0.253   +296        0.354       
+8  M. Stone                VGK  NJD  F    2.36  18.1  0.252   +297        0.348       
+9  S. Bennett              FLA  WPG  F    2.73  17.6  0.249   +301        0.459       
+10 B. McMann               SEA  CGY  F    2.67  16.7  0.245   +308        0.452       
+11 M. Scheifele            WPG  FLA  F    2.13  20.8   0.24   +317        0.303       
+12 N. Hischier             NJD  VGK  F    2.31  18.0  0.237   +322        0.339       
+13 C. Perfetti             WPG  FLA  F    2.47  18.2  0.237   +323        0.363       
+14 M. Coronato             CGY  SEA  F     2.5  18.1  0.237   +321        0.425       
+15 M. Marner               VGK  NJD  F    2.42  19.2  0.232   +332        0.359       
+16 M. Tkachuk              FLA  WPG  F    1.92  18.2  0.229   +336        0.301       
+17 M. Gridin               CGY  SEA  F    2.15  16.2  0.227   +341        0.357       
+18 M. Backlund             CGY  SEA  F    2.55  17.7  0.226   +342        0.434       
+19 T. Meier                NJD  VGK  F    3.31  16.1  0.224   +346        0.512       
+20 A. Lundell              FLA  WPG  F    2.55  17.3  0.221   +353        0.425       
+21 L. Evangelista          NJD  VGK  F    2.45  17.1  0.218   +360        0.366       
+22 M. Frost                CGY  SEA  F     2.0  15.6  0.211   +375        0.325       
+23 J. Eberle               SEA  CGY  F    1.93  16.5  0.211   +374        0.307       
+24 J. McCann               SEA  CGY  F     2.4  16.0  0.209   +379        0.401       
+25 T. Hertl                VGK  NJD  F    2.07  15.6  0.199   +401        0.295       
 
-380 players, 11 games -> docs/index.html
+104 players, 3 games -> docs/index.html
