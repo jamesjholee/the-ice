@@ -1,8 +1,10 @@
-== grade Fri Oct 30 19:37:43 UTC 2026 ==
+== grade Sat Oct 31 01:18:26 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== board Fri Oct 30 19:37:43 UTC 2026 ==
+== odds Sat Oct 31 01:18:26 UTC 2026 ==
+[odds] ODDS_API_KEY not set; skipping
+== board Sat Oct 31 01:18:26 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  K. Connor               WPG  FLA  F     4.2  21.0   0.38   +163        0.636       
 2  S. Reinhart             FLA  WPG  F    3.18  19.8  0.301   +232         0.54       
