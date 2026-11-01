@@ -1,35 +1,33 @@
-== grade Sun Nov  1 00:35:12 UTC 2026 ==
+== grade Sun Nov  1 19:05:47 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== odds Sun Nov  1 00:35:12 UTC 2026 ==
-[odds] ODDS_API_KEY not set; skipping
-== board Sun Nov  1 00:35:12 UTC 2026 ==
+== board Sun Nov  1 19:05:47 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
-1  B. Hagel                TBL  NSH  F    4.75  21.3  0.402   +149        0.757       
-2  N. MacKinnon            COL  CGY  F    3.69  21.0  0.358   +179         0.62       
-3  A. Matthews             TOR  VAN  F    3.08  20.5  0.352   +184         0.54       
-4  W. Nylander             TOR  VAN  F    2.93  20.4  0.347   +188        0.513       
-5  M. Celebrini            SJS  OTT  F    3.77  22.0  0.345   +190        0.597       
-6  C. Caufield             MTL  PIT  F    3.77  19.2  0.343   +192        0.622       
-7  T. Thompson             BUF  LAK  F    4.25  19.3  0.338   +196         0.67       
-8  A. Panarin              LAK  BUF  F    3.08  21.9  0.333   +200        0.495       
-9  L. Draisaitl            EDM  NYI  F    3.45  21.9  0.326   +207        0.543       
-10 A. DeBrincat            DET  STL  F    3.69  19.9  0.324   +208        0.596       
-11 A. Kempe                LAK  BUF  F    3.46  20.8  0.311   +222        0.558       
-12 D. Pastrnak             BOS  CHI  F    3.15  19.8   0.31   +223         0.52       
-13 B. Horvat               NYI  EDM  F     3.0  20.9  0.303   +230        0.473       
-14 T. Stützle              OTT  SJS  F    1.86  22.0  0.302   +232        0.289       
-15 C. McDavid              EDM  NYI  F    2.75  23.2    0.3   +233        0.426       
-16 J. Guentzel             TBL  NSH  F    2.91  20.0  0.296   +238        0.489       
-17 L. Raymond              DET  STL  F    3.08  20.2  0.295   +238        0.498       
-18 J. Robertson            DAL  CBJ  F    3.23  19.9  0.294   +240        0.521       
-19 V. Arvidsson            DET  STL  F    2.85  18.5  0.292   +243        0.458       
-20 F. Forsberg             NSH  TBL  F     3.0  20.5  0.285   +251        0.449       
-21 N. Kucherov             TBL  NSH  F    2.83  20.5  0.285   +251        0.476       
-22 D. Batherson            OTT  SJS  F    2.27  17.7  0.283   +254        0.372       
-23 J. Quinn                BUF  LAK  F     3.0  19.3  0.279   +258         0.48       
-24 M. Necas                COL  CGY  F    2.23  20.2  0.278   +260        0.363       
-25 N. Suzuki               MTL  PIT  F    2.78  22.2  0.276   +262        0.458       
+1  M. Boldy                MIN  WSH  F    4.29  21.7  0.386   +159         0.68       
+2  K. Kaprizov             MIN  WSH  F    3.43  21.8  0.384   +160        0.556       
+3  L. Draisaitl            EDM  NYR  F    3.33  21.7   0.34   +194         0.54       
+4  K. Connor               WPG  CAR  F     4.0  21.0  0.337   +197        0.578       
+5  C. McDavid              EDM  NYR  F    2.77  23.2  0.324   +209        0.444       
+6  J. Eriksson Ek          MIN  WSH  F    3.43  20.1  0.323   +210        0.556       
+7  T. Stützle              OTT  ANA  F     2.2  21.9  0.317   +215        0.336       
+8  S. Aho                  CAR  WPG  F    2.92  19.8  0.306   +227        0.491       
+9  C. Gauthier             ANA  OTT  F    4.08  17.9  0.296   +238        0.639       
+10 D. Batherson            OTT  ANA  F    2.38  17.6  0.287   +248        0.369       
+11 L. Stankoven            CAR  WPG  F    3.23  16.9  0.283   +253        0.544       
+12 B. Sennecke             ANA  OTT  F    2.38  20.0  0.269   +272        0.363       
+13 J. Blake                CAR  WPG  F    2.85  17.7  0.263   +281        0.477       
+14 D. Cozens               OTT  ANA  F    2.44  17.9  0.263   +281        0.381       
+15 N. Schmaltz             UTA  PHI  F    2.64  17.8  0.261   +283         0.43       
+16 A. Tuch                 WSH  MIN  F    2.58  19.3  0.259   +286        0.392       
+17 S. Pinto                OTT  ANA  F     2.0  19.7  0.258   +287        0.297       
+18 A. Svechnikov           CAR  WPG  F    2.54  17.6  0.257   +289        0.421       
+19 A. Lafrenière           NYR  EDM  F    2.42  19.1   0.25   +299        0.364       
+20 T. Zegras               PHI  UTA  F    2.46  19.0  0.248   +304        0.371       
+21 D. Guenther             UTA  PHI  F    2.62  17.4  0.238   +320        0.425       
+22 L. Cooley               UTA  PHI  F     1.5  18.1  0.233   +329        0.207       
+23 C. Keller               UTA  PHI  F    2.07  18.3  0.233   +330        0.321       
+24 L. Carlsson             ANA  OTT  F     2.0  19.7   0.23   +334        0.291       
+25 M. Granlund             ANA  OTT  F     2.0  20.3   0.23   +335        0.291       
 
-347 players, 10 games -> docs/index.html
+169 players, 5 games -> docs/index.html
