@@ -1,8 +1,10 @@
-== grade Sun Nov  1 19:05:47 UTC 2026 ==
+== grade Mon Nov  2 01:09:47 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== board Sun Nov  1 19:05:47 UTC 2026 ==
+== odds Mon Nov  2 01:09:48 UTC 2026 ==
+[odds] ODDS_API_KEY not set; skipping
+== board Mon Nov  2 01:09:48 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  M. Boldy                MIN  WSH  F    4.29  21.7  0.386   +159         0.68       
 2  K. Kaprizov             MIN  WSH  F    3.43  21.8  0.384   +160        0.556       
