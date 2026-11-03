@@ -1,35 +1,33 @@
-== grade Tue Nov  3 03:14:25 UTC 2026 ==
+== grade Tue Nov  3 16:24:36 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== odds Tue Nov  3 03:14:25 UTC 2026 ==
-[odds] ODDS_API_KEY not set; skipping
-== board Tue Nov  3 03:14:25 UTC 2026 ==
+== board Tue Nov  3 16:24:36 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
-1  N. MacKinnon            COL  CHI  F    3.77  20.9  0.364   +175        0.629       
-2  M. Celebrini            SJS  CGY  F    3.69  22.0   0.35   +186        0.617       
-3  A. DeBrincat            DET  FLA  F    3.85  19.9  0.315   +218        0.583       
-4  D. Pastrnak             BOS  VGK  F    3.23  20.4  0.314   +219        0.508       
-5  S. Reinhart             FLA  DET  F    3.25  19.8  0.299   +235        0.498       
-6  L. Raymond              DET  FLA  F    3.08  20.4  0.289   +246        0.465       
-7  J. Farabee              CGY  SJS  F    2.64  18.7  0.286   +250        0.451       
-8  W. Smith                SJS  CGY  F    2.87  18.8  0.285   +251        0.481       
-9  V. Arvidsson            DET  FLA  F    2.92  19.0   0.28   +257        0.439       
-10 J. Eichel               VGK  BOS  F    2.62  19.6  0.278   +260        0.422       
-11 B. Tkachuk              FLA  DET  F    3.42  16.1  0.274   +265        0.524       
-12 A. Lehkonen             COL  CHI  F    1.93  18.6  0.273   +267          0.3       
-13 M. Necas                COL  CHI  F     2.0  20.0  0.273   +266        0.315       
-14 M. Stone                VGK  BOS  F    2.23  18.1  0.255   +293        0.349       
-15 N. Kadri                COL  CHI  F    2.54  19.4  0.255   +292         0.42       
-16 A. Lundell              FLA  DET  F     3.0  17.2  0.241   +315        0.457       
-17 C. Bedard               CHI  COL  F     3.0  20.5  0.241   +314        0.482       
-18 C. Verhaeghe            FLA  DET  F    2.25  18.3   0.24   +317        0.325       
-19 M. Coronato             CGY  SJS  F    2.36  17.6  0.238   +321        0.395       
-20 M. Gridin               CGY  SJS  F    2.36  16.1  0.238   +321        0.395       
-21 M. Backlund             CGY  SJS  F    2.67  17.9  0.234   +328        0.455       
-22 M. Marner               VGK  BOS  F    2.36  19.3  0.232   +331        0.375       
-23 E. Finnie               DET  FLA  F    2.46  18.3  0.231   +332        0.359       
-24 S. Bennett              FLA  DET  F    2.67  17.3  0.228   +339        0.399       
-25 M. Tkachuk              FLA  DET  F    2.08  18.5  0.221   +352        0.294       
+1  B. Hagel                TBL  DET  F    4.58  21.3  0.513   -105        0.687       
+2  K. Kaprizov             MIN  PHI  F    3.33  21.8  0.482   +107        0.546       
+3  M. Boldy                MIN  PHI  F     4.2  21.7  0.474   +111        0.674       
+4  C. Gauthier             ANA  VAN  F     4.0  18.0   0.45   +122        0.679       
+5  N. MacKinnon            COL  CBJ  F    3.64  20.8  0.427   +134        0.582       
+6  K. Connor               WPG  MTL  F    3.64  21.0  0.426   +135        0.589       
+7  L. Draisaitl            EDM  NJD  F    3.31  21.6  0.418   +139        0.508       
+8  C. McDavid              EDM  NJD  F     3.0  23.6  0.414   +141        0.457       
+9  A. DeBrincat            DET  TBL  F    3.86  19.8   0.41   +144        0.592       
+10 J. Hughes               NJD  EDM  F    3.77  19.7  0.398   +151        0.601       
+11 A. Matthews             TOR  UTA  F     3.0  20.5  0.397   +152         0.46       
+12 J. Eriksson Ek          MIN  PHI  F     3.4  20.1  0.388   +158        0.557       
+13 B. Sennecke             ANA  VAN  F    2.54  20.7  0.387   +158        0.435       
+14 C. Caufield             MTL  WPG  F    3.15  19.0  0.386   +159        0.531       
+15 J. Guentzel             TBL  DET  F    2.92  20.5  0.384   +160        0.443       
+16 N. Suzuki               MTL  WPG  F     3.0  22.2  0.383   +161        0.504       
+17 S. Aho                  CAR  NSH  F    2.79  19.9   0.38   +163        0.458       
+18 W. Nylander             TOR  UTA  F    2.86  20.4  0.366   +174        0.435       
+19 J. Robertson            DAL  WSH  F    3.23  19.9  0.363   +176        0.525       
+20 V. Arvidsson            DET  TBL  F    3.07  19.0  0.355   +182        0.471       
+21 A. Fantilli             CBJ  COL  F    3.09  21.3  0.351   +185        0.498       
+22 L. Raymond              DET  TBL  F     3.0  20.3  0.346   +189        0.459       
+23 A. Lafrenière           NYR  STL  F    2.67  19.1  0.345   +190        0.432       
+24 J. Eichel               VGK  PIT  F     2.5  20.0  0.345   +190        0.404       
+25 L. Stankoven            CAR  NSH  F    3.21  16.7  0.341   +194        0.532       
 
-141 players, 4 games -> docs/index.html
+381 players, 11 games -> docs/index.html
