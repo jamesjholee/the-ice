@@ -213,9 +213,10 @@ def render(rows, games, d, odds_meta, todays_picks):
         r["et"] = gmeta.get(r["game"], {}).get("et", "")
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     n_out = sum(1 for r in rows if r.get("status") == "OUT"); n_q = sum(1 for r in rows if r.get("status") == "?"); n_in = sum(1 for r in rows if r.get("status") == "IN")
-    lineup_note = (f"lineups: {n_in} confirmed in, {n_out} out" if n_in else f"lineups not posted yet; {n_q} players flagged ? (didn't dress last game)")
-    odds_note = lineup_note + " · " + (f"book prices: best of {odds_meta.get('events', 0)} games fetched {odds_meta.get('fetched', '')[:16]}Z · "
-                 f"{odds_meta.get('credits_remaining', '?')} API credits left") if odds_meta else "no book prices this run"
+    lineup_note = (f"lineups: {n_in} in, {n_out} out" if n_in else f"lineups not posted; {n_q} flagged ?")
+    price_note = (f"book prices: best of {odds_meta.get('events', 0)} games fetched {odds_meta.get('fetched', '')[:16]}Z · "
+                  f"{odds_meta.get('credits_remaining', '?')} API credits left") if odds_meta else "no book prices this run"
+    odds_note = lineup_note + " · " + price_note
     data = json.dumps(rows)
     gdata = json.dumps(gmeta)
     tabs = "".join(f"<button {'class=on' if i==0 else ''} data-m='{m}'>{lbl}</button>" for i, (m, lbl, _) in enumerate(MARKETS))
@@ -257,7 +258,7 @@ function saCls(v){{return v>=29?'good':v<27?'bad':''}}
 function grade(v){{return v>=29?'A':v>=27?'B':'C'}}
 function trend(r){{const d=r.sog_l5-r.sog_pg;return d>=0.6?'<span class="up">▲</span>':d<=-0.6?'<span class="dn">▼</span>':'<span class="fl">–</span>'}}
 function prep(){{const k=MK[market];rows.forEach(r=>{{const key=r.pid+market;const o=manual[key]!==undefined&&manual[key]!==''?manual[key]:r['book_'+market];const ip=(o!==''&&o!=null)?implied(o):null;r._o=o;r._e=ip==null?null:(r[k]-ip)*100;r._p=r[k]}})}}
-function stat(r){{return r.status==='OUT'?'<span class="st out">OUT</span>':r.status==='?'?'<span class="st q" title="did not play team\'s last game; lineup not posted yet">?</span>':r.status==='IN'?'<span class="st in">IN</span>':''}}
+function stat(r){{return r.status==='OUT'?'<span class="st out">OUT</span>':r.status==='?'?'<span class="st q" title="did not play the last game; lineup not posted yet">?</span>':r.status==='IN'?'<span class="st in">IN</span>':''}}
 function head(){{return '<tr><th class="l">Player</th><th>Pos</th><th>TOI</th><th>SOG/g</th><th>L5</th><th></th><th>Form</th><th>sh%</th><th>PP</th><th title="Matchup: opponent shots allowed/game. A = 29+ (3+ SOG/g forwards hit 3+ shots 70% in Oct), B = 27-29 (54%), C = under 27 (52%)">Matchup</th><th>Model</th><th>Fair</th><th>Book</th><th>Edge</th></tr>'}}
 function row(r){{const e=r._e;const bk=(manual[r.pid+market]?'you':(r['book_'+market+'_bk']||''));const f=FORM[market];const form=f?Math.round(r[f]*100)+'%':'';
  return `<tr class="${{r.status==='OUT'?'dim':r.status==='?'?'dimq':''}}"><td class="l">${{stat(r)}}${{r.name}} <span class="mut">${{r.team}}</span></td><td>${{r.pos}}</td><td>${{r.toi}}</td><td>${{r.sog_pg}}</td><td>${{r.sog_l5}}</td><td>${{trend(r)}}</td><td>${{form}}</td><td>${{(r.sh_pct*100).toFixed(1)}}</td><td>${{(r.pp_share*100).toFixed(0)}}%</td><td class="${{saCls(r.opp_sa)}}"><b>${{grade(r.opp_sa)}}</b> <span class="mut">${{r.opp_sa}}</span></td><td><b>${{(r._p*100).toFixed(1)}}%</b></td><td>${{fair(r._p)}}</td><td><input value="${{am(r._o)}}" data-k="${{r.pid+market}}" placeholder="—"> <span class="bk">${{bk}}</span></td><td class="${{e==null?'':e>=0?'edge-pos':'edge-neg'}}">${{e==null?'':(e>0?'+':'')+e.toFixed(1)}}</td></tr>`}}
@@ -271,7 +272,7 @@ function render(){{
    return `<div class="game"><div class="gh">${{away}} @ ${{home}} <span class="mut">${{G[g].et}} ET</span></div><div class="sides">${{side(away)}}${{side(home)}}</div></div>`}}).join('');
  }} else {{
   const sorted=rows.slice().sort(view==='edge'?((a,b)=>(b._e==null?-999:b._e)-(a._e==null?-999:a._e)||b._p-a._p):((a,b)=>b._p-a._p));
-  el.innerHTML=`<div class="wrap"><table id="t"><thead>${{head().replace('<th class="l">Player','<th class="l">#</th><th class="l">Player').replace('<th>Pos>','<th class="l">Game</th><th>Pos>')}}</thead><tbody>${{sorted.map((r,i)=>row(r).replace('<tr><td class="l">',`<tr><td class="l">${{i+1}}</td><td class="l">`).replace('</td><td>'+r.pos+'</td>',`</td><td class="l">${{r.game}} ${{r.et}}</td><td>${{r.pos}}</td>`)).join('')}}</tbody></table></div>`;
+  el.innerHTML=`<div class="wrap"><table id="t"><thead>${{head().replace('<th class="l">Player</th>','<th class="l">#</th><th class="l">Player</th><th class="l">Game</th>')}}</thead><tbody>${{sorted.map((r,i)=>row(r).replace(/^<tr([^>]*)><td class="l">/,`<tr$1><td class="l">${{i+1}}</td><td class="l">`).replace('</td><td>'+r.pos+'</td>',`</td><td class="l">${{r.game}} ${{r.et}}</td><td>${{r.pos}}</td>`)).join('')}}</tbody></table></div>`;
  }}
  document.querySelectorAll('#board input').forEach(x=>x.addEventListener('change',ev=>{{manual[ev.target.dataset.k]=ev.target.value;localStorage.setItem('odds_{d}',JSON.stringify(manual));render()}}));
 }}
