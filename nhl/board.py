@@ -153,13 +153,18 @@ def main():
             rows, games, hist = score_slate(d, overrides, a.min_games)
 
     odds_meta = join_odds(rows, os.path.join(a.out, "odds.json"))
+    mp = os.path.join(a.out, "odds_meta.json")
+    if odds_meta:
+        json.dump(odds_meta, open(mp, "w"))
+    elif os.path.exists(mp):
+        os.remove(mp)
     picked = auto_picks(rows, d) if (a.auto_pick and odds_meta) else []
     todays_picks = [r for r in read_picks() if r["date"] == d.isoformat()]
 
     with open(os.path.join(a.out, "board.csv"), "w", newline="") as fh:
         if rows:
             w = csv.DictWriter(fh, fieldnames=list(rows[0].keys())); w.writeheader(); w.writerows(rows)
-    page = render(rows, games, d, odds_meta, todays_picks)
+    page = render(rows, games, d, odds_meta, todays_picks, out_dir=a.out)
     open(os.path.join(a.out, "index.html"), "w").write(page)
     open(os.path.join(a.out, "boards", f"{d.isoformat()}.html"), "w").write(page)
     if not rows:

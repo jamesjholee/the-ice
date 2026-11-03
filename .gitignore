@@ -5,3 +5,4 @@ __pycache__/
 *.db
 .DS_Store
 backtest_progress.log
+odds_meta.json

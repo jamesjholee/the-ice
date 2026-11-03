@@ -29,6 +29,9 @@ shows the best price per row on the board, and appends up to 8 picks/day to `pic
 beats the book by the market's bar (+6 pts goals, +4 pts shots). The next morning's run grades them and
 the record at the top of the board is real. Manual picks still work: `python -m nhl.pick ...` or edit `picks.csv`.
 
+## Parlays (automatic)
+`nhl/parlays.py` builds seven ticket shapes from each evening's board — core (3 shots legs, 3 games), team stack (2+ shots, one team), pace mix (one high-pace game), and four longshots (4 and 6 goal scorers, a 4+ shots ladder, a two-game pace stack). Each is priced at the model's fair odds and, when the book pulled prices for every leg, at the book's combined price with the overlay vs fair. Tickets log to `parlays.csv`, grade the next morning (a scratched leg is voided, not lost), and post to Discord if `DISCORD_WEBHOOK` is set. They show in the Parlays panel on the board with a why-line per leg.
+
 ## 2. Daily (manual, if you'd rather run it yourself)
 ```
 python -m nhl.board                          # today's slate -> board.html, board.csv

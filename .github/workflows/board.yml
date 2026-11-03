@@ -50,12 +50,18 @@ jobs:
           { echo "== board $(date -u) =="; python -m nhl.board --out docs $FLAG; } >> docs/last_run.log 2>&1 \
             || { echo "BOARD FAILED"; tail -40 docs/last_run.log; exit 1; }
           rm -f docs/odds.json
+      - name: build parlays (afternoon/evening runs)
+        if: steps.mode.outputs.odds == '1' || github.event_name == 'workflow_dispatch'
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          { echo "== parlays $(date -u) =="; python -m nhl.parlays --log --post; } >> docs/last_run.log 2>&1 || true
       - name: commit
         if: always()
         run: |
           git config user.name "the-ice bot"
           git config user.email "actions@users.noreply.github.com"
-          git add docs nhl_cache picks.csv
+          git add docs nhl_cache picks.csv parlays.csv
           git diff --cached --quiet || git commit -m "board $(date -u +'%Y-%m-%d %H:%M UTC')"
           git pull --rebase --autostash origin ${GITHUB_REF_NAME}
           git push

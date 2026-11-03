@@ -68,7 +68,7 @@ tr.dim td{opacity:.4}
 .verdict{font-weight:600;font-size:15px;margin-bottom:9px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(224px,1fr));gap:var(--s3)}
 .block{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:11px 13px}
-.stat{display:flex;justify-content:space-between;gap:12px;padding:5px 0;border-bottom:1px solid var(--line);font-size:13px} .stat:last-child{border-bottom:0}
+.stat{display:flex;justify-content:space-between;gap:12px;padding:5px 0;border-bottom:1px solid var(--line);font-size:13px;flex-wrap:wrap} .stat:last-child{border-bottom:0}
 .stat-l{color:var(--faint)} .stat-v{font-weight:600;font-variant-numeric:tabular-nums}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3)}
 .team-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:13px 15px;animation:rise var(--settle) var(--ease)}
@@ -140,7 +140,38 @@ def _picks_html(todays_picks, odds_meta, rows_by_pid):
     return f"<div class='panel'><div class='head'><h2>Model picks</h2></div><div class='body'><p class='dim' style='margin:10px 0 0'>{msg}</p></div></div>"
 
 
-def render(rows, games, d, odds_meta, todays_picks):
+def _parlays_html(out_dir, rows_by_pid):
+    import os
+    from .parlays import why, record as parlay_record
+    path = os.path.join(out_dir, "parlays.json")
+    if not os.path.exists(path):
+        return ""
+    try:
+        tickets = json.load(open(path))
+    except Exception:
+        return ""
+    if not tickets:
+        return ""
+    NAMES = {"core": "Core · 3 shots legs", "stack": "Team stack · 2+ shots", "mix": "Pace mix · one game",
+             "goals4": "Longshot · 4 goal scorers", "goals6": "Longshot · 6 goal scorers", "ladder4": "Longshot · 4+ shots ladder", "pace6": "Longshot · pace stack"}
+    MK = {"goal": "ATG", "sog2": "2+ SOG", "sog3": "3+ SOG", "sog4": "4+ SOG"}
+    body = ""
+    for t in tickets:
+        fp = float(t["fair_p"]); bo = t.get("book_odds"); bp = t.get("book_p")
+        long = fp < 0.05
+        tier = "lean" if long else "bet"
+        price = f"<b>{bo:+d}</b><div class='muted'>fair {t['fair_odds']}</div>" if bo is not None else f"<b>{t['fair_odds']}</b><div class='muted'>fair · no book</div>"
+        overlay = f" · book pays <span class='pos'>{fp/float(bp):.1f}×</span> fair" if bo is not None and bp else ""
+        legs = "".join(f"<div class='stat'><span class='stat-l'><b style='color:var(--paint)'>{l['name']}</b> <span class='muted'>{l['team']}</span> {MK[l['market']]}"
+                       f"{(' @ %+d' % l['book']) if l.get('book') is not None else ''}</span><span class='stat-v'>{float(l['p']):.0%} <span class='muted' style='font-weight:400'>{why(l, rows_by_pid)}</span></span></div>" for l in t["legs"])
+        body += (f"<div class='pick-row'><span class='tier {tier}'>{'long' if long else 'play'}</span><div><div class='who'>{NAMES.get(t['kind'], t['kind'])}</div>"
+                 f"<div class='why'>{len(t['legs'])} legs · model {fp:.2%} to hit{overlay}</div><div style='margin-top:8px'>{legs}</div></div><div class='price'>{price}</div></div>")
+    pr = parlay_record()
+    rec = f"<span class='muted'>{pr['total'][1]}/{pr['total'][0]} hit · {pr['total'][2]:+.1f}u</span>" if pr else "<span class='muted'>built from the board each evening, graded next morning</span>"
+    return f"<div class='panel'><div class='head'><h2>Parlays</h2>{rec}</div><div class='body'>{body}</div></div>"
+
+
+def render(rows, games, d, odds_meta, todays_picks, out_dir="docs"):
     games_sorted = sorted(games, key=lambda g: g.get("start") or "")
     gmeta = {f"{g['away']}@{g['home']}": dict(start=g.get("start") or "", et=_et(g.get("start") or "")) for g in games}
     for r in rows:
@@ -160,6 +191,7 @@ def render(rows, games, d, odds_meta, todays_picks):
 <div class="wrap">
 {_record_html()}
 {_picks_html(todays_picks, odds_meta, by_pid)}
+{_parlays_html(out_dir, by_pid)}
 <div class="gh"><h2>Board</h2><span class="muted">{len(games)} games · {len(rows)} players</span></div>
 <div class="games" id="strip"><button class="game on" data-g=""><b>All games</b><small>{len(games)} tonight</small></button>{strip}</div>
 <div class="bar"><div class="seg" id="mseg">{seg_m}</div><div class="seg" id="vseg"><button class="on" data-v="edge">By edge</button><button data-v="model">By model</button><button data-v="games">By game</button></div><input type="search" id="q" placeholder="Search player"></div>

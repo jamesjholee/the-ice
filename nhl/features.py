@@ -156,7 +156,7 @@ def p_sog_at_least(f, k, model=None):
 
 
 def american(p):
-    p = min(max(p, 0.01), 0.99)
+    p = min(max(p, 0.0005), 0.99)
     return f"+{round(100 * (1 - p) / p)}" if p < 0.5 else f"-{round(100 * p / (1 - p))}"
 
 

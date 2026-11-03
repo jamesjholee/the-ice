@@ -9,6 +9,7 @@ from datetime import date
 from .data import games_on, boxscore
 from .features import payout
 from .store import ungraded, grade, record
+from .parlays import grade_parlays, record as parlay_record
 
 
 def main():
@@ -42,6 +43,27 @@ def main():
             grade(pid_, hit, pnl)
             print(f"  {dt} {name:<22}{market:<5} o{line}  {'G' if market=='goal' else 'SOG'}={val}  "
                   f"{'HIT ' if hit else 'MISS'} {pnl:+.2f}u  (model {mp:.2f} book {bp:.2f})")
+    # parlays: collect stats for every date with ungraded tickets
+    from .parlays import _read as read_parlays
+    pdates = {r["date"] for r in read_parlays() if r.get("result", "") == ""}
+    sbd = {}
+    for dstr in pdates:
+        st = {}
+        for g in games_on(date.fromisoformat(dstr)):
+            sk, _ = boxscore(g["id"])
+            for r in sk:
+                st[r["pid"]] = r
+        if st:
+            sbd[dstr] = st
+    n = grade_parlays(sbd)
+    if n:
+        print(f"graded {n} parlay tickets")
+    pr = parlay_record()
+    if pr:
+        print("\n=== Parlays ===")
+        for k, (cnt, hits, pnl) in sorted(pr["by"].items()):
+            print(f"{k:<8} {hits}/{cnt}  P&L {pnl:+.2f}u")
+        print(f"TOTAL    {pr['total'][1]}/{pr['total'][0]}  P&L {pr['total'][2]:+.2f}u")
     rows, tot = record()
     print("\n=== Record ===")
     for m, n, hits, pnl, stake, amp, abp in rows:
