@@ -1,1 +1,7 @@
 id,date,kind,legs,n_legs,fair_p,fair_odds,book_odds,book_p,stake,result,pnl,note
+1,2026-11-03,core,8479542:B. Hagel:sog3:2.5::0.687|8481557:M. Boldy:sog3:2.5::0.674|8483445:C. Gauthier:sog3:2.5::0.679,3,0.31440,+218,,,1.0,,,
+2,2026-11-03,stack,8481557:M. Boldy:sog2:1.5::0.853|8478493:J. Eriksson Ek:sog2:1.5::0.774|8478864:K. Kaprizov:sog2:1.5::0.767,3,0.50639,-103,,,1.0,,,
+3,2026-11-03,mix,8477951:N. Schmaltz:sog3:2.5::0.467|8479318:A. Matthews:goal:0.5::0.397|8482699:D. Guenther:sog2:1.5::0.694,3,0.12867,+677,,,1.0,,,
+4,2026-11-03,goals4,8477934:L. Draisaitl:goal:0.5::0.418|8479337:A. DeBrincat:goal:0.5::0.410|8479318:A. Matthews:goal:0.5::0.397|8478493:J. Eriksson Ek:goal:0.5::0.388,4,0.02640,+3688,,,1.0,,,
+5,2026-11-03,goals6,8477934:L. Draisaitl:goal:0.5::0.418|8479337:A. DeBrincat:goal:0.5::0.410|8479318:A. Matthews:goal:0.5::0.397|8478493:J. Eriksson Ek:goal:0.5::0.388|8484762:B. Sennecke:goal:0.5::0.387|8481540:C. Caufield:goal:0.5::0.386,6,0.00394,+25258,,,1.0,,,
+6,2026-11-03,ladder4,8479542:B. Hagel:sog4:3.5::0.478|8483445:C. Gauthier:sog4:3.5::0.470|8481557:M. Boldy:sog4:3.5::0.464|8481559:J. Hughes:sog4:3.5::0.389,4,0.04055,+2366,,,1.0,,,
