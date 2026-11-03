@@ -1,9 +1,13 @@
 name: daily board
 
+# GitHub's cron is best-effort and drifts 30-180 min on quiet repos, and the old 22:00 UTC
+# job rarely fired at all. So: several triggers across the afternoon/evening, each run is
+# idempotent, and the odds/auto-pick step runs on the LAST run before puck drop that has a key.
 on:
   schedule:
-    - cron: "30 14 * * *"   # 10:30am ET — morning board + grade yesterday
-    - cron: "0 22 * * *"    # 6:00pm ET — re-score after rosters/lineups settle
+    - cron: "15 15 * * *"   # ~10:15am ET: grade yesterday, morning board (no odds)
+    - cron: "45 21 * * *"   # ~4:45pm ET: odds + auto-picks (lineups usually not up yet)
+    - cron: "20 23 * * *"   # ~6:20pm ET: odds refresh + lineups for 7pm games (re-scores, no duplicate picks)
   workflow_dispatch:
 
 permissions:
@@ -16,6 +20,7 @@ concurrency:
 jobs:
   board:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -23,12 +28,18 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
+      - name: decide whether this run pulls odds
+        id: mode
+        run: |
+          H=$(TZ=America/New_York date +%H)
+          if [ -n "${{ secrets.ODDS_API_KEY }}" ] && [ "$H" -ge 15 ]; then echo "odds=1" >> $GITHUB_OUTPUT; else echo "odds=0" >> $GITHUB_OUTPUT; fi
+          echo "ET hour $H, odds=$( [ "$H" -ge 15 ] && echo yes || echo no )"
       - name: grade ungraded picks
         run: |
           mkdir -p docs
           { echo "== grade $(date -u) =="; python -m nhl.grade; } > docs/last_run.log 2>&1 || true
-      - name: fetch book prices (6pm run only — ~15 credits/day on the free tier)
-        if: github.event.schedule == '0 22 * * *' || github.event_name == 'workflow_dispatch'
+      - name: fetch book prices (afternoon/evening runs only; ~2 credits per game)
+        if: steps.mode.outputs.odds == '1'
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: |

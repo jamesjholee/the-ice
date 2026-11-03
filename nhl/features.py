@@ -103,7 +103,8 @@ class History:
         opp = self.goalie_sv(opp_goalie_pid) if opp_goalie_pid else LEAGUE_SV
         opp_sa = self.team_shots_allowed(opp_team) if opp_team else 28.0
         l5 = h[-5:]
-        return dict(sog_pg=sog, sh_pct=sh, pp_share=pp, goals_l5=g5, toi_pg=toi,
+        last_date = self.sk[pid][-1]["date"] if self.sk[pid] else None
+        return dict(last_date=last_date, sog_pg=sog, sh_pct=sh, pp_share=pp, goals_l5=g5, toi_pg=toi,
                     opp_gsv=opp, is_d=1.0 if self.pos.get(pid) == "D" else 0.0, opp_sa=opp_sa, n_games=n,
                     # form / trend columns for the dashboard (not model inputs)
                     sog_l5=sum(x["sog"] for x in l5) / len(l5),
@@ -129,10 +130,13 @@ def p_goal(f, model):
     # Early-window shrinkage: with fewer than the full lookback of games the rolling
     # inputs are noisy and the live Oct-2026 check showed the top end ~6 pts hot.
     # Blend toward the position baseline with weight (lookback - n) / lookback.
+    # Live check (Oct 8-Nov 1 2026, 5.3k player-games): the full-strength blend fixed the
+    # first-week overconfidence but then under-predicted the 20-30% tier by ~4 pts once
+    # players had 10+ games. Half-strength blend, and none past 12 games.
     n = f.get("n_games", 20)
-    if n < 20:
+    if n < 12:
         base = 0.07 if f.get("is_d") else 0.17
-        w = (20 - n) / 20
+        w = 0.5 * (12 - n) / 12
         p = (1 - w) * p + w * base
     return p
 

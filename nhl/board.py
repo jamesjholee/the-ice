@@ -9,7 +9,7 @@ Book prices come from <out>/odds.json if present (written by `python -m nhl.odds
 import argparse, csv, json, os, sys
 from datetime import date, datetime, timezone, timedelta
 
-from .data import games_on, roster
+from .data import games_on, roster, dressed
 from .features import load_model, p_goal, p_sog_at_least, american, implied
 from .history import build_history
 from .odds import norm, best
@@ -27,7 +27,17 @@ def score_slate(d, overrides, min_games):
     hist = build_history(d)
     games = games_on(d, final_only=False)
     rows = []
+    # last game each team played before today (for "did he dress last game?")
+    team_last = {}
+    for t, lst in hist.team_sa.items():
+        pass
+    for pid, h in hist.sk.items():
+        if h:
+            t = h[-1]["team"]; dt = h[-1]["date"]
+            if dt and (t not in team_last or dt > team_last[t]):
+                team_last[t] = dt
     for g in games:
+        lineup = dressed(g["id"])          # None until the lineup is submitted
         for team, opp in ((g["home"], g["away"]), (g["away"], g["home"])):
             gpid = overrides.get(opp) or hist.likely_starter(opp)
             gname = hist.names.get(gpid, "?") if gpid else "?"
@@ -41,7 +51,14 @@ def score_slate(d, overrides, min_games):
                 if not f:
                     continue
                 pg = p_goal(f, model)
+                # status: IN (confirmed in lineup) / OUT (lineup up, not in it) /
+                #         ? (no lineup yet; didn't play team's last game) / "" (no lineup yet; played last game)
+                if lineup is not None:
+                    status = "IN" if p["pid"] in lineup else "OUT"
+                else:
+                    status = "" if f.get("last_date") == team_last.get(team) else "?"
                 rows.append(dict(
+                    status=status,
                     pid=p["pid"], name=hist.names.get(p["pid"], p["name"]), full_name=p["name"],
                     team=team, opp=opp, pos=p["pos"], game=f"{g['away']}@{g['home']}", start=g.get("start") or "",
                     opp_goalie=gname, opp_gsv=round(gsv, 3),
@@ -93,6 +110,8 @@ def auto_picks(rows, d):
     existing = {(r["date"], str(r["pid"]), r["market"]) for r in read_picks()}
     cands = []
     for r in rows:
+        if r.get("status") in ("OUT", "?"):
+            continue
         for m, _, pk in MARKETS:
             px = r.get(f"book_{m}")
             if px == "" or px is None:
@@ -193,7 +212,9 @@ def render(rows, games, d, odds_meta, todays_picks):
     for r in rows:
         r["et"] = gmeta.get(r["game"], {}).get("et", "")
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    odds_note = (f"book prices: best of {odds_meta.get('events', 0)} games fetched {odds_meta.get('fetched', '')[:16]}Z · "
+    n_out = sum(1 for r in rows if r.get("status") == "OUT"); n_q = sum(1 for r in rows if r.get("status") == "?"); n_in = sum(1 for r in rows if r.get("status") == "IN")
+    lineup_note = (f"lineups: {n_in} confirmed in, {n_out} out" if n_in else f"lineups not posted yet; {n_q} players flagged ? (didn't dress last game)")
+    odds_note = lineup_note + " · " + (f"book prices: best of {odds_meta.get('events', 0)} games fetched {odds_meta.get('fetched', '')[:16]}Z · "
                  f"{odds_meta.get('credits_remaining', '?')} API credits left") if odds_meta else "no book prices this run"
     data = json.dumps(rows)
     gdata = json.dumps(gmeta)
@@ -212,6 +233,8 @@ input{{width:64px;background:#0f1115;color:var(--fg);border:1px solid var(--line
 .wrap{{overflow:auto;max-height:75vh;border:1px solid var(--line);border-radius:6px}} .note{{color:var(--mut);font-size:12px;margin-top:8px}} code{{background:#0f1115;padding:1px 4px;border-radius:3px}}
 details summary{{cursor:pointer;color:var(--mut)}}
 .lbl{{color:var(--mut);font-size:12px;margin:0 8px 0 4px}} .mut{{color:var(--mut)}} .good{{color:var(--acc)}} .bad{{color:var(--bad)}} .up{{color:var(--acc)}} .dn{{color:var(--bad)}} .fl{{color:var(--mut)}}
+.st{{display:inline-block;font-size:10px;font-weight:700;padding:1px 5px;border-radius:3px;margin-right:6px;vertical-align:middle}} .st.out{{background:var(--bad);color:#0f1115}} .st.q{{background:#4a4f5c;color:var(--fg)}} .st.in{{background:var(--acc);color:#0f1115}}
+tr.dim td{{opacity:.35}} tr.dimq td{{opacity:.6}}
 .game{{margin:14px 0 22px}} .gh{{font-size:16px;font-weight:600;margin-bottom:8px}} .sides{{display:grid;grid-template-columns:1fr 1fr;gap:12px}} @media(max-width:1000px){{.sides{{grid-template-columns:1fr}}}}
 .side{{border:1px solid var(--line);border-radius:6px;overflow:auto}} .side .th{{padding:6px 8px;background:#1c2029;border-bottom:1px solid var(--line)}} .side table{{font-size:13px}} .side th,.side td{{padding:4px 6px}}
 </style></head><body>
@@ -220,7 +243,7 @@ details summary{{cursor:pointer;color:var(--mut)}}
 <h2>Record</h2>{rec_html}
 <h2>Model picks today</h2>{picks_html}
 <h2>Board</h2>
-<div class="sub">Model = rolling shots/game, finishing %, ice time, position, PP share, <b>opponent shots allowed</b> (last 20 games). Form = last 5 / last 10. Matchup = opponent's shots allowed per game (league ~28; higher = softer). Book = best US price; type your own to override. Edge = model − implied, in points.</div>
+<div class="sub">Model = rolling shots/game, finishing %, ice time, position, PP share, <b>opponent shots allowed</b> (last 20 games). Form = last 5 / last 10. Matchup = opponent shots allowed/game, graded A (29+) / B (27–29) / C (&lt;27): in October, 3+ SOG/g forwards hit 3+ shots 70% / 54% / 52% by grade. Rows marked <b>OUT</b> are not in the posted lineup; <b>?</b> didn't dress the team's last game and the lineup isn't up yet — neither is auto-picked. Book = best US price; type your own to override. Edge = model − implied, in points.</div>
 <div class="tabs"><span class="lbl">Market</span>{tabs}<span class="lbl">View</span><button class="on" data-v="games">By game</button><button data-v="edge">By edge</button><button data-v="model">By model</button></div>
 <div id="board"></div>
 <div class="note">Rows: {len(rows)}. Shots prices are shown for the line the book posted (a 2.5 line fills the 3+ tab). Form hit-rates are the player's last-10 rate for that line.</div>
@@ -230,12 +253,14 @@ let market='goal',view='games';const manual=JSON.parse(localStorage.getItem('odd
 function implied(o){{o=parseInt(String(o).replace('+',''));if(isNaN(o))return null;return o>0?100/(o+100):(-o)/(-o+100)}}
 function fair(p){{return p<0.5?'+'+Math.round(100*(1-p)/p):'-'+Math.round(100*p/(1-p))}}
 function am(o){{return o===''||o==null?'':(o>0?'+'+o:String(o))}}
-function saCls(v){{return v>=30?'good':v<=26.5?'bad':''}}
+function saCls(v){{return v>=29?'good':v<27?'bad':''}}
+function grade(v){{return v>=29?'A':v>=27?'B':'C'}}
 function trend(r){{const d=r.sog_l5-r.sog_pg;return d>=0.6?'<span class="up">▲</span>':d<=-0.6?'<span class="dn">▼</span>':'<span class="fl">–</span>'}}
 function prep(){{const k=MK[market];rows.forEach(r=>{{const key=r.pid+market;const o=manual[key]!==undefined&&manual[key]!==''?manual[key]:r['book_'+market];const ip=(o!==''&&o!=null)?implied(o):null;r._o=o;r._e=ip==null?null:(r[k]-ip)*100;r._p=r[k]}})}}
-function head(){{return '<tr><th class="l">Player</th><th>Pos</th><th>TOI</th><th>SOG/g</th><th>L5</th><th></th><th>Form</th><th>sh%</th><th>PP</th><th>Opp SA</th><th>Model</th><th>Fair</th><th>Book</th><th>Edge</th></tr>'}}
+function stat(r){{return r.status==='OUT'?'<span class="st out">OUT</span>':r.status==='?'?'<span class="st q" title="did not play team\'s last game; lineup not posted yet">?</span>':r.status==='IN'?'<span class="st in">IN</span>':''}}
+function head(){{return '<tr><th class="l">Player</th><th>Pos</th><th>TOI</th><th>SOG/g</th><th>L5</th><th></th><th>Form</th><th>sh%</th><th>PP</th><th title="Matchup: opponent shots allowed/game. A = 29+ (3+ SOG/g forwards hit 3+ shots 70% in Oct), B = 27-29 (54%), C = under 27 (52%)">Matchup</th><th>Model</th><th>Fair</th><th>Book</th><th>Edge</th></tr>'}}
 function row(r){{const e=r._e;const bk=(manual[r.pid+market]?'you':(r['book_'+market+'_bk']||''));const f=FORM[market];const form=f?Math.round(r[f]*100)+'%':'';
- return `<tr><td class="l">${{r.name}} <span class="mut">${{r.team}}</span></td><td>${{r.pos}}</td><td>${{r.toi}}</td><td>${{r.sog_pg}}</td><td>${{r.sog_l5}}</td><td>${{trend(r)}}</td><td>${{form}}</td><td>${{(r.sh_pct*100).toFixed(1)}}</td><td>${{(r.pp_share*100).toFixed(0)}}%</td><td class="${{saCls(r.opp_sa)}}">${{r.opp_sa}}</td><td><b>${{(r._p*100).toFixed(1)}}%</b></td><td>${{fair(r._p)}}</td><td><input value="${{am(r._o)}}" data-k="${{r.pid+market}}" placeholder="—"> <span class="bk">${{bk}}</span></td><td class="${{e==null?'':e>=0?'edge-pos':'edge-neg'}}">${{e==null?'':(e>0?'+':'')+e.toFixed(1)}}</td></tr>`}}
+ return `<tr class="${{r.status==='OUT'?'dim':r.status==='?'?'dimq':''}}"><td class="l">${{stat(r)}}${{r.name}} <span class="mut">${{r.team}}</span></td><td>${{r.pos}}</td><td>${{r.toi}}</td><td>${{r.sog_pg}}</td><td>${{r.sog_l5}}</td><td>${{trend(r)}}</td><td>${{form}}</td><td>${{(r.sh_pct*100).toFixed(1)}}</td><td>${{(r.pp_share*100).toFixed(0)}}%</td><td class="${{saCls(r.opp_sa)}}"><b>${{grade(r.opp_sa)}}</b> <span class="mut">${{r.opp_sa}}</span></td><td><b>${{(r._p*100).toFixed(1)}}%</b></td><td>${{fair(r._p)}}</td><td><input value="${{am(r._o)}}" data-k="${{r.pid+market}}" placeholder="—"> <span class="bk">${{bk}}</span></td><td class="${{e==null?'':e>=0?'edge-pos':'edge-neg'}}">${{e==null?'':(e>0?'+':'')+e.toFixed(1)}}</td></tr>`}}
 function render(){{
  prep();const el=document.getElementById('board');
  if(view==='games'){{

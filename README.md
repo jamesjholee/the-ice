@@ -53,6 +53,13 @@ Grades every ungraded pick from final boxscores, prints hit/miss per pick and th
 - Rosters come from `/roster/TEAM/current`; a scratched player still shows. Check the lineup.
 - Odds are typed by hand; there's no feed. Closing-line value isn't tracked yet (column exists in the DB).
 
+## Live check, Oct 8 – Nov 1 2026 (25 slates, 5,276 graded player-games)
+- 3+ shots calibrated within 2 pts in every bucket; top-10 by P(3+) each day hit 55% (pred 56%).
+- Anytime goal: top-10 hit 38% (pred 34%). First nine days ran 6 pts hot; since Oct 17, 36% actual vs 34% pred.
+- Matchup held: 3+ SOG/g forwards hit 3+ shots 70% vs 29+ shots-allowed defenses, 52% vs under-27.
+- 10.8% of board rows were players who didn't dress → lineup status added (IN/OUT from the NHL gamecenter lineup once posted; `?` = didn't play the team's last game). Catches 69% of scratches before lineups post, 100% after; `?`/OUT rows are never auto-picked.
+- The 6pm cron almost never fired (GitHub cron drift) → three staggered triggers; odds pulled on any run after 3pm ET with a key.
+
 ## Backtest findings (2024-25 train → 2025-26 test, 83k player-games)
 - Shots/game is the predictor. Top-5 by shots alone score 35–38% vs a 15% baseline. Nothing else comes close standalone.
 - Position is the second thing: defensemen score ~7%. Once `is_d` is in the model, ice time flips to a strong positive (among forwards, minutes matter). The earlier "TOI is useless" read was a D confound.

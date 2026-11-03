@@ -161,6 +161,23 @@ def pp_toi_by_game(season):
     return out
 
 
+def dressed(game_id):
+    """Skater pids in the submitted lineup for a game (available ~1-2h before puck drop),
+    or None if the lineup isn't up yet. Uses the boxscore endpoint, which fills playerByGameStats
+    once the lineup is submitted."""
+    try:
+        b = _get(f"{WEB}/gamecenter/{game_id}/boxscore", cache=False)
+    except Exception:
+        return None
+    pids = set()
+    for side in ("awayTeam", "homeTeam"):
+        pbg = b.get("playerByGameStats", {}).get(side, {})
+        for grp in ("forwards", "defense"):
+            for p in pbg.get(grp, []):
+                pids.add(p["playerId"])
+    return pids or None
+
+
 def roster(team):
     # cache per day so the two daily runs don't hammer the endpoint (rate-limits at ~30 calls)
     key = os.path.join(CACHE, f"roster_{team}_{date.today().isoformat()}.json")
