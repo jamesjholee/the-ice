@@ -1,8 +1,8 @@
-== grade Tue Nov  3 21:52:36 UTC 2026 ==
+== grade Wed Nov  4 01:40:25 UTC 2026 ==
 nothing to grade
 
 === Record ===
-== board Tue Nov  3 21:52:36 UTC 2026 ==
+== board Wed Nov  4 01:40:25 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  B. Hagel                TBL  DET  F    4.58  21.3  0.513   -105        0.687       
 2  K. Kaprizov             MIN  PHI  F    3.33  21.8  0.482   +107        0.546       
@@ -31,42 +31,3 @@ nothing to grade
 25 L. Stankoven            CAR  NSH  F    3.21  16.7  0.341   +194        0.532       
 
 381 players, 11 games -> docs/index.html
-== parlays Tue Nov  3 21:53:15 UTC 2026 ==
-
-[core] fair +218 (31.440%)  (no book prices)
-   B. Hagel        TBL sog3 69%         4.58 SOG/g · L5 4.0 · 21.3 min · PP 24% · vs DET C (24.8)
-   M. Boldy        MIN sog3 67%         4.2 SOG/g · L5 3.4 · 21.7 min · PP 19% · vs PHI B (28.1)
-   C. Gauthier     ANA sog3 68%         4.0 SOG/g · L5 5.0 · 18.0 min · PP 20% · vs VAN A (31.6)
-
-[stack] fair -103 (50.639%)  (no book prices)
-   M. Boldy        MIN sog2 85%         4.2 SOG/g · L5 3.4 · 21.7 min · PP 19% · vs PHI B (28.1)
-   J. Eriksson Ek  MIN sog2 77%         3.4 SOG/g · L5 3.4 · 20.1 min · PP 23% · vs PHI B (28.1)
-   K. Kaprizov     MIN sog2 77%         3.33 SOG/g · L5 3.0 · 21.8 min · PP 19% · vs PHI B (28.1)
-
-[mix] fair +677 (12.867%)  (no book prices)
-   N. Schmaltz     UTA sog3 47%         2.79 SOG/g · L5 2.0 · 17.8 min · PP 22% · vs TOR A (29.9)
-   A. Matthews     TOR goal 40%         3.0 SOG/g · L5 2.6 · 20.5 min · PP 20% · vs UTA C (25.0) · sh% 14.8
-   D. Guenther     UTA sog2 69%         2.71 SOG/g · L5 2.6 · 17.5 min · PP 24% · vs TOR A (29.9)
-
-[goals4] fair +3688 (2.640%)  (no book prices)
-   L. Draisaitl    EDM goal 42%         3.31 SOG/g · L5 3.4 · 21.6 min · PP 19% · vs NJD C (24.8) · sh% 14.0
-   A. DeBrincat    DET goal 41%         3.86 SOG/g · L5 3.2 · 19.8 min · PP 30% · vs TBL C (24.9) · sh% 11.0
-   A. Matthews     TOR goal 40%         3.0 SOG/g · L5 2.6 · 20.5 min · PP 20% · vs UTA C (25.0) · sh% 14.8
-   J. Eriksson Ek  MIN goal 39%         3.4 SOG/g · L5 3.4 · 20.1 min · PP 23% · vs PHI B (28.1) · sh% 9.9
-
-[goals6] fair +25258 (0.394%)  (no book prices)
-   L. Draisaitl    EDM goal 42%         3.31 SOG/g · L5 3.4 · 21.6 min · PP 19% · vs NJD C (24.8) · sh% 14.0
-   A. DeBrincat    DET goal 41%         3.86 SOG/g · L5 3.2 · 19.8 min · PP 30% · vs TBL C (24.9) · sh% 11.0
-   A. Matthews     TOR goal 40%         3.0 SOG/g · L5 2.6 · 20.5 min · PP 20% · vs UTA C (25.0) · sh% 14.8
-   J. Eriksson Ek  MIN goal 39%         3.4 SOG/g · L5 3.4 · 20.1 min · PP 23% · vs PHI B (28.1) · sh% 9.9
-   B. Sennecke     ANA goal 39%         2.54 SOG/g · L5 1.8 · 20.7 min · PP 21% · vs VAN A (31.6) · sh% 12.8
-   C. Caufield     MTL goal 39%         3.15 SOG/g · L5 2.4 · 19.0 min · PP 19% · vs WPG A (29.7) · sh% 12.8
-
-[ladder4] fair +2366 (4.055%)  (no book prices)
-   B. Hagel        TBL sog4 48%         4.58 SOG/g · L5 4.0 · 21.3 min · PP 24% · vs DET C (24.8)
-   C. Gauthier     ANA sog4 47%         4.0 SOG/g · L5 5.0 · 18.0 min · PP 20% · vs VAN A (31.6)
-   M. Boldy        MIN sog4 46%         4.2 SOG/g · L5 3.4 · 21.7 min · PP 19% · vs PHI B (28.1)
-   J. Hughes       NJD sog4 39%         3.77 SOG/g · L5 3.8 · 19.7 min · PP 27% · vs EDM C (26.9)
-
-logged 6 tickets to parlays.csv
-page re-rendered with parlays
