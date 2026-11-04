@@ -1,13 +1,13 @@
 """Build the day's parlays from the scored board, price them, log them, post them.
 
-Ticket shapes (same ones built by hand on Nov 3):
-  core     3 legs, 3+ shots, three different games, all P >= 0.60, best edge first
-  stack    3 legs, 2+ shots, one team, all P >= 0.75 — same-game, positively correlated
-  mix      3 legs from one high-pace game: 3+ shots, anytime goal, 2+ shots floor
-  goals4   4 legs, anytime goal, four games, model 0.33-0.42 (the under-predicted tier)
-  ladder4  4 legs, 4+ shots, the four highest 4+ probabilities in different games
-  goals6   6 legs, anytime goal, six games — the +10000 ticket
-  pace6    4 legs from the fastest game + 2 from the second-fastest, correlated
+Ticket shapes (revised Nov 4 after the first graded night — shots legs went 6/9, goal legs 2/9):
+  core     3 x 3+ shots, three games, P >= .60, best edge first
+  core2    3 x 3+ shots from three other games, P >= .55
+  stack    3 x 2+ shots, one team's forwards, P >= .75 — same-game, positively correlated
+  ladder4  4 x 4+ shots, four games, P >= .35
+  shots6   6 x 2+ shots, six games, P >= .75 — the shots-only longshot
+  goals4   4 x anytime goal, four games, 0.33-0.42 band, 3.0+ SOG/g forwards only — the one goal ticket
+  No player appears on more than two tickets a night.
 
 Pricing: fair = product of model probs (independent) → American. Book = product of the
 best book price per leg when every leg has one; else blank. Edge = (book_implied vs fair).
@@ -79,23 +79,52 @@ def _pace(rows):
     return {k: sum(sf + sa for _, sf, sa in s) for k, s in g.items()}
 
 
+MAX_USES = 2   # no player anchors more than two tickets a night (Nov 3: Hagel sank four)
+
+
 def build(rows):
     el = _eligible(rows)
     for r in el:
         for m in MK:
             r[MK[m]] = float(r[MK[m]])
     tickets = []
+    used = defaultdict(int)
 
-    # core: 3+ shots, >= .60, distinct games, prefer book edge when priced
-    c = sorted([r for r in el if r["p_sog3"] >= 0.60], key=lambda r: -(r["p_sog3"] - (implied(_book(r, "sog3")) if _book(r, "sog3") else r["p_sog3"] - 0.05)))
-    legs = _distinct_games(c, 3, "game")
-    if len(legs) == 3:
-        tickets.append(("core", [_mk_leg(r, "sog3") for r in legs]))
+    def take(cands, k, market, distinct_games=True, min_p=0.0):
+        """Pick up to k rows from cands (already sorted best-first), honoring the usage cap."""
+        out, seen = [], set()
+        for r in cands:
+            if used[r["pid"]] >= MAX_USES or r[MK[market]] < min_p:
+                continue
+            if distinct_games and r["game"] in seen:
+                continue
+            out.append(r); seen.add(r["game"])
+            if len(out) == k:
+                break
+        return out
 
-    # stack: one team, three 2+ shots legs >= .75
+    def commit(kind, pairs):
+        legs = [_mk_leg(r, m) for r, m in pairs]
+        for r, _ in pairs:
+            used[r["pid"]] += 1
+        tickets.append((kind, legs))
+
+    def edge_key(m):
+        def k(r):
+            b = _book(r, m)
+            return -(r[MK[m]] - implied(b)) if b else -(r[MK[m]] - 0.05)
+        return k
+
+    # ---- shots tickets (the model's strength) ----
+    # core: 3 x 3+ shots, three games, P >= .60
+    c = take(sorted(el, key=edge_key("sog3")), 3, "sog3", min_p=0.60)
+    if len(c) == 3:
+        commit("core", [(r, "sog3") for r in c])
+
+    # stack: one team, three forwards 2+ shots >= .75
     by_team = defaultdict(list)
     for r in el:
-        if r["p_sog2"] >= 0.75 and r["pos"] == "F":
+        if r["p_sog2"] >= 0.75 and r["pos"] == "F" and used[r["pid"]] < MAX_USES:
             by_team[r["team"]].append(r)
     best = None
     for t, rs in by_team.items():
@@ -105,47 +134,33 @@ def build(rows):
             if best is None or score > best[0]:
                 best = (score, rs)
     if best:
-        tickets.append(("stack", [_mk_leg(r, "sog2") for r in best[1]]))
+        commit("stack", [(r, "sog2") for r in best[1]])
 
-    # mix + pace: rank games by pace
-    pace = _pace(el)
-    games = sorted(pace, key=lambda g: -pace[g])
-    if games:
-        g0 = [r for r in el if r["game"] == games[0]]
-        s3 = sorted(g0, key=lambda r: -r["p_sog3"])
-        gl = sorted([r for r in g0 if 0.30 <= r["p_goal"] <= 0.45], key=lambda r: -r["p_goal"])
-        s2 = sorted(g0, key=lambda r: -r["p_sog2"])
-        if s3 and gl and s2:
-            a, b = s3[0], gl[0]
-            cf = next((r for r in s2 if r["pid"] not in (a["pid"], b["pid"])), None)
-            if cf:
-                tickets.append(("mix", [_mk_leg(a, "sog3"), _mk_leg(b, "goal"), _mk_leg(cf, "sog2")]))
+    # ladder4: 4 x 4+ shots, four games, P >= .35
+    l4 = take(sorted(el, key=lambda r: -r["p_sog4"]), 4, "sog4", min_p=0.35)
+    if len(l4) == 4:
+        commit("ladder4", [(r, "sog4") for r in l4])
 
-    # goals4 / goals6: anytime goal in the 0.33-0.42 band, distinct games, best book edge first
-    band = sorted([r for r in el if 0.33 <= r["p_goal"] <= 0.42 and r["pos"] == "F"],
-                  key=lambda r: -(r["p_goal"] - (implied(_book(r, "goal")) if _book(r, "goal") else 0.0)))
-    g4 = _distinct_games(band, 4, "game")
+    # shots6: 6 x 2+ shots, six games, P >= .78 — the shots-only longshot
+    s6 = take(sorted(el, key=lambda r: -r["p_sog2"]), 6, "sog2", min_p=0.75)
+    if len(s6) == 6:
+        commit("shots6", [(r, "sog2") for r in s6])
+
+    # shots3x3: three 3+ shots at P >= .55 from three *different* games than core if possible
+    core_games = {l["game"] for k, legs in tickets if k == "core" for l in legs}
+    alt = [r for r in sorted(el, key=edge_key("sog3")) if r["game"] not in core_games]
+    a3 = take(alt, 3, "sog3", min_p=0.55)
+    if len(a3) == 3:
+        commit("core2", [(r, "sog3") for r in a3])
+
+    # ---- the one goal ticket ----
+    # goals4: anytime goal, 0.33-0.42 band, four games, best book edge first.
+    # Only forwards with >= 3.0 SOG/g (Nov 3: the 0-SOG goal legs were all sub-3 shooters that night).
+    band = sorted([r for r in el if 0.33 <= r["p_goal"] <= 0.42 and r["pos"] == "F" and float(r.get("sog_pg", 0)) >= 3.0],
+                  key=edge_key("goal"))
+    g4 = take(band, 4, "goal")
     if len(g4) == 4:
-        tickets.append(("goals4", [_mk_leg(r, "goal") for r in g4]))
-    g6 = _distinct_games(band, 6, "game")
-    if len(g6) == 6:
-        tickets.append(("goals6", [_mk_leg(r, "goal") for r in g6]))
-
-    # ladder4: top 4+ shots, distinct games
-    l4 = _distinct_games(sorted(el, key=lambda r: -r["p_sog4"]), 4, "game")
-    if len(l4) == 4 and l4[-1]["p_sog4"] >= 0.35:
-        tickets.append(("ladder4", [_mk_leg(r, "sog4") for r in l4]))
-
-    # pace6: 4 from fastest game (2x 4+ shots, 2x goal) + 2 from second (3+ shots, goal)
-    if len(games) >= 2:
-        g0 = [r for r in el if r["game"] == games[0]]; g1 = [r for r in el if r["game"] == games[1]]
-        s4 = [r for r in sorted(g0, key=lambda r: -r["p_sog4"]) if r["p_sog4"] >= 0.35][:2]
-        gg = [r for r in sorted(g0, key=lambda r: -r["p_goal"]) if r["pid"] not in {x["pid"] for x in s4} and r["pos"] == "F" and r["p_goal"] >= 0.33][:2]
-        s3b = sorted(g1, key=lambda r: -r["p_sog3"])[:1]
-        ggb = [r for r in sorted(g1, key=lambda r: -r["p_goal"]) if r["pid"] not in {x["pid"] for x in s3b} and r["pos"] == "F"][:1]
-        if len(s4) == 2 and len(gg) == 2 and s3b and ggb:
-            tickets.append(("pace6", [_mk_leg(r, "sog4") for r in s4] + [_mk_leg(r, "goal") for r in gg]
-                            + [_mk_leg(s3b[0], "sog3"), _mk_leg(ggb[0], "goal")]))
+        commit("goals4", [(r, "goal") for r in g4])
 
     out = []
     for kind, legs in tickets:

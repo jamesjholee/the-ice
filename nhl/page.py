@@ -152,8 +152,9 @@ def _parlays_html(out_dir, rows_by_pid):
         return ""
     if not tickets:
         return ""
-    NAMES = {"core": "Core · 3 shots legs", "stack": "Team stack · 2+ shots", "mix": "Pace mix · one game",
-             "goals4": "Longshot · 4 goal scorers", "goals6": "Longshot · 6 goal scorers", "ladder4": "Longshot · 4+ shots ladder", "pace6": "Longshot · pace stack"}
+    NAMES = {"core": "Core · 3 × 3+ shots", "core2": "Core B · 3 × 3+ shots", "stack": "Team stack · 2+ shots",
+             "ladder4": "Longshot · 4 × 4+ shots", "shots6": "Longshot · 6 × 2+ shots", "goals4": "Longshot · 4 goal scorers",
+             "mix": "Pace mix · one game", "goals6": "Longshot · 6 goal scorers", "pace6": "Longshot · pace stack"}
     MK = {"goal": "ATG", "sog2": "2+ SOG", "sog3": "3+ SOG", "sog4": "4+ SOG"}
     body = ""
     for t in tickets:
