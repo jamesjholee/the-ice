@@ -72,20 +72,32 @@ def toi_min(s):
 
 def games_on(d, final_only=True):
     """Return list of dicts {id, home, away, state} for regular-season games on date d."""
-    # only cache schedules for past days (today's schedule changes state as games finish)
-    sched = _get(f"{WEB}/schedule/{d.isoformat()}", cache=final_only and d < date.today())
-    out = []
+    # Cache a day's schedule only once every game on it is final. (Nov 3-4 2026: a schedule
+    # cached mid-evening with games LIVE was reused forever, so nothing graded.)
+    url = f"{WEB}/schedule/{d.isoformat()}"
+    key = os.path.join(CACHE, url.replace("https://", "").replace("/", "_").replace(":", "")[:200] + ".json")
+    sched = _get(url, cache=False) if not os.path.exists(key) else json.load(open(key))
+    out, all_final, any_game = [], True, False
     for day in sched.get("gameWeek", []):
         if day["date"] != d.isoformat():
             continue
         for g in day["games"]:
             if g.get("gameType") != 2:
                 continue
+            any_game = True
             st = g.get("gameState")
+            if st not in ("OFF", "FINAL"):
+                all_final = False
             if final_only and st not in ("OFF", "FINAL"):
                 continue
             out.append(dict(id=g["id"], home=g["homeTeam"]["abbrev"], away=g["awayTeam"]["abbrev"],
                             state=st, start=g.get("startTimeUTC")))
+    if os.path.exists(key) and not all_final:
+        # stale non-final cache from an earlier run: refetch once and retry
+        os.remove(key)
+        return games_on(d, final_only)
+    if any_game and all_final and not os.path.exists(key):
+        json.dump(sched, open(key, "w"))
     return out
 
 

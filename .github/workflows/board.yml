@@ -32,8 +32,9 @@ jobs:
         id: mode
         run: |
           H=$(TZ=America/New_York date +%H)
+          if [ "$H" -ge 15 ]; then echo "evening=1" >> $GITHUB_OUTPUT; else echo "evening=0" >> $GITHUB_OUTPUT; fi
           if [ -n "${{ secrets.ODDS_API_KEY }}" ] && [ "$H" -ge 15 ]; then echo "odds=1" >> $GITHUB_OUTPUT; else echo "odds=0" >> $GITHUB_OUTPUT; fi
-          echo "ET hour $H, odds=$( [ "$H" -ge 15 ] && echo yes || echo no )"
+          echo "ET hour $H, evening=$( [ "$H" -ge 15 ] && echo yes || echo no ), odds key $( [ -n "${{ secrets.ODDS_API_KEY }}" ] && echo set || echo MISSING )"
       - name: grade ungraded picks
         run: |
           mkdir -p docs
@@ -51,7 +52,7 @@ jobs:
             || { echo "BOARD FAILED"; tail -40 docs/last_run.log; exit 1; }
           rm -f docs/odds.json
       - name: build parlays (afternoon/evening runs)
-        if: steps.mode.outputs.odds == '1' || github.event_name == 'workflow_dispatch'
+        if: steps.mode.outputs.evening == '1' || github.event_name == 'workflow_dispatch'
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         run: |
