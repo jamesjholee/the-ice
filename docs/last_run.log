@@ -1,6 +1,5 @@
-== grade Thu Nov  5 19:43:59 UTC 2026 ==
+== grade Thu Nov  5 21:27:50 UTC 2026 ==
 nothing to grade
-graded 6 parlay tickets
 
 === Parlays ===
 core     0/1  P&L -1.00u
@@ -12,7 +11,7 @@ stack    0/1  P&L -1.00u
 TOTAL    0/6  P&L -6.00u
 
 === Record ===
-== board Thu Nov  5 19:44:00 UTC 2026 ==
+== board Thu Nov  5 21:27:50 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  B. Hagel                TBL  CHI  F    4.31  21.4  0.519   -108        0.702       
 2  K. Connor               WPG  VAN  F    3.93  21.5  0.519   -108        0.664       
@@ -41,7 +40,7 @@ TOTAL    0/6  P&L -6.00u
 25 F. Forsberg             NSH  COL  F     2.5  20.5   0.32   +212        0.391       
 
 384 players, 11 games -> docs/index.html
-== parlays Thu Nov  5 19:44:36 UTC 2026 ==
+== parlays Thu Nov  5 21:28:29 UTC 2026 ==
 
 [core] fair +225 (30.764%)  (no book prices)
    B. Hagel        TBL sog3 70%         4.31 SOG/g · L5 3.6 · 21.4 min · PP 24% · vs CHI A (29.6)
@@ -73,5 +72,5 @@ TOTAL    0/6  P&L -6.00u
    L. Raymond      DET goal 37%         3.13 SOG/g · L5 3.0 · 20.2 min · PP 31% · vs VGK C (26.0) · sh% 10.9
    C. Perfetti     WPG goal 35%         3.0 SOG/g · L5 3.4 · 18.8 min · vs VAN A (31.0) · sh% 11.0
 
-logged 5 tickets to parlays.csv
+logged 0 tickets to parlays.csv
 page re-rendered with parlays
