@@ -1,17 +1,20 @@
-== grade Fri Nov  6 01:49:11 UTC 2026 ==
+== grade Fri Nov  6 03:29:13 UTC 2026 ==
 nothing to grade
+graded 5 parlay tickets
 
 === Parlays ===
-core     0/1  P&L -1.00u
-goals4   0/1  P&L -1.00u
+core     0/2  P&L -2.00u
+core2    1/1  P&L +4.01u
+goals4   0/2  P&L -2.00u
 goals6   0/1  P&L -1.00u
-ladder4  0/1  P&L -1.00u
+ladder4  0/2  P&L -2.00u
 mix      0/1  P&L -1.00u
+shots6   1/1  P&L +3.13u
 stack    0/1  P&L -1.00u
-TOTAL    0/6  P&L -6.00u
+TOTAL    2/11  P&L -1.86u
 
 === Record ===
-== board Fri Nov  6 01:49:11 UTC 2026 ==
+== board Fri Nov  6 03:29:13 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  B. Hagel                TBL  CHI  F    4.31  21.4  0.519   -108        0.702       
 2  K. Connor               WPG  VAN  F    3.93  21.5  0.519   -108        0.664       
@@ -40,7 +43,7 @@ TOTAL    0/6  P&L -6.00u
 25 F. Forsberg             NSH  COL  F     2.5  20.5   0.32   +212        0.391       
 
 384 players, 11 games -> docs/index.html
-== parlays Fri Nov  6 01:49:46 UTC 2026 ==
+== parlays Fri Nov  6 03:29:49 UTC 2026 ==
 
 [core] fair +225 (30.764%)  (no book prices)
    B. Hagel        TBL sog3 70%         4.31 SOG/g · L5 3.6 · 21.4 min · PP 24% · vs CHI A (29.6)
