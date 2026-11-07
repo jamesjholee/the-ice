@@ -1,6 +1,5 @@
-== grade Sat Nov  7 02:54:55 UTC 2026 ==
+== grade Sat Nov  7 19:24:22 UTC 2026 ==
 nothing to grade
-graded 2 parlay tickets
 
 === Parlays ===
 core     1/3  P&L +0.14u
@@ -14,46 +13,32 @@ stack    0/2  P&L -1.00u
 TOTAL    3/13  P&L +0.29u
 
 === Record ===
-== board Sat Nov  7 02:54:55 UTC 2026 ==
+== board Sat Nov  7 19:24:22 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
-1  M. Boldy                MIN  SJS  F    4.19  21.6  0.503   -101        0.694       
-2  K. Kaprizov             MIN  SJS  F    3.19  21.8  0.489   +104        0.543       
-3  C. Gauthier             ANA  CGY  F    4.07  18.0  0.485   +106         0.67       
-4  T. Thompson             BUF  CBJ  F    4.36  19.4  0.473   +112        0.684       
-5  M. Celebrini            SJS  MIN  F    3.71  22.7  0.419   +139        0.579       
-6  J. Eriksson Ek          MIN  SJS  F    3.44  20.0  0.418   +139        0.584       
-7  B. Sennecke             ANA  CGY  F     2.6  20.5  0.389   +157        0.431       
-8  A. Fantilli             CBJ  BUF  F    3.31  21.2  0.374   +167        0.536       
-9  J. Quinn                BUF  CBJ  F    2.64  19.3  0.322   +211        0.418       
-10 M. Granlund             ANA  CGY  F    1.79  20.5  0.293   +241         0.27       
-11 Z. Benson               BUF  CBJ  F     2.5  20.1  0.288   +247        0.392       
-12 L. Carlsson             ANA  CGY  F    1.73  20.2  0.287   +249        0.259       
-13 K. Johnson              CBJ  BUF  F    2.15  18.2  0.284   +252        0.329       
-14 J. Farabee              CGY  ANA  F     2.4  18.8  0.283   +253        0.372       
-15 N. Ostlund              BUF  CBJ  F    2.43  19.2  0.282   +254        0.378       
-16 C. Coyle                CBJ  BUF  F     2.0  20.0  0.272   +267          0.3       
-17 M. Backlund             CGY  ANA  F    2.85  18.3  0.268   +273        0.453       
-18 W. Smith                SJS  MIN  F     2.5  19.2  0.262   +282        0.378       
-19 M. Gridin               CGY  ANA  F     2.4  15.8  0.237   +322        0.372       
-20 M. Coronato             CGY  ANA  F    2.13  17.5  0.232   +331        0.322       
-21 B. Coleman              MIN  SJS  F    2.12  15.9  0.225   +344        0.345       
-22 Q. Hughes               MIN  SJS  D    2.69  27.9  0.224   +347        0.454       
-23 M. Shabanov             MIN  SJS  F     1.4  15.1  0.208   +381        0.195       
-24 D. Yurov                MIN  SJS  F    1.62  14.7  0.205   +387        0.242       
-25 Z. Werenski             CBJ  BUF  D    2.92  28.5  0.201   +398        0.471       
+1  L. Draisaitl            EDM  VAN  F    3.53  21.8  0.503   -101        0.603       
+2  C. McDavid              EDM  VAN  F    2.87  23.7  0.468   +114         0.49       
+3  M. Boldy                MIN  TBL  F    4.35  21.5  0.455   +120        0.657       
+4  B. Hagel                TBL  MIN  F    4.21  21.0  0.448   +123        0.648       
+5  J. Hughes               NJD  NYI  F     4.0  20.1  0.446   +124        0.636       
+6  A. Panarin              LAK  PIT  F    3.31  21.8  0.442   +126         0.54       
+7  C. Caufield             MTL  TOR  F     3.4  18.8  0.432   +132        0.577       
+8  K. Kaprizov             MIN  TBL  F    3.12  21.6   0.43   +132        0.476       
+9  A. DeBrincat            DET  COL  F    3.94  20.0  0.428   +134        0.626       
+10 S. Reinhart             FLA  WSH  F    3.43  19.7  0.424   +136        0.552       
+11 A. Kempe                LAK  PIT  F     3.5  20.6  0.424   +136        0.571       
+12 M. Celebrini            SJS  DAL  F    3.87  22.8  0.421   +137        0.571       
+13 J. Robertson            DAL  SJS  F    3.33  19.7  0.415   +141        0.566       
+14 N. Suzuki               MTL  TOR  F    3.11  21.9  0.409   +144        0.528       
+15 A. Matthews             TOR  MTL  F    3.13  20.5  0.407   +146        0.515       
+16 N. MacKinnon            COL  DET  F    3.31  20.9  0.401   +149        0.516       
+17 S. Aho                  CAR  CHI  F    2.94  20.1  0.392   +155        0.496       
+18 L. Raymond              DET  COL  F    3.12  20.3  0.376   +166          0.5       
+19 W. Nylander             TOR  MTL  F    2.87  20.4  0.369   +171        0.468       
+20 B. Horvat               NYI  NJD  F    3.07  20.9  0.363   +176        0.472       
+21 J. Eriksson Ek          MIN  TBL  F    3.35  20.0  0.356   +181        0.514       
+22 V. Arvidsson            DET  COL  F     3.0  19.0  0.355   +181        0.479       
+23 T. Stützle              OTT  UTA  F    2.29  22.0  0.354   +183        0.343       
+24 A. Lafrenière           NYR  SEA  F     2.5  18.7  0.348   +187        0.422       
+25 B. Tkachuk              FLA  WSH  F    3.29  16.4  0.344   +191        0.529       
 
-107 players, 3 games -> docs/index.html
-== parlays Sat Nov  7 02:55:05 UTC 2026 ==
-
-[core] fair +214 (31.805%)  (no book prices)
-   M. Boldy        MIN sog3 69%         4.19 SOG/g · L5 3.2 · 21.6 min · PP 19% · vs SJS A (30.4)
-   T. Thompson     BUF sog3 68%         4.36 SOG/g · L5 4.0 · 19.4 min · vs CBJ B (27.2)
-   C. Gauthier     ANA sog3 67%         4.07 SOG/g · L5 5.6 · 18.0 min · PP 26% · vs CGY A (29.6)
-
-[stack] fair -111 (52.533%)  (no book prices)
-   M. Boldy        MIN sog2 87%         4.19 SOG/g · L5 3.2 · 21.6 min · PP 19% · vs SJS A (30.4)
-   J. Eriksson Ek  MIN sog2 79%         3.44 SOG/g · L5 3.8 · 20.0 min · PP 23% · vs SJS A (30.4)
-   K. Kaprizov     MIN sog2 76%         3.19 SOG/g · L5 2.4 · 21.8 min · PP 19% · vs SJS A (30.4)
-
-logged 0 tickets to parlays.csv
-page re-rendered with parlays
+430 players, 12 games -> docs/index.html
