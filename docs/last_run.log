@@ -1,4 +1,4 @@
-== grade Fri Nov  6 20:51:31 UTC 2026 ==
+== grade Sat Nov  7 01:14:14 UTC 2026 ==
 nothing to grade
 
 === Parlays ===
@@ -13,7 +13,7 @@ stack    0/1  P&L -1.00u
 TOTAL    2/11  P&L -1.86u
 
 === Record ===
-== board Fri Nov  6 20:51:31 UTC 2026 ==
+== board Sat Nov  7 01:14:15 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  M. Boldy                MIN  SJS  F    4.19  21.6  0.503   -101        0.694       
 2  K. Kaprizov             MIN  SJS  F    3.19  21.8  0.489   +104        0.543       
@@ -42,7 +42,7 @@ TOTAL    2/11  P&L -1.86u
 25 Z. Werenski             CBJ  BUF  D    2.92  28.5  0.201   +398        0.471       
 
 107 players, 3 games -> docs/index.html
-== parlays Fri Nov  6 20:51:42 UTC 2026 ==
+== parlays Sat Nov  7 01:14:25 UTC 2026 ==
 
 [core] fair +214 (31.805%)  (no book prices)
    M. Boldy        MIN sog3 69%         4.19 SOG/g · L5 3.2 · 21.6 min · PP 19% · vs SJS A (30.4)
@@ -54,5 +54,5 @@ TOTAL    2/11  P&L -1.86u
    J. Eriksson Ek  MIN sog2 79%         3.44 SOG/g · L5 3.8 · 20.0 min · PP 23% · vs SJS A (30.4)
    K. Kaprizov     MIN sog2 76%         3.19 SOG/g · L5 2.4 · 21.8 min · PP 19% · vs SJS A (30.4)
 
-logged 2 tickets to parlays.csv
+logged 0 tickets to parlays.csv
 page re-rendered with parlays
