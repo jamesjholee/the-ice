@@ -12,3 +12,8 @@ id,date,kind,legs,n_legs,fair_p,fair_odds,book_odds,book_p,stake,result,pnl,note
 11,2026-11-05,goals4,8480027:J. Robertson:goal:0.5::0.394|8481540:C. Caufield:goal:0.5::0.378|8482078:L. Raymond:goal:0.5::0.367|8482149:C. Perfetti:goal:0.5::0.347,4,0.01897,+5172,,,1.0,0,-1.0000,
 12,2026-11-06,core,8481557:M. Boldy:sog3:2.5::0.694|8479420:T. Thompson:sog3:2.5::0.684|8483445:C. Gauthier:sog3:2.5::0.670,3,0.31805,+214,,,1.0,1,2.1442, void leg(s) removed
 13,2026-11-06,stack,8481557:M. Boldy:sog2:1.5::0.866|8478493:J. Eriksson Ek:sog2:1.5::0.794|8478864:K. Kaprizov:sog2:1.5::0.764,3,0.52533,-111,,,1.0,0,0,all legs void
+14,2026-11-07,core,8481557:M. Boldy:sog3:2.5::0.657|8481559:J. Hughes:sog3:2.5::0.636|8479337:A. DeBrincat:sog3:2.5::0.626,3,0.26158,+282,,,1.0,,,
+15,2026-11-07,ladder4,8481557:M. Boldy:sog4:3.5::0.447|8481559:J. Hughes:sog4:3.5::0.424|8479337:A. DeBrincat:sog4:3.5::0.414|8477934:L. Draisaitl:sog4:3.5::0.391,4,0.03068,+3159,,,1.0,,,
+16,2026-11-07,shots6,8479542:B. Hagel:sog2:1.5::0.837|8477934:L. Draisaitl:sog2:1.5::0.808|8481540:C. Caufield:sog2:1.5::0.789|8477960:A. Kempe:sog2:1.5::0.785|8484801:M. Celebrini:sog2:1.5::0.785|8478414:T. Meier:sog2:1.5::0.782,6,0.25713,+289,,,1.0,,,
+17,2026-11-07,core2,8481540:C. Caufield:sog3:2.5::0.577|8477960:A. Kempe:sog3:2.5::0.571|8484801:M. Celebrini:sog3:2.5::0.571,3,0.18813,+432,,,1.0,,,
+18,2026-11-07,goals4,8480027:J. Robertson:goal:0.5::0.415|8480018:N. Suzuki:goal:0.5::0.409|8477492:N. MacKinnon:goal:0.5::0.401|8477500:B. Horvat:goal:0.5::0.363,4,0.02471,+3947,,,1.0,,,

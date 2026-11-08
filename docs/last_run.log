@@ -1,4 +1,4 @@
-== grade Sat Nov  7 19:24:22 UTC 2026 ==
+== grade Sun Nov  8 00:54:47 UTC 2026 ==
 nothing to grade
 
 === Parlays ===
@@ -13,7 +13,7 @@ stack    0/2  P&L -1.00u
 TOTAL    3/13  P&L +0.29u
 
 === Record ===
-== board Sat Nov  7 19:24:22 UTC 2026 ==
+== board Sun Nov  8 00:54:47 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  L. Draisaitl            EDM  VAN  F    3.53  21.8  0.503   -101        0.603       
 2  C. McDavid              EDM  VAN  F    2.87  23.7  0.468   +114         0.49       
@@ -42,3 +42,37 @@ TOTAL    3/13  P&L +0.29u
 25 B. Tkachuk              FLA  WSH  F    3.29  16.4  0.344   +191        0.529       
 
 430 players, 12 games -> docs/index.html
+== parlays Sun Nov  8 00:55:27 UTC 2026 ==
+
+[core] fair +282 (26.158%)  (no book prices)
+   M. Boldy        MIN sog3 66%         4.35 SOG/g · L5 4.0 · 21.5 min · PP 19% · vs TBL C (24.7)
+   J. Hughes       NJD sog3 64%         4.0 SOG/g · L5 5.2 · 20.1 min · PP 27% · vs NYI B (27.1)
+   A. DeBrincat    DET sog3 63%         3.94 SOG/g · L5 4.0 · 20.0 min · PP 30% · vs COL B (27.0)
+
+[ladder4] fair +3159 (3.068%)  (no book prices)
+   M. Boldy        MIN sog4 45%         4.35 SOG/g · L5 4.0 · 21.5 min · PP 19% · vs TBL C (24.7)
+   J. Hughes       NJD sog4 42%         4.0 SOG/g · L5 5.2 · 20.1 min · PP 27% · vs NYI B (27.1)
+   A. DeBrincat    DET sog4 41%         3.94 SOG/g · L5 4.0 · 20.0 min · PP 30% · vs COL B (27.0)
+   L. Draisaitl    EDM sog4 39%         3.53 SOG/g · L5 3.4 · 21.8 min · PP 19% · vs VAN A (30.9)
+
+[shots6] fair +289 (25.713%)  (no book prices)
+   B. Hagel        TBL sog2 84%         4.21 SOG/g · L5 3.8 · 21.0 min · PP 24% · vs MIN C (25.5)
+   L. Draisaitl    EDM sog2 81%         3.53 SOG/g · L5 3.4 · 21.8 min · PP 19% · vs VAN A (30.9)
+   C. Caufield     MTL sog2 79%         3.4 SOG/g · L5 3.6 · 18.8 min · PP 19% · vs TOR A (30.3)
+   A. Kempe        LAK sog2 78%         3.5 SOG/g · L5 3.4 · 20.6 min · PP 18% · vs PIT B (28.0)
+   M. Celebrini    SJS sog2 78%         3.87 SOG/g · L5 4.2 · 22.8 min · vs DAL C (22.9)
+   T. Meier        NJD sog2 78%         3.53 SOG/g · L5 2.2 · 16.3 min · PP 22% · vs NYI B (27.1)
+
+[core2] fair +432 (18.813%)  (no book prices)
+   C. Caufield     MTL sog3 58%         3.4 SOG/g · L5 3.6 · 18.8 min · PP 19% · vs TOR A (30.3)
+   A. Kempe        LAK sog3 57%         3.5 SOG/g · L5 3.4 · 20.6 min · PP 18% · vs PIT B (28.0)
+   M. Celebrini    SJS sog3 57%         3.87 SOG/g · L5 4.2 · 22.8 min · vs DAL C (22.9)
+
+[goals4] fair +3947 (2.471%)  (no book prices)
+   J. Robertson    DAL goal 42%         3.33 SOG/g · L5 3.2 · 19.7 min · vs SJS A (30.3) · sh% 12.0
+   N. Suzuki       MTL goal 41%         3.11 SOG/g · L5 3.6 · 21.9 min · PP 19% · vs TOR A (30.3) · sh% 12.5
+   N. MacKinnon    COL goal 40%         3.31 SOG/g · L5 2.2 · 20.9 min · PP 27% · vs DET C (25.5) · sh% 11.1
+   B. Horvat       NYI goal 36%         3.07 SOG/g · L5 2.6 · 20.9 min · PP 21% · vs NJD C (25.0) · sh% 11.9
+
+logged 5 tickets to parlays.csv
+page re-rendered with parlays
