@@ -1,6 +1,5 @@
-== grade Mon Nov  9 02:45:13 UTC 2026 ==
+== grade Mon Nov  9 23:46:00 UTC 2026 ==
 nothing to grade
-graded 2 parlay tickets
 
 === Parlays ===
 core     1/5  P&L -0.86u
@@ -14,47 +13,36 @@ stack    0/2  P&L -1.00u
 TOTAL    3/20  P&L -1.71u
 
 === Record ===
-== board Mon Nov  9 02:45:13 UTC 2026 ==
+== board Mon Nov  9 23:46:00 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
-1  J. Hughes               NJD  TOR  F    4.06  20.3  0.492   +103        0.674       
-2  C. Gauthier             ANA  PIT  F    4.07  18.3  0.486   +106        0.654       
-3  B. Hagel                TBL  WPG  F    3.93  20.7  0.467   +114        0.646       
-4  K. Connor               WPG  TBL  F    3.81  21.3  0.445   +125        0.582       
-5  T. Thompson             BUF  VGK  F    4.27  19.4  0.443   +126         0.66       
-6  J. Guentzel             TBL  WPG  F    2.87  20.7  0.415   +141        0.474       
-7  S. Reinhart             FLA  BOS  F    3.33  20.1   0.41   +144        0.537       
-8  N. Kucherov             TBL  WPG  F    3.27  21.1  0.396   +153        0.543       
-9  A. Matthews             TOR  NJD  F    3.12  20.6   0.39   +156        0.479       
-10 D. Pastrnak             BOS  FLA  F    3.53  20.5  0.388   +158        0.542       
-11 B. Sennecke             ANA  PIT  F    2.62  20.7  0.379   +164        0.422       
-12 B. Tkachuk              FLA  BOS  F    3.53  16.8  0.374   +168        0.568       
-13 W. Nylander             TOR  NJD  F    2.94  20.6  0.366   +173        0.448       
-14 J. Eichel               VGK  BUF  F    2.56  20.2  0.333   +200        0.406       
-15 T. Meier                NJD  TOR  F    3.81  16.4  0.332   +202        0.639       
-16 N. Hischier             NJD  TOR  F    2.44  18.1  0.314   +219        0.404       
-17 J. Quinn                BUF  VGK  F    2.67  19.1   0.31   +223        0.412       
-18 L. Evangelista          NJD  TOR  F    2.77  17.1  0.308   +224        0.466       
-19 B. Point                TBL  WPG  F     2.2  19.3  0.307   +226        0.349       
-20 J. Farabee              CGY  PHI  F     2.5  19.0  0.303   +230        0.397       
-21 M. Stone                VGK  BUF  F    2.12  18.6  0.302   +231        0.323       
-22 C. Verhaeghe            FLA  BOS  F    2.33  18.5    0.3   +234        0.361       
-23 R. Rakell               PIT  ANA  F    2.38  19.8  0.298   +236        0.364       
-24 T. Zegras               PHI  CGY  F    2.25  19.0  0.297   +237        0.363       
-25 M. Marner               VGK  BUF  F    2.36  20.1  0.291   +244        0.367       
+1  L. Draisaitl            EDM  NYR  F    3.75  22.0    0.5   +100        0.602       
+2  M. Celebrini            SJS  NYI  F     4.0  23.1  0.487   +105        0.651       
+3  C. McDavid              EDM  NYR  F    2.88  23.8  0.429   +133         0.46       
+4  B. Horvat               NYI  SJS  F     3.0  20.9  0.408   +145        0.509       
+5  A. Lafrenière           NYR  EDM  F    2.47  18.8  0.297   +237        0.382       
+6  T. Zegras               PHI  VAN  F    2.24  18.9  0.296   +238        0.369       
+7  W. Smith                SJS  NYI  F     2.5  19.6  0.295   +239        0.404       
+8  B. Boeser               VAN  PHI  F    1.71  19.1  0.278   +260        0.242       
+9  T. Foerster             PHI  VAN  F    2.25  17.1  0.268   +273        0.372       
+10 S. Holmstrom            NYI  SJS  F    1.93  18.3  0.267   +274        0.305       
+11 M. Michkov              PHI  VAN  F    1.47  16.1  0.265   +278        0.212       
+12 P. Dorofeyev            NYR  EDM  F     2.6  17.2  0.264   +279        0.406       
+13 M. Schaefer             NYI  SJS  D     3.6  26.7  0.262   +282        0.608       
+14 B. Schenn               NYI  SJS  F    1.87  16.7  0.253   +295        0.291       
+15 O. Tippett              PHI  VAN  F    2.55  15.7  0.248   +303         0.43       
+16 K. Palmieri             NYI  SJS  F    1.93  16.7   0.24   +316        0.305       
+17 J. Miller               NYR  EDM  F    1.87  19.3  0.237   +322        0.268       
+18 M. Zibanejad            NYR  EDM  F    1.73  20.7  0.236   +323        0.242       
+19 R. Nugent-Hopkins       EDM  NYR  F    1.78  18.4  0.233   +329        0.254       
+20 G. Perreault            NYR  EDM  F    2.27  17.2  0.233   +330        0.345       
+21 J. DeBrusk              VAN  PHI  F    2.13  16.8  0.231   +333        0.326       
+22 E. Pettersson           VAN  PHI  F    1.24  20.5  0.227   +341         0.15       
+23 V. Podkolzin            EDM  NYR  F    1.56  17.5  0.224   +346        0.212       
+24 K. Kapanen              EDM  NYR  F     1.5  18.4  0.219   +356        0.199       
+25 C. Dvorak               PHI  VAN  F    1.41  18.0  0.216   +362          0.2       
 
-216 players, 6 games -> docs/index.html
-== parlays Mon Nov  9 02:45:34 UTC 2026 ==
-
-[core] fair +244 (29.093%)  (no book prices)
-   J. Hughes       NJD sog3 67%         4.06 SOG/g · L5 5.0 · 20.3 min · PP 27% · vs TOR A (30.1)
-   T. Thompson     BUF sog3 66%         4.27 SOG/g · L5 4.6 · 19.4 min · vs VGK C (26.0)
-   C. Gauthier     ANA sog3 65%         4.07 SOG/g · L5 5.6 · 18.3 min · PP 24% · vs PIT B (28.0)
-
-[ladder4] fair +2391 (4.014%)  (no book prices)
-   J. Hughes       NJD sog4 46%         4.06 SOG/g · L5 5.0 · 20.3 min · PP 27% · vs TOR A (30.1)
-   T. Thompson     BUF sog4 45%         4.27 SOG/g · L5 4.6 · 19.4 min · vs VGK C (26.0)
-   C. Gauthier     ANA sog4 44%         4.07 SOG/g · L5 5.6 · 18.3 min · PP 24% · vs PIT B (28.0)
-   B. Hagel        TBL sog4 43%         3.93 SOG/g · L5 2.4 · 20.7 min · PP 24% · vs WPG A (29.0)
+111 players, 3 games -> docs/index.html
+== parlays Mon Nov  9 23:46:11 UTC 2026 ==
 
 logged 0 tickets to parlays.csv
 page re-rendered with parlays
