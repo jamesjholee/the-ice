@@ -1,19 +1,20 @@
-== grade Mon Nov  9 01:14:14 UTC 2026 ==
+== grade Mon Nov  9 02:45:13 UTC 2026 ==
 nothing to grade
+graded 2 parlay tickets
 
 === Parlays ===
-core     1/4  P&L +0.14u
+core     1/5  P&L -0.86u
 core2    1/2  P&L +4.01u
 goals4   0/3  P&L -2.00u
 goals6   0/1  P&L -1.00u
-ladder4  0/3  P&L -2.00u
+ladder4  0/4  P&L -3.00u
 mix      0/1  P&L -1.00u
 shots6   1/2  P&L +3.13u
 stack    0/2  P&L -1.00u
-TOTAL    3/18  P&L +0.29u
+TOTAL    3/20  P&L -1.71u
 
 === Record ===
-== board Mon Nov  9 01:14:15 UTC 2026 ==
+== board Mon Nov  9 02:45:13 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  J. Hughes               NJD  TOR  F    4.06  20.3  0.492   +103        0.674       
 2  C. Gauthier             ANA  PIT  F    4.07  18.3  0.486   +106        0.654       
@@ -42,7 +43,7 @@ TOTAL    3/18  P&L +0.29u
 25 M. Marner               VGK  BUF  F    2.36  20.1  0.291   +244        0.367       
 
 216 players, 6 games -> docs/index.html
-== parlays Mon Nov  9 01:14:34 UTC 2026 ==
+== parlays Mon Nov  9 02:45:34 UTC 2026 ==
 
 [core] fair +244 (29.093%)  (no book prices)
    J. Hughes       NJD sog3 67%         4.06 SOG/g · L5 5.0 · 20.3 min · PP 27% · vs TOR A (30.1)
@@ -55,5 +56,5 @@ TOTAL    3/18  P&L +0.29u
    C. Gauthier     ANA sog4 44%         4.07 SOG/g · L5 5.6 · 18.3 min · PP 24% · vs PIT B (28.0)
    B. Hagel        TBL sog4 43%         3.93 SOG/g · L5 2.4 · 20.7 min · PP 24% · vs WPG A (29.0)
 
-logged 2 tickets to parlays.csv
+logged 0 tickets to parlays.csv
 page re-rendered with parlays

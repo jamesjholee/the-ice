@@ -17,5 +17,5 @@ id,date,kind,legs,n_legs,fair_p,fair_odds,book_odds,book_p,stake,result,pnl,note
 16,2026-11-07,shots6,8479542:B. Hagel:sog2:1.5::0.837|8477934:L. Draisaitl:sog2:1.5::0.808|8481540:C. Caufield:sog2:1.5::0.789|8477960:A. Kempe:sog2:1.5::0.785|8484801:M. Celebrini:sog2:1.5::0.785|8478414:T. Meier:sog2:1.5::0.782,6,0.25713,+289,,,1.0,0,0,all legs void
 17,2026-11-07,core2,8481540:C. Caufield:sog3:2.5::0.577|8477960:A. Kempe:sog3:2.5::0.571|8484801:M. Celebrini:sog3:2.5::0.571,3,0.18813,+432,,,1.0,0,0,all legs void
 18,2026-11-07,goals4,8480027:J. Robertson:goal:0.5::0.415|8480018:N. Suzuki:goal:0.5::0.409|8477492:N. MacKinnon:goal:0.5::0.401|8477500:B. Horvat:goal:0.5::0.363,4,0.02471,+3947,,,1.0,0,0,all legs void
-19,2026-11-08,core,8481559:J. Hughes:sog3:2.5::0.674|8479420:T. Thompson:sog3:2.5::0.660|8483445:C. Gauthier:sog3:2.5::0.654,3,0.29093,+244,,,1.0,,,
-20,2026-11-08,ladder4,8481559:J. Hughes:sog4:3.5::0.464|8479420:T. Thompson:sog4:3.5::0.450|8483445:C. Gauthier:sog4:3.5::0.443|8479542:B. Hagel:sog4:3.5::0.434,4,0.04014,+2391,,,1.0,,,
+19,2026-11-08,core,8481559:J. Hughes:sog3:2.5::0.674|8479420:T. Thompson:sog3:2.5::0.660|8483445:C. Gauthier:sog3:2.5::0.654,3,0.29093,+244,,,1.0,0,-1.0000, void leg(s) removed
+20,2026-11-08,ladder4,8481559:J. Hughes:sog4:3.5::0.464|8479420:T. Thompson:sog4:3.5::0.450|8483445:C. Gauthier:sog4:3.5::0.443|8479542:B. Hagel:sog4:3.5::0.434,4,0.04014,+2391,,,1.0,0,-1.0000, void leg(s) removed
