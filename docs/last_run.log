@@ -1,4 +1,4 @@
-== grade Mon Nov  9 23:46:00 UTC 2026 ==
+== grade Tue Nov 10 03:49:51 UTC 2026 ==
 nothing to grade
 
 === Parlays ===
@@ -13,7 +13,7 @@ stack    0/2  P&L -1.00u
 TOTAL    3/20  P&L -1.71u
 
 === Record ===
-== board Mon Nov  9 23:46:00 UTC 2026 ==
+== board Tue Nov 10 03:49:51 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  L. Draisaitl            EDM  NYR  F    3.75  22.0    0.5   +100        0.602       
 2  M. Celebrini            SJS  NYI  F     4.0  23.1  0.487   +105        0.651       
@@ -42,7 +42,7 @@ TOTAL    3/20  P&L -1.71u
 25 C. Dvorak               PHI  VAN  F    1.41  18.0  0.216   +362          0.2       
 
 111 players, 3 games -> docs/index.html
-== parlays Mon Nov  9 23:46:11 UTC 2026 ==
+== parlays Tue Nov 10 03:50:02 UTC 2026 ==
 
 logged 0 tickets to parlays.csv
 page re-rendered with parlays
