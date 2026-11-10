@@ -19,3 +19,8 @@ id,date,kind,legs,n_legs,fair_p,fair_odds,book_odds,book_p,stake,result,pnl,note
 18,2026-11-07,goals4,8480027:J. Robertson:goal:0.5::0.415|8480018:N. Suzuki:goal:0.5::0.409|8477492:N. MacKinnon:goal:0.5::0.401|8477500:B. Horvat:goal:0.5::0.363,4,0.02471,+3947,,,1.0,0,0,all legs void
 19,2026-11-08,core,8481559:J. Hughes:sog3:2.5::0.674|8479420:T. Thompson:sog3:2.5::0.660|8483445:C. Gauthier:sog3:2.5::0.654,3,0.29093,+244,,,1.0,0,-1.0000, void leg(s) removed
 20,2026-11-08,ladder4,8481559:J. Hughes:sog4:3.5::0.464|8479420:T. Thompson:sog4:3.5::0.450|8483445:C. Gauthier:sog4:3.5::0.443|8479542:B. Hagel:sog4:3.5::0.434,4,0.04014,+2391,,,1.0,0,-1.0000, void leg(s) removed
+21,2026-11-09,core,8481557:M. Boldy:sog3:2.5::0.678|8481559:J. Hughes:sog3:2.5::0.650|8479337:A. DeBrincat:sog3:2.5::0.630,3,0.27764,+260,,,1.0,,,
+22,2026-11-09,stack,8481557:M. Boldy:sog2:1.5::0.856|8478493:J. Eriksson Ek:sog2:1.5::0.761|8478864:K. Kaprizov:sog2:1.5::0.754,3,0.49117,+104,,,1.0,,,
+23,2026-11-09,ladder4,8481559:J. Hughes:sog4:3.5::0.439|8479337:A. DeBrincat:sog4:3.5::0.418|8480801:B. Tkachuk:sog4:3.5::0.405|8477492:N. MacKinnon:sog4:3.5::0.356,4,0.02646,+3680,,,1.0,,,
+24,2026-11-09,core2,8480801:B. Tkachuk:sog3:2.5::0.617|8477492:N. MacKinnon:sog3:2.5::0.567|8477960:A. Kempe:sog3:2.5::0.562,3,0.19661,+409,,,1.0,,,
+25,2026-11-09,goals4,8477933:S. Reinhart:goal:0.5::0.416|8477960:A. Kempe:goal:0.5::0.400|8479318:A. Matthews:goal:0.5::0.399|8482078:L. Raymond:goal:0.5::0.373,4,0.02476,+3938,,,1.0,,,
