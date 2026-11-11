@@ -1,6 +1,5 @@
-== grade Tue Nov 10 21:16:29 UTC 2026 ==
+== grade Wed Nov 11 01:28:59 UTC 2026 ==
 nothing to grade
-graded 5 parlay tickets
 
 === Parlays ===
 core     1/6  P&L -0.86u
@@ -14,7 +13,7 @@ stack    0/3  P&L -1.00u
 TOTAL    3/25  P&L -1.71u
 
 === Record ===
-== board Tue Nov 10 21:16:29 UTC 2026 ==
+== board Wed Nov 11 01:28:59 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  J. Hughes               NJD  WPG  F     4.0  20.3   0.47   +113         0.65       
 2  M. Boldy                MIN  MTL  F    4.22  21.5  0.461   +117        0.678       
@@ -43,7 +42,7 @@ TOTAL    3/25  P&L -1.71u
 25 F. Forsberg             NSH  LAK  F    2.56  20.5  0.319   +213        0.408       
 
 253 players, 7 games -> docs/index.html
-== parlays Tue Nov 10 21:16:52 UTC 2026 ==
+== parlays Wed Nov 11 01:29:23 UTC 2026 ==
 
 [core] fair +260 (27.764%)  (no book prices)
    M. Boldy        MIN sog3 68%         4.22 SOG/g · L5 4.0 · 21.5 min · PP 19% · vs MTL B (28.3)
@@ -72,5 +71,5 @@ TOTAL    3/25  P&L -1.71u
    A. Matthews     TOR goal 40%         3.18 SOG/g · L5 3.6 · 20.5 min · PP 20% · vs COL B (27.0) · sh% 13.6
    L. Raymond      DET goal 37%         3.06 SOG/g · L5 3.2 · 20.2 min · PP 31% · vs STL A (29.0) · sh% 10.5
 
-logged 5 tickets to parlays.csv
+logged 0 tickets to parlays.csv
 page re-rendered with parlays
