@@ -1,6 +1,5 @@
-== grade Wed Nov 11 02:51:13 UTC 2026 ==
+== grade Wed Nov 11 21:53:58 UTC 2026 ==
 nothing to grade
-graded 5 parlay tickets
 
 === Parlays ===
 core     2/7  P&L +1.75u
@@ -14,63 +13,47 @@ stack    0/4  P&L -1.00u
 TOTAL    5/30  P&L +2.97u
 
 === Record ===
-== board Wed Nov 11 02:51:13 UTC 2026 ==
+== board Wed Nov 11 21:53:58 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
-1  J. Hughes               NJD  WPG  F     4.0  20.3   0.47   +113         0.65       
-2  M. Boldy                MIN  MTL  F    4.22  21.5  0.461   +117        0.678       
-3  K. Kaprizov             MIN  MTL  F    3.22  21.6  0.447   +124        0.529       
-4  N. MacKinnon            COL  TOR  F    3.35  20.8  0.438   +128        0.567       
-5  K. Connor               WPG  NJD  F    3.82  21.5  0.437   +129        0.586       
-6  A. DeBrincat            DET  STL  F    3.82  19.8  0.422   +137         0.63       
-7  A. Panarin              LAK  NSH  F    3.29  21.8  0.422   +137        0.546       
-8  S. Reinhart             FLA  CBJ  F    3.31  20.0  0.416   +140         0.54       
-9  A. Kempe                LAK  NSH  F    3.38  20.5    0.4   +150        0.562       
-10 A. Matthews             TOR  COL  F    3.18  20.5  0.399   +151        0.509       
-11 B. Tkachuk              FLA  CBJ  F    3.81  16.5  0.397   +152        0.617       
-12 L. Raymond              DET  STL  F    3.06  20.2  0.373   +168        0.508       
-13 C. Caufield             MTL  MIN  F    3.38  18.7  0.371   +170        0.531       
-14 W. Nylander             TOR  COL  F    2.94  20.4  0.366   +173        0.469       
-15 J. Eriksson Ek          MIN  MTL  F    3.28  19.9  0.361   +177        0.538       
-16 T. Stützle              OTT  WSH  F    2.33  21.9  0.358   +179        0.363       
-17 A. Tuch                 WSH  OTT  F    2.79  19.4  0.356   +181        0.444       
-18 V. Arvidsson            DET  STL  F     3.0  18.8  0.351   +185        0.498       
-19 N. Suzuki               MTL  MIN  F     2.9  21.6  0.349   +187        0.452       
-20 M. Necas                COL  TOR  F     2.0  19.9  0.344   +191        0.317       
-21 T. Meier                NJD  WPG  F    3.88  16.5  0.343   +192        0.634       
-22 S. Stamkos              NSH  LAK  F    2.69  18.7  0.335   +198        0.431       
-23 A. Fantilli             CBJ  FLA  F    3.07  21.1  0.329   +204        0.476       
-24 A. Laferriere           LAK  NSH  F     3.0  19.7  0.319   +213        0.497       
-25 F. Forsberg             NSH  LAK  F    2.56  20.5  0.319   +213        0.408       
+1  L. Draisaitl            EDM  PHI  F    3.76  22.1  0.519   -108        0.603       
+2  M. Celebrini            SJS  PIT  F    4.12  23.3  0.509   -104        0.659       
+3  C. Gauthier             ANA  NSH  F    4.19  18.3  0.502   -101         0.68       
+4  B. Hagel                TBL  BUF  F    3.88  20.7  0.449   +123        0.621       
+5  C. McDavid              EDM  PHI  F    2.94  23.9  0.442   +126        0.471       
+6  T. Thompson             BUF  TBL  F    4.12  19.4  0.424   +136        0.626       
+7  J. Guentzel             TBL  BUF  F    2.75  20.7  0.388   +158        0.439       
+8  N. Kucherov             TBL  BUF  F    3.12  21.1  0.369   +171        0.504       
+9  B. Sennecke             ANA  NSH  F    2.59  20.5  0.356   +181        0.423       
+10 J. Eichel               VGK  UTA  F    2.71  20.0  0.339   +195        0.415       
+11 R. Rakell               PIT  SJS  F    2.41  19.9  0.335   +198        0.401       
+12 F. Forsberg             NSH  ANA  F    2.59  20.5  0.329   +204        0.407       
+13 A. Lafrenière           NYR  CGY  F    2.31  18.9  0.327   +205        0.378       
+14 S. Stamkos              NSH  ANA  F    2.65  18.7  0.327   +206        0.418       
+15 P. Dorofeyev            NYR  CGY  F    2.81  17.3  0.315   +217        0.472       
+16 W. Smith                SJS  PIT  F    2.53  19.8  0.309   +223        0.402       
+17 J. Farabee              CGY  NYR  F    2.65  19.1  0.308   +224        0.415       
+18 J. Quinn                BUF  TBL  F    2.62  19.0  0.299   +235        0.391       
+19 M. Marner               VGK  UTA  F     2.4  20.0  0.295   +239         0.36       
+20 L. Cooley               UTA  VGK  F    1.82  18.6  0.294   +241        0.256       
+21 M. Stone                VGK  UTA  F    2.12  18.5  0.293   +241        0.307       
+22 N. Schmaltz             UTA  VGK  F    2.71  17.6  0.292   +242         0.42       
+23 S. Crosby               PIT  SJS  F    1.76  19.6   0.29   +244        0.271       
+24 M. Granlund             ANA  NSH  F    1.81  20.7  0.284   +252        0.272       
+25 C. Keller               UTA  VGK  F    2.59  18.5  0.277   +261        0.399       
 
-253 players, 7 games -> docs/index.html
-== parlays Wed Nov 11 02:51:38 UTC 2026 ==
+226 players, 6 games -> docs/index.html
+== parlays Wed Nov 11 21:54:20 UTC 2026 ==
 
-[core] fair +260 (27.764%)  (no book prices)
-   M. Boldy        MIN sog3 68%         4.22 SOG/g · L5 4.0 · 21.5 min · PP 19% · vs MTL B (28.3)
-   J. Hughes       NJD sog3 65%         4.0 SOG/g · L5 5.2 · 20.3 min · PP 27% · vs WPG B (28.5)
-   A. DeBrincat    DET sog3 63%         3.82 SOG/g · L5 3.6 · 19.8 min · PP 30% · vs STL A (29.0)
+[core] fair +256 (28.052%)  (no book prices)
+   C. Gauthier     ANA sog3 68%         4.19 SOG/g · L5 4.8 · 18.3 min · PP 25% · vs NSH A (29.0)
+   M. Celebrini    SJS sog3 66%         4.12 SOG/g · L5 5.0 · 23.3 min · vs PIT B (27.8)
+   T. Thompson     BUF sog3 63%         4.12 SOG/g · L5 3.8 · 19.4 min · vs TBL C (24.6)
 
-[stack] fair +104 (49.117%)  (no book prices)
-   M. Boldy        MIN sog2 86%         4.22 SOG/g · L5 4.0 · 21.5 min · PP 19% · vs MTL B (28.3)
-   J. Eriksson Ek  MIN sog2 76%         3.28 SOG/g · L5 2.8 · 19.9 min · PP 23% · vs MTL B (28.3)
-   K. Kaprizov     MIN sog2 75%         3.22 SOG/g · L5 2.6 · 21.6 min · PP 19% · vs MTL B (28.3)
+[ladder4] fair +2821 (3.423%)  (no book prices)
+   C. Gauthier     ANA sog4 47%         4.19 SOG/g · L5 4.8 · 18.3 min · PP 25% · vs NSH A (29.0)
+   M. Celebrini    SJS sog4 45%         4.12 SOG/g · L5 5.0 · 23.3 min · vs PIT B (27.8)
+   T. Thompson     BUF sog4 41%         4.12 SOG/g · L5 3.8 · 19.4 min · vs TBL C (24.6)
+   L. Draisaitl    EDM sog4 39%         3.76 SOG/g · L5 4.8 · 22.1 min · PP 19% · vs PHI B (27.2)
 
-[ladder4] fair +3680 (2.646%)  (no book prices)
-   J. Hughes       NJD sog4 44%         4.0 SOG/g · L5 5.2 · 20.3 min · PP 27% · vs WPG B (28.5)
-   A. DeBrincat    DET sog4 42%         3.82 SOG/g · L5 3.6 · 19.8 min · PP 30% · vs STL A (29.0)
-   B. Tkachuk      FLA sog4 40%         3.81 SOG/g · L5 5.2 · 16.5 min · PP 37% · vs CBJ B (27.9)
-   N. MacKinnon    COL sog4 36%         3.35 SOG/g · L5 2.6 · 20.8 min · PP 27% · vs TOR A (30.1)
-
-[core2] fair +409 (19.661%)  (no book prices)
-   B. Tkachuk      FLA sog3 62%         3.81 SOG/g · L5 5.2 · 16.5 min · PP 37% · vs CBJ B (27.9)
-   N. MacKinnon    COL sog3 57%         3.35 SOG/g · L5 2.6 · 20.8 min · PP 27% · vs TOR A (30.1)
-   A. Kempe        LAK sog3 56%         3.38 SOG/g · L5 3.8 · 20.5 min · PP 18% · vs NSH B (28.9)
-
-[goals4] fair +3938 (2.476%)  (no book prices)
-   S. Reinhart     FLA goal 42%         3.31 SOG/g · L5 3.6 · 20.0 min · PP 31% · vs CBJ B (27.9) · sh% 12.4
-   A. Kempe        LAK goal 40%         3.38 SOG/g · L5 3.8 · 20.5 min · PP 18% · vs NSH B (28.9) · sh% 11.1
-   A. Matthews     TOR goal 40%         3.18 SOG/g · L5 3.6 · 20.5 min · PP 20% · vs COL B (27.0) · sh% 13.6
-   L. Raymond      DET goal 37%         3.06 SOG/g · L5 3.2 · 20.2 min · PP 31% · vs STL A (29.0) · sh% 10.5
-
-logged 0 tickets to parlays.csv
+logged 2 tickets to parlays.csv
 page re-rendered with parlays

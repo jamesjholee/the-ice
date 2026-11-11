@@ -29,3 +29,5 @@ id,date,kind,legs,n_legs,fair_p,fair_odds,book_odds,book_p,stake,result,pnl,note
 28,2026-11-10,ladder4,8481559:J. Hughes:sog4:3.5::0.439|8479337:A. DeBrincat:sog4:3.5::0.418|8480801:B. Tkachuk:sog4:3.5::0.405|8477492:N. MacKinnon:sog4:3.5::0.356,4,0.02646,+3680,,,1.0,0,-1.0000, void leg(s) removed
 29,2026-11-10,core2,8480801:B. Tkachuk:sog3:2.5::0.617|8477492:N. MacKinnon:sog3:2.5::0.567|8477960:A. Kempe:sog3:2.5::0.562,3,0.19661,+409,,,1.0,1,4.0862, void leg(s) removed
 30,2026-11-10,goals4,8477933:S. Reinhart:goal:0.5::0.416|8477960:A. Kempe:goal:0.5::0.400|8479318:A. Matthews:goal:0.5::0.399|8482078:L. Raymond:goal:0.5::0.373,4,0.02476,+3938,,,1.0,0,-1.0000, void leg(s) removed
+31,2026-11-11,core,8483445:C. Gauthier:sog3:2.5::0.680|8484801:M. Celebrini:sog3:2.5::0.659|8479420:T. Thompson:sog3:2.5::0.626,3,0.28052,+256,,,1.0,,,
+32,2026-11-11,ladder4,8483445:C. Gauthier:sog4:3.5::0.471|8484801:M. Celebrini:sog4:3.5::0.449|8479420:T. Thompson:sog4:3.5::0.414|8477934:L. Draisaitl:sog4:3.5::0.391,4,0.03423,+2821,,,1.0,,,
