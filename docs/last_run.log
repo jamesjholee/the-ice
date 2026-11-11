@@ -1,19 +1,20 @@
-== grade Wed Nov 11 01:28:59 UTC 2026 ==
+== grade Wed Nov 11 02:51:13 UTC 2026 ==
 nothing to grade
+graded 5 parlay tickets
 
 === Parlays ===
-core     1/6  P&L -0.86u
-core2    1/3  P&L +4.01u
-goals4   0/4  P&L -2.00u
+core     2/7  P&L +1.75u
+core2    2/4  P&L +8.09u
+goals4   0/5  P&L -3.00u
 goals6   0/1  P&L -1.00u
-ladder4  0/5  P&L -3.00u
+ladder4  0/6  P&L -4.00u
 mix      0/1  P&L -1.00u
 shots6   1/2  P&L +3.13u
-stack    0/3  P&L -1.00u
-TOTAL    3/25  P&L -1.71u
+stack    0/4  P&L -1.00u
+TOTAL    5/30  P&L +2.97u
 
 === Record ===
-== board Wed Nov 11 01:28:59 UTC 2026 ==
+== board Wed Nov 11 02:51:13 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  J. Hughes               NJD  WPG  F     4.0  20.3   0.47   +113         0.65       
 2  M. Boldy                MIN  MTL  F    4.22  21.5  0.461   +117        0.678       
@@ -42,7 +43,7 @@ TOTAL    3/25  P&L -1.71u
 25 F. Forsberg             NSH  LAK  F    2.56  20.5  0.319   +213        0.408       
 
 253 players, 7 games -> docs/index.html
-== parlays Wed Nov 11 01:29:23 UTC 2026 ==
+== parlays Wed Nov 11 02:51:38 UTC 2026 ==
 
 [core] fair +260 (27.764%)  (no book prices)
    M. Boldy        MIN sog3 68%         4.22 SOG/g · L5 4.0 · 21.5 min · PP 19% · vs MTL B (28.3)

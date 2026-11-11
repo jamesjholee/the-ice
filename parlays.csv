@@ -24,8 +24,8 @@ id,date,kind,legs,n_legs,fair_p,fair_odds,book_odds,book_p,stake,result,pnl,note
 23,2026-11-09,ladder4,8481559:J. Hughes:sog4:3.5::0.439|8479337:A. DeBrincat:sog4:3.5::0.418|8480801:B. Tkachuk:sog4:3.5::0.405|8477492:N. MacKinnon:sog4:3.5::0.356,4,0.02646,+3680,,,1.0,0,0,all legs void
 24,2026-11-09,core2,8480801:B. Tkachuk:sog3:2.5::0.617|8477492:N. MacKinnon:sog3:2.5::0.567|8477960:A. Kempe:sog3:2.5::0.562,3,0.19661,+409,,,1.0,0,0,all legs void
 25,2026-11-09,goals4,8477933:S. Reinhart:goal:0.5::0.416|8477960:A. Kempe:goal:0.5::0.400|8479318:A. Matthews:goal:0.5::0.399|8482078:L. Raymond:goal:0.5::0.373,4,0.02476,+3938,,,1.0,0,0,all legs void
-26,2026-11-10,core,8481557:M. Boldy:sog3:2.5::0.678|8481559:J. Hughes:sog3:2.5::0.650|8479337:A. DeBrincat:sog3:2.5::0.630,3,0.27764,+260,,,1.0,,,
-27,2026-11-10,stack,8481557:M. Boldy:sog2:1.5::0.856|8478493:J. Eriksson Ek:sog2:1.5::0.761|8478864:K. Kaprizov:sog2:1.5::0.754,3,0.49117,+104,,,1.0,,,
-28,2026-11-10,ladder4,8481559:J. Hughes:sog4:3.5::0.439|8479337:A. DeBrincat:sog4:3.5::0.418|8480801:B. Tkachuk:sog4:3.5::0.405|8477492:N. MacKinnon:sog4:3.5::0.356,4,0.02646,+3680,,,1.0,,,
-29,2026-11-10,core2,8480801:B. Tkachuk:sog3:2.5::0.617|8477492:N. MacKinnon:sog3:2.5::0.567|8477960:A. Kempe:sog3:2.5::0.562,3,0.19661,+409,,,1.0,,,
-30,2026-11-10,goals4,8477933:S. Reinhart:goal:0.5::0.416|8477960:A. Kempe:goal:0.5::0.400|8479318:A. Matthews:goal:0.5::0.399|8482078:L. Raymond:goal:0.5::0.373,4,0.02476,+3938,,,1.0,,,
+26,2026-11-10,core,8481557:M. Boldy:sog3:2.5::0.678|8481559:J. Hughes:sog3:2.5::0.650|8479337:A. DeBrincat:sog3:2.5::0.630,3,0.27764,+260,,,1.0,1,2.6018, void leg(s) removed
+27,2026-11-10,stack,8481557:M. Boldy:sog2:1.5::0.856|8478493:J. Eriksson Ek:sog2:1.5::0.761|8478864:K. Kaprizov:sog2:1.5::0.754,3,0.49117,+104,,,1.0,0,0,all legs void
+28,2026-11-10,ladder4,8481559:J. Hughes:sog4:3.5::0.439|8479337:A. DeBrincat:sog4:3.5::0.418|8480801:B. Tkachuk:sog4:3.5::0.405|8477492:N. MacKinnon:sog4:3.5::0.356,4,0.02646,+3680,,,1.0,0,-1.0000, void leg(s) removed
+29,2026-11-10,core2,8480801:B. Tkachuk:sog3:2.5::0.617|8477492:N. MacKinnon:sog3:2.5::0.567|8477960:A. Kempe:sog3:2.5::0.562,3,0.19661,+409,,,1.0,1,4.0862, void leg(s) removed
+30,2026-11-10,goals4,8477933:S. Reinhart:goal:0.5::0.416|8477960:A. Kempe:goal:0.5::0.400|8479318:A. Matthews:goal:0.5::0.399|8482078:L. Raymond:goal:0.5::0.373,4,0.02476,+3938,,,1.0,0,-1.0000, void leg(s) removed
