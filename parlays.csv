@@ -31,3 +31,9 @@ id,date,kind,legs,n_legs,fair_p,fair_odds,book_odds,book_p,stake,result,pnl,note
 30,2026-11-10,goals4,8477933:S. Reinhart:goal:0.5::0.416|8477960:A. Kempe:goal:0.5::0.400|8479318:A. Matthews:goal:0.5::0.399|8482078:L. Raymond:goal:0.5::0.373,4,0.02476,+3938,,,1.0,0,-1.0000, void leg(s) removed
 31,2026-11-11,core,8483445:C. Gauthier:sog3:2.5::0.680|8484801:M. Celebrini:sog3:2.5::0.659|8479420:T. Thompson:sog3:2.5::0.626,3,0.28052,+256,,,1.0,1,2.5648, void leg(s) removed
 32,2026-11-11,ladder4,8483445:C. Gauthier:sog4:3.5::0.471|8484801:M. Celebrini:sog4:3.5::0.449|8479420:T. Thompson:sog4:3.5::0.414|8477934:L. Draisaitl:sog4:3.5::0.391,4,0.03423,+2821,,,1.0,0,-1.0000, void leg(s) removed
+33,2026-11-12,core,8481557:M. Boldy:sog3:2.5::0.678|8479420:T. Thompson:sog3:2.5::0.674|8479542:B. Hagel:sog3:2.5::0.636,3,0.29063,+244,,,1.0,,,
+34,2026-11-12,stack,8481557:M. Boldy:sog2:1.5::0.856|8478493:J. Eriksson Ek:sog2:1.5::0.764|8478864:K. Kaprizov:sog2:1.5::0.750,3,0.49049,+104,,,1.0,,,
+35,2026-11-12,ladder4,8479420:T. Thompson:sog4:3.5::0.464|8479542:B. Hagel:sog4:3.5::0.424|8481559:J. Hughes:sog4:3.5::0.418|8485366:M. Schaefer:sog4:3.5::0.387,4,0.03183,+3042,,,1.0,,,
+36,2026-11-12,shots6,8481559:J. Hughes:sog2:1.5::0.826|8485366:M. Schaefer:sog2:1.5::0.805|8478398:K. Connor:sog2:1.5::0.798|8480801:B. Tkachuk:sog2:1.5::0.794|8477956:D. Pastrnak:sog2:1.5::0.785|8478493:J. Eriksson Ek:sog2:1.5::0.764,6,0.25268,+296,,,1.0,,,
+37,2026-11-12,core2,8478414:T. Meier:sog3:2.5::0.614|8478398:K. Connor:sog3:2.5::0.590|8480801:B. Tkachuk:sog3:2.5::0.583,3,0.21120,+373,,,1.0,,,
+38,2026-11-12,goals4,8478550:A. Panarin:goal:0.5::0.418|8477933:S. Reinhart:goal:0.5::0.409|8477492:N. MacKinnon:goal:0.5::0.405|8477956:D. Pastrnak:goal:0.5::0.399,4,0.02763,+3520,,,1.0,,,
