@@ -1,19 +1,20 @@
-== grade Thu Nov 12 02:32:19 UTC 2026 ==
+== grade Thu Nov 12 03:54:47 UTC 2026 ==
 nothing to grade
+graded 2 parlay tickets
 
 === Parlays ===
-core     2/7  P&L +1.75u
+core     3/8  P&L +4.31u
 core2    2/4  P&L +8.09u
 goals4   0/5  P&L -3.00u
 goals6   0/1  P&L -1.00u
-ladder4  0/6  P&L -4.00u
+ladder4  0/7  P&L -5.00u
 mix      0/1  P&L -1.00u
 shots6   1/2  P&L +3.13u
 stack    0/4  P&L -1.00u
-TOTAL    5/30  P&L +2.97u
+TOTAL    6/32  P&L +4.54u
 
 === Record ===
-== board Thu Nov 12 02:32:19 UTC 2026 ==
+== board Thu Nov 12 03:54:47 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  L. Draisaitl            EDM  PHI  F    3.76  22.1  0.519   -108        0.603       
 2  M. Celebrini            SJS  PIT  F    4.12  23.3  0.509   -104        0.659       
@@ -42,7 +43,7 @@ TOTAL    5/30  P&L +2.97u
 25 C. Keller               UTA  VGK  F    2.59  18.5  0.277   +261        0.399       
 
 227 players, 6 games -> docs/index.html
-== parlays Thu Nov 12 02:32:40 UTC 2026 ==
+== parlays Thu Nov 12 03:55:08 UTC 2026 ==
 
 [core] fair +256 (28.052%)  (no book prices)
    C. Gauthier     ANA sog3 68%         4.19 SOG/g · L5 4.8 · 18.3 min · PP 25% · vs NSH A (29.0)
