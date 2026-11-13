@@ -1,19 +1,20 @@
-== grade Thu Nov 12 21:49:40 UTC 2026 ==
+== grade Fri Nov 13 02:08:34 UTC 2026 ==
 nothing to grade
+graded 6 parlay tickets
 
 === Parlays ===
-core     3/8  P&L +4.31u
-core2    2/4  P&L +8.09u
-goals4   0/5  P&L -3.00u
+core     3/9  P&L +4.31u
+core2    2/5  P&L +8.09u
+goals4   0/6  P&L -3.00u
 goals6   0/1  P&L -1.00u
-ladder4  0/7  P&L -5.00u
+ladder4  0/8  P&L -5.00u
 mix      0/1  P&L -1.00u
-shots6   1/2  P&L +3.13u
-stack    0/4  P&L -1.00u
-TOTAL    6/32  P&L +4.54u
+shots6   1/3  P&L +3.13u
+stack    0/5  P&L -1.00u
+TOTAL    6/38  P&L +4.54u
 
 === Record ===
-== board Thu Nov 12 21:49:40 UTC 2026 ==
+== board Fri Nov 13 02:08:35 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  M. Boldy                MIN  TOR  F    4.11  21.5  0.481   +108        0.678       
 2  K. Kaprizov             MIN  TOR  F    3.11  21.5  0.481   +108        0.524       
@@ -42,7 +43,7 @@ TOTAL    6/32  P&L +4.54u
 25 L. Raymond              DET  FLA  F     3.0  20.2  0.347   +188        0.472       
 
 405 players, 11 games -> docs/index.html
-== parlays Thu Nov 12 21:50:15 UTC 2026 ==
+== parlays Fri Nov 13 02:09:10 UTC 2026 ==
 
 [core] fair +244 (29.063%)  (no book prices)
    M. Boldy        MIN sog3 68%         4.11 SOG/g · L5 3.6 · 21.5 min · PP 19% · vs TOR A (29.9)
@@ -79,5 +80,5 @@ TOTAL    6/32  P&L +4.54u
    N. MacKinnon    COL goal 40%         3.33 SOG/g · L5 2.2 · 20.8 min · PP 27% · vs OTT C (26.7) · sh% 11.3
    D. Pastrnak     BOS goal 40%         3.5 SOG/g · L5 4.2 · 20.5 min · PP 20% · vs MTL B (28.1) · sh% 11.5
 
-logged 6 tickets to parlays.csv
+logged 0 tickets to parlays.csv
 page re-rendered with parlays
