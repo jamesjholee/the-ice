@@ -1,4 +1,4 @@
-== grade Sat Nov 14 01:48:52 UTC 2026 ==
+== grade Sat Nov 14 03:23:29 UTC 2026 ==
 nothing to grade
 
 === Parlays ===
@@ -13,7 +13,7 @@ stack    0/5  P&L -1.00u
 TOTAL    6/38  P&L +4.54u
 
 === Record ===
-== board Sat Nov 14 01:48:52 UTC 2026 ==
+== board Sat Nov 14 03:23:29 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  J. Eichel               VGK  NSH  F    2.61  20.1  0.359   +178        0.428       
 2  A. Lafrenière           NYR  VAN  F    2.29  18.8  0.321   +211        0.375       
@@ -42,7 +42,7 @@ TOTAL    6/38  P&L +4.54u
 25 A. Edstrom              NSH  VGK  F    1.67  15.1  0.171   +486        0.222       
 
 73 players, 2 games -> docs/index.html
-== parlays Sat Nov 14 01:48:59 UTC 2026 ==
+== parlays Sat Nov 14 03:23:36 UTC 2026 ==
 
 logged 0 tickets to parlays.csv
 page re-rendered with parlays
