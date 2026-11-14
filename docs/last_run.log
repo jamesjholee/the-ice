@@ -1,4 +1,4 @@
-== grade Sat Nov 14 03:23:29 UTC 2026 ==
+== grade Sat Nov 14 19:54:58 UTC 2026 ==
 nothing to grade
 
 === Parlays ===
@@ -13,36 +13,32 @@ stack    0/5  P&L -1.00u
 TOTAL    6/38  P&L +4.54u
 
 === Record ===
-== board Sat Nov 14 03:23:29 UTC 2026 ==
+== board Sat Nov 14 19:54:58 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
-1  J. Eichel               VGK  NSH  F    2.61  20.1  0.359   +178        0.428       
-2  A. Lafrenière           NYR  VAN  F    2.29  18.8  0.321   +211        0.375       
-3  M. Marner               VGK  NSH  F    2.44  19.9   0.31   +223        0.395       
-4  P. Dorofeyev            NYR  VAN  F    2.82  17.2  0.308   +225        0.476       
-5  F. Forsberg             NSH  VGK  F    2.56  20.4  0.307   +226        0.389       
-6  S. Stamkos              NSH  VGK  F    2.56  18.6  0.307   +226        0.389       
-7  M. Stone                VGK  NSH  F     2.0  18.6  0.298   +235         0.31       
-8  M. Zibanejad            NYR  VAN  F    1.71  20.7  0.286   +249        0.257       
-9  J. Miller               NYR  VAN  F    1.94  19.4  0.273   +267        0.305       
-10 B. Boeser               VAN  NYR  F    1.67  19.3  0.271   +269        0.231       
-11 T. Hertl                VGK  NSH  F    2.22  15.4  0.267   +274        0.353       
-12 T. Kartye               NYR  VAN  F     2.0  17.2  0.257   +289        0.317       
-13 G. Perreault            NYR  VAN  F    2.12  17.1  0.253   +296         0.34       
-14 R. O'Reilly             NSH  VGK  F     1.5  20.8   0.25   +301        0.191       
-15 J. DeBrusk              VAN  NYR  F    2.25  17.1  0.232   +330        0.343       
-16 W. Cuylle               NYR  VAN  F    1.82  16.7  0.223   +347        0.281       
-17 E. Pettersson           VAN  NYR  F    1.22  20.8  0.222   +350        0.145       
-18 T. Connelly             VGK  NSH  F    1.78  14.7   0.21   +377        0.265       
-19 J. Lekkerimäki          VAN  NYR  F    1.89  15.7  0.208   +381        0.274       
-20 W. Karlsson             VGK  NSH  F    1.61  17.2  0.207   +384        0.231       
-21 J. Marchessault         NSH  VGK  F    2.38  16.6  0.207   +383        0.358       
-22 B. Howden               VGK  NSH  F    1.33  15.3  0.182   +451        0.175       
-23 I. Barbashev            VGK  NSH  F    1.33  15.8  0.181   +453        0.175       
-24 M. Rossi                VAN  NYR  F    1.69  15.4  0.177   +466        0.235       
-25 A. Edstrom              NSH  VGK  F    1.67  15.1  0.171   +486        0.222       
+1  L. Draisaitl            EDM  TOR  F    3.78  22.0  0.547   -121         0.63       
+2  K. Connor               WPG  CHI  F     4.0  21.4  0.528   -112        0.662       
+3  C. Gauthier             ANA  NYI  F    4.35  18.4  0.515   -106        0.705       
+4  M. Celebrini            SJS  UTA  F     4.0  23.4  0.485   +106        0.619       
+5  M. Boldy                MIN  BOS  F    4.15  21.5  0.484   +107        0.668       
+6  B. Hagel                TBL  DET  F    4.06  20.4  0.468   +114        0.635       
+7  C. McDavid              EDM  TOR  F    2.89  23.9  0.464   +115        0.485       
+8  K. Kaprizov             MIN  BOS  F     3.2  21.6  0.454   +120        0.525       
+9  J. Hughes               NJD  WSH  F    3.89  20.6  0.449   +122        0.624       
+10 A. Panarin              LAK  CGY  F    3.38  21.5  0.435   +130        0.566       
+11 S. Reinhart             FLA  STL  F    3.33  20.0   0.42   +138        0.555       
+12 S. Aho                  CAR  SEA  F    2.78  19.7  0.407   +146        0.471       
+13 A. Kempe                LAK  CGY  F    3.33  20.1  0.405   +147        0.559       
+14 A. Matthews             TOR  EDM  F    3.16  20.5  0.398   +151        0.508       
+15 T. Thompson             BUF  DAL  F    3.94  19.5  0.397   +152        0.587       
+16 B. Horvat               NYI  ANA  F    3.18  21.3  0.396   +153        0.507       
+17 C. Caufield             MTL  COL  F    3.33  18.5  0.381   +162        0.536       
+18 N. MacKinnon            COL  MTL  F    3.26  20.3  0.379   +164        0.536       
+19 B. Tkachuk              FLA  STL  F    3.72  16.5  0.379   +164        0.616       
+20 J. Robertson            DAL  BUF  F    3.24  19.4  0.378   +164        0.518       
+21 D. Pastrnak             BOS  MIN  F    3.47  20.3  0.372   +169        0.548       
+22 N. Kucherov             TBL  DET  F    3.17  20.9  0.372   +168          0.5       
+23 A. DeBrincat            DET  TBL  F    3.58  19.7  0.372   +169        0.554       
+24 T. Stützle              OTT  PIT  F    2.35  22.0  0.367   +173        0.373       
+25 J. Guentzel             TBL  DET  F    2.67  20.8  0.364   +175        0.414       
 
-73 players, 2 games -> docs/index.html
-== parlays Sat Nov 14 03:23:36 UTC 2026 ==
-
-logged 0 tickets to parlays.csv
-page re-rendered with parlays
+524 players, 14 games -> docs/index.html
