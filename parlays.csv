@@ -37,3 +37,9 @@ id,date,kind,legs,n_legs,fair_p,fair_odds,book_odds,book_p,stake,result,pnl,note
 36,2026-11-12,shots6,8481559:J. Hughes:sog2:1.5::0.826|8485366:M. Schaefer:sog2:1.5::0.805|8478398:K. Connor:sog2:1.5::0.798|8480801:B. Tkachuk:sog2:1.5::0.794|8477956:D. Pastrnak:sog2:1.5::0.785|8478493:J. Eriksson Ek:sog2:1.5::0.764,6,0.25268,+296,,,1.0,0,0,all legs void
 37,2026-11-12,core2,8478414:T. Meier:sog3:2.5::0.614|8478398:K. Connor:sog3:2.5::0.590|8480801:B. Tkachuk:sog3:2.5::0.583,3,0.21120,+373,,,1.0,0,0,all legs void
 38,2026-11-12,goals4,8478550:A. Panarin:goal:0.5::0.418|8477933:S. Reinhart:goal:0.5::0.409|8477492:N. MacKinnon:goal:0.5::0.405|8477956:D. Pastrnak:goal:0.5::0.399,4,0.02763,+3520,,,1.0,0,0,all legs void
+39,2026-11-14,core,8483445:C. Gauthier:sog3:2.5::0.705|8481557:M. Boldy:sog3:2.5::0.668|8478398:K. Connor:sog3:2.5::0.662,3,0.31176,+221,,,1.0,,,
+40,2026-11-14,stack,8481557:M. Boldy:sog2:1.5::0.850|8478864:K. Kaprizov:sog2:1.5::0.751|8478493:J. Eriksson Ek:sog2:1.5::0.751,3,0.47940,+109,,,1.0,,,
+41,2026-11-14,ladder4,8483445:C. Gauthier:sog4:3.5::0.498|8478398:K. Connor:sog4:3.5::0.452|8479542:B. Hagel:sog4:3.5::0.423|8477934:L. Draisaitl:sog4:3.5::0.418,4,0.03980,+2413,,,1.0,,,
+42,2026-11-14,shots6,8479542:B. Hagel:sog2:1.5::0.829|8477934:L. Draisaitl:sog2:1.5::0.826|8481559:J. Hughes:sog2:1.5::0.822|8484801:M. Celebrini:sog2:1.5::0.818|8480801:B. Tkachuk:sog2:1.5::0.816|8479420:T. Thompson:sog2:1.5::0.796,6,0.29906,+234,,,1.0,,,
+43,2026-11-14,core2,8481559:J. Hughes:sog3:2.5::0.624|8484801:M. Celebrini:sog3:2.5::0.619|8480801:B. Tkachuk:sog3:2.5::0.616,3,0.23793,+320,,,1.0,,,
+44,2026-11-14,goals4,8477933:S. Reinhart:goal:0.5::0.420|8477960:A. Kempe:goal:0.5::0.405|8479318:A. Matthews:goal:0.5::0.398|8479420:T. Thompson:goal:0.5::0.397,4,0.02688,+3621,,,1.0,,,
