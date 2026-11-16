@@ -43,4 +43,4 @@ id,date,kind,legs,n_legs,fair_p,fair_odds,book_odds,book_p,stake,result,pnl,note
 42,2026-11-14,shots6,8479542:B. Hagel:sog2:1.5::0.829|8477934:L. Draisaitl:sog2:1.5::0.826|8481559:J. Hughes:sog2:1.5::0.822|8484801:M. Celebrini:sog2:1.5::0.818|8480801:B. Tkachuk:sog2:1.5::0.816|8479420:T. Thompson:sog2:1.5::0.796,6,0.29906,+234,,,1.0,1,2.3438, void leg(s) removed
 43,2026-11-14,core2,8481559:J. Hughes:sog3:2.5::0.624|8484801:M. Celebrini:sog3:2.5::0.619|8480801:B. Tkachuk:sog3:2.5::0.616,3,0.23793,+320,,,1.0,0,-1.0000, void leg(s) removed
 44,2026-11-14,goals4,8477933:S. Reinhart:goal:0.5::0.420|8477960:A. Kempe:goal:0.5::0.405|8479318:A. Matthews:goal:0.5::0.398|8479420:T. Thompson:goal:0.5::0.397,4,0.02688,+3621,,,1.0,0,-1.0000, void leg(s) removed
-45,2026-11-15,core,8483445:C. Gauthier:sog3:2.5::0.698|8484801:M. Celebrini:sog3:2.5::0.661|8477934:L. Draisaitl:sog3:2.5::0.607,3,0.28006,+257,,,1.0,,,
+45,2026-11-15,core,8483445:C. Gauthier:sog3:2.5::0.698|8484801:M. Celebrini:sog3:2.5::0.661|8477934:L. Draisaitl:sog3:2.5::0.607,3,0.28006,+257,,,1.0,1,2.5707,

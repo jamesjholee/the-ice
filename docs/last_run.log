@@ -1,8 +1,9 @@
-== grade Mon Nov 16 02:51:40 UTC 2026 ==
+== grade Mon Nov 16 23:43:50 UTC 2026 ==
 nothing to grade
+graded 1 parlay tickets
 
 === Parlays ===
-core     4/10  P&L +6.52u
+core     5/11  P&L +9.09u
 core2    2/6  P&L +7.09u
 goals4   0/7  P&L -4.00u
 goals6   0/1  P&L -1.00u
@@ -10,44 +11,39 @@ ladder4  1/9  P&L +19.13u
 mix      0/1  P&L -1.00u
 shots6   2/4  P&L +5.48u
 stack    0/6  P&L -2.00u
-TOTAL    9/44  P&L +30.22u
+TOTAL    10/45  P&L +32.79u
 
 === Record ===
-== board Mon Nov 16 02:51:40 UTC 2026 ==
+== board Mon Nov 16 23:43:51 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
-1  C. Gauthier             ANA  CGY  F    4.28  18.4  0.521   -109        0.698       
-2  L. Draisaitl            EDM  PHI  F    3.79  22.0  0.512   -105        0.607       
-3  M. Celebrini            SJS  NSH  F     4.0  23.3  0.491   +104        0.661       
-4  C. McDavid              EDM  PHI  F    2.89  23.8  0.433   +131        0.463       
-5  J. Eichel               VGK  VAN  F    2.79  20.2  0.384   +160        0.469       
-6  S. Reinhart             FLA  DAL  F    3.37  19.8  0.381   +163        0.501       
-7  J. Robertson            DAL  FLA  F    3.33  19.4  0.367   +173        0.527       
-8  B. Sennecke             ANA  CGY  F    2.53  20.5  0.367   +172        0.417       
-9  S. Stamkos              NSH  SJS  F    2.53  18.7   0.35   +185        0.424       
-10 F. Forsberg             NSH  SJS  F    2.47  20.5  0.348   +188        0.414       
-11 B. Tkachuk              FLA  DAL  F    3.68  16.4  0.339   +195        0.549       
-12 J. Farabee              CGY  ANA  F    2.79  19.3  0.318   +214         0.44       
-13 R. O'Reilly             NSH  SJS  F    1.63  20.9  0.317   +215        0.244       
-14 M. Marner               VGK  VAN  F    2.35  19.9  0.316   +217        0.387       
-15 M. Granlund             ANA  CGY  F    1.89  20.6  0.309   +223        0.291       
-16 M. Stone                VGK  VAN  F    1.95  18.6  0.305   +228        0.306       
-17 W. Smith                SJS  NSH  F    2.45  20.0  0.298   +235        0.403       
-18 L. Carlsson             ANA  CGY  F    1.74  20.2  0.286   +250         0.26       
-19 W. Johnston             DAL  FLA  F    2.62  19.4  0.282   +254        0.406       
-20 T. Hertl                VGK  VAN  F    2.26  15.4   0.28   +257        0.369       
-21 M. Rantanen             DAL  FLA  F    1.83  19.7  0.278   +259        0.258       
-22 C. Verhaeghe            FLA  DAL  F    2.42  18.4  0.267   +275        0.343       
-23 T. Zegras               PHI  EDM  F     2.2  18.6   0.26   +285        0.332       
-24 B. Boeser               VAN  VGK  F    1.63  19.4  0.259   +286        0.218       
-25 M. Backlund             CGY  ANA  F    2.71  18.5  0.254   +293        0.425       
+1  C. Caufield             MTL  NYR  F    3.37  18.6  0.374   +167        0.541       
+2  N. Suzuki               MTL  NYR  F    2.62  21.1  0.362   +177        0.412       
+3  L. Cooley               UTA  VAN  F    1.82  18.6  0.335   +198        0.283       
+4  C. Keller               UTA  VAN  F     2.6  19.1  0.324   +209        0.437       
+5  N. Schmaltz             UTA  VAN  F    2.56  17.1  0.313   +220        0.429       
+6  A. Lafrenière           NYR  MTL  F    2.28  18.6  0.293   +241        0.358       
+7  D. Guenther             UTA  VAN  F    2.41  17.3  0.283   +254        0.401       
+8  P. Dorofeyev            NYR  MTL  F    2.89  17.0  0.277   +261        0.471       
+9  B. Boeser               VAN  UTA  F     1.6  19.6  0.262   +282        0.208       
+10 M. Zibanejad            NYR  MTL  F    1.78  20.5  0.258   +287         0.26       
+11 J. Slafkovský           MTL  NYR  F    2.37  18.3  0.244   +310        0.366       
+12 J. Miller               NYR  MTL  F    1.94  19.4  0.243   +311        0.293       
+13 F. Chytil               VAN  UTA  F    2.22  19.3  0.238   +320        0.325       
+14 V. Trocheck             UTA  VAN  F    1.85  18.4  0.236   +324        0.288       
+15 E. Pettersson           VAN  UTA  F     1.2  20.8  0.234   +328        0.134       
+16 G. Perreault            NYR  MTL  F    2.11  16.9  0.231   +333        0.326       
+17 T. Kartye               NYR  MTL  F    1.94  17.2  0.227   +341        0.293       
+18 J. DeBrusk              VAN  UTA  F    2.28  17.0  0.221   +352        0.335       
+19 K. Yamamoto             UTA  VAN  F     2.0  15.5  0.212   +371        0.319       
+20 W. Cuylle               NYR  MTL  F    1.83  16.8    0.2   +399        0.271       
+21 J. Lekkerimäki          VAN  UTA  F     1.8  15.6  0.198   +404        0.245       
+22 L. Karlsson             VAN  UTA  F     2.0  14.6  0.192   +422        0.283       
+23 B. Hayton               UTA  VAN  F    1.75  14.9  0.188   +433        0.268       
+24 L. Crouse               UTA  VAN  F    1.65  15.2   0.18   +456        0.247       
+25 J. Anderson             MTL  NYR  F    1.78  14.1  0.179   +459        0.253       
 
-192 players, 5 games -> docs/index.html
-== parlays Mon Nov 16 02:51:57 UTC 2026 ==
-
-[core] fair +257 (28.006%)  (no book prices)
-   C. Gauthier     ANA sog3 70%         4.28 SOG/g · L5 4.6 · 18.4 min · PP 22% · vs CGY A (29.6)
-   M. Celebrini    SJS sog3 66%         4.0 SOG/g · L5 4.8 · 23.3 min · vs NSH A (29.7)
-   L. Draisaitl    EDM sog3 61%         3.79 SOG/g · L5 5.0 · 22.0 min · PP 19% · vs PHI B (27.2)
+77 players, 2 games -> docs/index.html
+== parlays Mon Nov 16 23:43:58 UTC 2026 ==
 
 logged 0 tickets to parlays.csv
 page re-rendered with parlays
