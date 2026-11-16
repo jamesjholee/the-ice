@@ -1,4 +1,4 @@
-== grade Sun Nov 15 20:23:17 UTC 2026 ==
+== grade Mon Nov 16 01:24:48 UTC 2026 ==
 nothing to grade
 
 === Parlays ===
@@ -13,7 +13,7 @@ stack    0/6  P&L -2.00u
 TOTAL    9/44  P&L +30.22u
 
 === Record ===
-== board Sun Nov 15 20:23:18 UTC 2026 ==
+== board Mon Nov 16 01:24:48 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  C. Gauthier             ANA  CGY  F    4.28  18.4  0.521   -109        0.698       
 2  L. Draisaitl            EDM  PHI  F    3.79  22.0  0.512   -105        0.607       
@@ -42,12 +42,12 @@ TOTAL    9/44  P&L +30.22u
 25 M. Backlund             CGY  ANA  F    2.71  18.5  0.254   +293        0.425       
 
 192 players, 5 games -> docs/index.html
-== parlays Sun Nov 15 20:23:34 UTC 2026 ==
+== parlays Mon Nov 16 01:25:05 UTC 2026 ==
 
 [core] fair +257 (28.006%)  (no book prices)
    C. Gauthier     ANA sog3 70%         4.28 SOG/g · L5 4.6 · 18.4 min · PP 22% · vs CGY A (29.6)
    M. Celebrini    SJS sog3 66%         4.0 SOG/g · L5 4.8 · 23.3 min · vs NSH A (29.7)
    L. Draisaitl    EDM sog3 61%         3.79 SOG/g · L5 5.0 · 22.0 min · PP 19% · vs PHI B (27.2)
 
-logged 1 tickets to parlays.csv
+logged 0 tickets to parlays.csv
 page re-rendered with parlays
