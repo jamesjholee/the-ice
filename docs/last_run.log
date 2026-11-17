@@ -1,20 +1,20 @@
-== grade Tue Nov 17 05:07:41 UTC 2026 ==
+== grade Tue Nov 17 17:47:38 UTC 2026 ==
 nothing to grade
 graded 6 parlay tickets
 
 === Parlays ===
-core     5/12  P&L +9.09u
-core2    2/7  P&L +7.09u
-goals4   0/8  P&L -4.00u
+core     3/11  P&L -0.08u
+core2    1/6  P&L -0.27u
+goals4   0/7  P&L -6.00u
 goals6   0/1  P&L -1.00u
-ladder4  1/10  P&L +19.13u
+ladder4  0/9  P&L -8.00u
 mix      0/1  P&L -1.00u
-shots6   2/5  P&L +5.48u
-stack    0/7  P&L -2.00u
-TOTAL    10/51  P&L +32.79u
+shots6   2/5  P&L +3.30u
+stack    2/6  P&L -1.06u
+TOTAL    8/46  P&L -14.10u
 
 === Record ===
-== board Tue Nov 17 05:07:41 UTC 2026 ==
+== board Tue Nov 17 17:47:39 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  M. Celebrini            SJS  CGY  F    4.05  23.1  0.516   -107         0.67       
 2  C. Gauthier             ANA  STL  F    4.32  18.4  0.504   -102        0.698       
@@ -43,3 +43,42 @@ TOTAL    10/51  P&L +32.79u
 25 A. Fantilli             CBJ  NYI  F    2.94  20.9  0.344   +191        0.489       
 
 414 players, 11 games -> docs/index.html
+== parlays Tue Nov 17 17:48:18 UTC 2026 ==
+
+[core] fair +218 (31.474%)  (no book prices)
+   C. Gauthier     ANA sog3 70%         4.32 SOG/g · L5 5.0 · 18.4 min · PP 21% · vs STL A (29.1)
+   M. Boldy        MIN sog3 67%         4.1 SOG/g · L5 3.8 · 21.5 min · PP 20% · vs NSH A (29.5)
+   M. Celebrini    SJS sog3 67%         4.05 SOG/g · L5 4.6 · 23.1 min · vs CGY A (29.9)
+
+[stack] fair +105 (48.815%)  (no book prices)
+   M. Boldy        MIN sog2 85%         4.1 SOG/g · L5 3.8 · 21.5 min · PP 20% · vs NSH A (29.5)
+   K. Kaprizov     MIN sog2 76%         3.2 SOG/g · L5 3.2 · 21.7 min · PP 19% · vs NSH A (29.5)
+   J. Eriksson Ek  MIN sog2 75%         3.15 SOG/g · L5 2.0 · 19.3 min · PP 23% · vs NSH A (29.5)
+
+[ladder4] fair +2341 (4.097%)  (no book prices)
+   C. Gauthier     ANA sog4 49%         4.32 SOG/g · L5 5.0 · 18.4 min · PP 21% · vs STL A (29.1)
+   M. Celebrini    SJS sog4 46%         4.05 SOG/g · L5 4.6 · 23.1 min · vs CGY A (29.9)
+   B. Hagel        TBL sog4 44%         4.05 SOG/g · L5 3.6 · 20.4 min · PP 24% · vs WSH B (27.7)
+   K. Connor       WPG sog4 42%         4.0 SOG/g · L5 4.2 · 21.6 min · vs OTT C (26.2)
+
+[shots6] fair +260 (27.771%)  (no book prices)
+   B. Hagel        TBL sog2 84%         4.05 SOG/g · L5 3.6 · 20.4 min · PP 24% · vs WSH B (27.7)
+   K. Connor       WPG sog2 82%         4.0 SOG/g · L5 4.2 · 21.6 min · vs OTT C (26.2)
+   T. Thompson     BUF sog2 82%         3.95 SOG/g · L5 2.8 · 19.7 min · vs PHI C (26.2)
+   B. Tkachuk      FLA sog2 80%         3.7 SOG/g · L5 4.2 · 16.4 min · PP 37% · vs EDM B (27.2)
+   D. Pastrnak     BOS sog2 79%         3.61 SOG/g · L5 4.6 · 20.5 min · PP 20% · vs LAK B (27.3)
+   M. Schaefer     NYI sog2 78%         3.44 SOG/g · L5 2.6 · 26.9 min · PP 18% · vs CBJ B (27.5)
+
+[core2] fair +368 (21.363%)  (no book prices)
+   T. Thompson     BUF sog3 62%         3.95 SOG/g · L5 2.8 · 19.7 min · vs PHI C (26.2)
+   B. Tkachuk      FLA sog3 59%         3.7 SOG/g · L5 4.2 · 16.4 min · PP 37% · vs EDM B (27.2)
+   D. Pastrnak     BOS sog3 58%         3.61 SOG/g · L5 4.6 · 20.5 min · PP 20% · vs LAK B (27.3)
+
+[goals4] fair +3982 (2.450%)  (no book prices)
+   N. Kucherov     TBL goal 41%         3.26 SOG/g · L5 4.4 · 21.1 min · PP 25% · vs WSH B (27.7) · sh% 10.5
+   S. Reinhart     FLA goal 40%         3.3 SOG/g · L5 3.2 · 19.9 min · PP 31% · vs EDM B (27.2) · sh% 13.3
+   B. Horvat       NYI goal 40%         3.17 SOG/g · L5 3.4 · 21.1 min · PP 21% · vs CBJ B (27.5) · sh% 12.1
+   A. Kempe        LAK goal 38%         3.31 SOG/g · L5 3.0 · 20.2 min · PP 18% · vs BOS B (28.1) · sh% 10.5
+
+logged 6 tickets to parlays.csv
+page re-rendered with parlays
