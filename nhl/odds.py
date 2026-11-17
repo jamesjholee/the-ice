@@ -12,6 +12,8 @@ from datetime import datetime, timezone, timedelta
 
 import requests
 
+from .data import et_today
+
 API = "https://api.the-odds-api.com/v4"
 SPORT = "icehockey_nhl"
 MARKETS = "player_goal_scorer_anytime,player_shots_on_goal"
@@ -83,7 +85,7 @@ def main():
     if not key:
         print("[odds] ODDS_API_KEY not set; skipping", file=sys.stderr); return
     from datetime import date
-    d = date.fromisoformat(a.date) if a.date else (datetime.now(timezone.utc) - timedelta(hours=4)).date()
+    d = date.fromisoformat(a.date) if a.date else et_today()
     odds, meta = fetch(d, key)
     json.dump({"meta": meta, "players": odds}, open(os.path.join(a.out, "odds.json"), "w"))
 

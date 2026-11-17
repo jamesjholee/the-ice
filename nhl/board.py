@@ -9,7 +9,7 @@ Book prices come from <out>/odds.json if present (written by `python -m nhl.odds
 import argparse, csv, json, os, sys
 from datetime import date, datetime, timezone, timedelta
 
-from .data import games_on, roster, dressed
+from .data import games_on, roster, dressed, et_today
 from .features import load_model, p_goal, p_sog_at_least, american, implied
 from .history import build_history
 from .odds import norm, best
@@ -138,7 +138,7 @@ def main():
     ap.add_argument("--min-games", type=int, default=8)
     ap.add_argument("--auto-pick", action="store_true", help="append model picks to picks.csv")
     a = ap.parse_args()
-    d = date.fromisoformat(a.date) if a.date else (datetime.now(timezone.utc) - timedelta(hours=4)).date()
+    d = date.fromisoformat(a.date) if a.date else et_today()
     os.makedirs(os.path.join(a.out, "boards"), exist_ok=True)
 
     overrides = {}

@@ -47,9 +47,18 @@ def main():
     from .parlays import _read as read_parlays
     pdates = {r["date"] for r in read_parlays() if r.get("result", "") == ""}
     sbd = {}
-    for dstr in pdates:
+    for dstr in sorted(pdates):
+        # Tickets don't record which game each leg is in, so only grade a date once EVERY game on it
+        # is final. Grading a half-finished slate voided live legs as "scratches" (Nov 7-16).
+        try:
+            allg = games_on(date.fromisoformat(dstr), final_only=False)
+        except Exception as e:
+            print(f"  parlays {dstr}: schedule fetch failed ({str(e)[:60]}) — left ungraded"); continue
+        if not allg or any(g["state"] not in ("OFF", "FINAL") for g in allg):
+            print(f"  parlays {dstr}: slate not final yet ({sum(g['state'] in ('OFF','FINAL') for g in allg)}/{len(allg)} games) — left ungraded")
+            continue
         st = {}
-        for g in games_on(date.fromisoformat(dstr)):
+        for g in allg:
             sk, _ = boxscore(g["id"])
             for r in sk:
                 st[r["pid"]] = r

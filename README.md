@@ -72,3 +72,11 @@ Grades every ungraded pick from final boxscores, prints hit/miss per pick and th
 - Finishing % (shrunk): real but small, +0.07. PP share (PP-goals proxy here; real PP TOI needs the stats API): small positive, unverified.
 - Anytime-goal model is calibrated: top decile predicts 35%, actual 34%. That's roughly what books charge for second-tier scorers and well under what they charge for stars — a box-score model does not beat the ATG market on its own.
 - Shot lines: raw Poisson is overconfident at the high end (says 75%, reality 64%). Platt calibration fixes it; every 2+/3+/4+ bucket now lands within a few points. Shot props are where the model's number is most trustworthy.
+
+## Grading rules (fixed Nov 17)
+- Parlay tickets are graded only once **every** game on the date is final. Grading a half-finished slate
+  (the 6:20pm cron drifting to 11pm ET) treated live West-Coast legs as scratches and paid the rest at full price;
+  the ledger showed +34.6u when the honest number was -14.1u. Regraded from cached boxscores.
+- A real scratch voids the leg and the ticket is **re-priced** on the remaining legs (4-leg with one void pays as a 3-leg).
+- All modules take "today" from `data.et_today()` (America/New_York). board.py used UTC-4 and parlays.py UTC-5, which
+  diverged after DST ended and filed Nov 10's tickets under Nov 9.

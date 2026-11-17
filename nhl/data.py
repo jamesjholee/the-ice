@@ -8,9 +8,19 @@ Endpoints (no key needed):
                                                       endpoint has no PP TOI field)
 """
 import json, os, sys, time
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
+from zoneinfo import ZoneInfo
 
 import requests
+
+ET = ZoneInfo("America/New_York")
+
+
+def et_today():
+    """Today's date in New York (handles DST). Every module must use this: board.py (UTC-4) and
+    parlays.py (UTC-5) disagreed between 11pm and midnight EST, so Nov 9 tickets were built from
+    the Nov 10 board and filed under Nov 9."""
+    return datetime.now(ET).date()
 
 WEB = "https://api-web.nhle.com/v1"
 STATS = "https://api.nhle.com/stats/rest/en"

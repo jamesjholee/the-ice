@@ -22,6 +22,7 @@ from collections import defaultdict
 from itertools import combinations
 
 from .features import american, implied
+from .data import et_today
 
 PARLAYS = os.environ.get("NHL_PARLAYS", "parlays.csv")
 FIELDS = ["id", "date", "kind", "legs", "n_legs", "fair_p", "fair_odds", "book_odds", "book_p", "stake",
@@ -223,27 +224,32 @@ def grade_parlays(stats_by_date):
         stats = stats_by_date.get(r["date"])
         if not stats:
             continue
+        # Caller guarantees every game on this date is final (grade.py), so a missing player is a
+        # real scratch, not a game still in progress. (Nov 7-16: tickets graded at 11pm ET had live
+        # West-Coast legs dropped as "void" and were paid at the full fair price.)
         legs = [l.split(":") for l in r["legs"].split("|")]
-        hit_all = True; live = []; dec = 1.0; any_missing = False
+        hit_all = True; live = []; dec = 1.0; fair_live = 1.0; voided = []
         for pid, name, m, line, book, p in legs:
             s = stats.get(int(pid))
             if s is None:
-                any_missing = True; continue            # void leg (scratch)
+                voided.append(name); continue           # void leg (scratch)
             val = s["goals"] if m == "goal" else s["sog"]
             ok = val > float(line)
             hit_all &= ok; live.append(ok)
+            fair_live *= float(p)
             if book:
                 o = int(book); dec *= (1 + o / 100) if o > 0 else (1 + 100 / -o)
         if not live:
             r["result"] = "0"; r["pnl"] = "0"; r["note"] = "all legs void"; changed += 1; continue
-        if any_missing and not r.get("book_odds"):
-            pass
         res = 1 if hit_all else 0
         stake = float(r.get("stake") or 1)
-        payout = (dec - 1) * stake if r.get("book_odds") else (1 / float(r["fair_p"]) - 1) * stake
+        # re-price on the legs that actually played (a 4-leg ticket with one scratch pays as a 3-leg)
+        payout = (dec - 1) * stake if (r.get("book_odds") and not voided) else (1 / fair_live - 1) * stake
         r["result"] = str(res); r["pnl"] = f"{payout if res else -stake:.4f}"
-        if any_missing:
-            r["note"] = (r.get("note") or "") + " void leg(s) removed"
+        if voided:
+            r["note"] = f"void: {', '.join(voided)}; repriced {american(fair_live)}"
+        else:
+            r["note"] = ""
         changed += 1
     if changed:
         _write(rows)
@@ -288,7 +294,7 @@ def main():
     ap.add_argument("--log", action="store_true")
     ap.add_argument("--post", action="store_true")
     a = ap.parse_args()
-    d = a.date or (datetime.now(timezone.utc) - timedelta(hours=5)).date().isoformat()
+    d = a.date or et_today().isoformat()
     rows = list(csv.DictReader(open(a.board)))
     for r in rows:
         r["pid"] = int(r["pid"])
