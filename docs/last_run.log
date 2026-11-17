@@ -1,20 +1,20 @@
-== grade Tue Nov 17 17:47:38 UTC 2026 ==
+== grade Tue Nov 17 22:51:41 UTC 2026 ==
 nothing to grade
-graded 6 parlay tickets
+  parlays 2026-11-17: slate not final yet (0/11 games) — left ungraded
 
 === Parlays ===
-core     3/11  P&L -0.08u
-core2    1/6  P&L -0.27u
-goals4   0/7  P&L -6.00u
+core     3/10  P&L -0.08u
+core2    1/5  P&L -0.27u
+goals4   0/6  P&L -6.00u
 goals6   0/1  P&L -1.00u
-ladder4  0/9  P&L -8.00u
+ladder4  0/8  P&L -8.00u
 mix      0/1  P&L -1.00u
-shots6   2/5  P&L +3.30u
-stack    2/6  P&L -1.06u
-TOTAL    8/46  P&L -14.10u
+shots6   2/4  P&L +3.30u
+stack    2/5  P&L -1.06u
+TOTAL    8/40  P&L -14.10u
 
 === Record ===
-== board Tue Nov 17 17:47:39 UTC 2026 ==
+== board Tue Nov 17 22:51:42 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  M. Celebrini            SJS  CGY  F    4.05  23.1  0.516   -107         0.67       
 2  C. Gauthier             ANA  STL  F    4.32  18.4  0.504   -102        0.698       
@@ -43,7 +43,7 @@ TOTAL    8/46  P&L -14.10u
 25 A. Fantilli             CBJ  NYI  F    2.94  20.9  0.344   +191        0.489       
 
 414 players, 11 games -> docs/index.html
-== parlays Tue Nov 17 17:48:18 UTC 2026 ==
+== parlays Tue Nov 17 22:52:19 UTC 2026 ==
 
 [core] fair +218 (31.474%)  (no book prices)
    C. Gauthier     ANA sog3 70%         4.32 SOG/g · L5 5.0 · 18.4 min · PP 21% · vs STL A (29.1)
@@ -80,5 +80,5 @@ TOTAL    8/46  P&L -14.10u
    B. Horvat       NYI goal 40%         3.17 SOG/g · L5 3.4 · 21.1 min · PP 21% · vs CBJ B (27.5) · sh% 12.1
    A. Kempe        LAK goal 38%         3.31 SOG/g · L5 3.0 · 20.2 min · PP 18% · vs BOS B (28.1) · sh% 10.5
 
-logged 6 tickets to parlays.csv
+logged 0 tickets to parlays.csv
 page re-rendered with parlays
