@@ -1,6 +1,6 @@
-== grade Wed Nov 18 03:08:35 UTC 2026 ==
+== grade Wed Nov 18 04:33:13 UTC 2026 ==
 nothing to grade
-  parlays 2026-11-17: slate not final yet (6/11 games) — left ungraded
+  parlays 2026-11-17: slate not final yet (9/11 games) — left ungraded
 
 === Parlays ===
 core     3/10  P&L -0.08u
@@ -14,7 +14,7 @@ stack    2/5  P&L -1.06u
 TOTAL    8/40  P&L -14.10u
 
 === Record ===
-== board Wed Nov 18 03:08:36 UTC 2026 ==
+== board Wed Nov 18 04:33:13 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  M. Celebrini            SJS  CGY  F    4.05  23.1  0.516   -107         0.67       
 2  C. Gauthier             ANA  STL  F    4.32  18.4  0.504   -102        0.698       
@@ -43,7 +43,7 @@ TOTAL    8/40  P&L -14.10u
 25 A. Fantilli             CBJ  NYI  F    2.94  20.9  0.344   +191        0.489       
 
 414 players, 11 games -> docs/index.html
-== parlays Wed Nov 18 03:09:13 UTC 2026 ==
+== parlays Wed Nov 18 04:33:49 UTC 2026 ==
 
 [core] fair +218 (31.474%)  (no book prices)
    C. Gauthier     ANA sog3 70%         4.32 SOG/g · L5 5.0 · 18.4 min · PP 21% · vs STL A (29.1)
