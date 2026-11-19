@@ -1,6 +1,5 @@
-== grade Wed Nov 18 22:34:40 UTC 2026 ==
+== grade Thu Nov 19 02:49:04 UTC 2026 ==
 nothing to grade
-graded 6 parlay tickets
 
 === Parlays ===
 core     4/11  P&L +2.10u
@@ -14,7 +13,7 @@ stack    3/6  P&L -0.01u
 TOTAL    13/46  P&L +3.52u
 
 === Record ===
-== board Wed Nov 18 22:34:42 UTC 2026 ==
+== board Thu Nov 19 02:49:04 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  J. Hughes               NJD  MTL  F     3.8  20.4  0.424   +136        0.618       
 2  D. Pastrnak             BOS  DET  F    3.63  20.4  0.389   +157        0.576       
@@ -43,7 +42,7 @@ TOTAL    13/46  P&L +3.52u
 25 B. Nelson               COL  UTA  F    1.75  17.4  0.216   +363        0.237       
 
 116 players, 3 games -> docs/index.html
-== parlays Wed Nov 18 22:34:54 UTC 2026 ==
+== parlays Thu Nov 19 02:49:13 UTC 2026 ==
 
 logged 0 tickets to parlays.csv
 page re-rendered with parlays
