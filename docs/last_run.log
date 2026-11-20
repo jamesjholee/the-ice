@@ -1,5 +1,6 @@
-== grade Thu Nov 19 22:39:15 UTC 2026 ==
+== grade Fri Nov 20 02:36:58 UTC 2026 ==
 nothing to grade
+  parlays 2026-11-19: slate not final yet (0/12 games) — left ungraded
 
 === Parlays ===
 core     4/11  P&L +2.10u
@@ -13,7 +14,7 @@ stack    3/6  P&L -0.01u
 TOTAL    13/46  P&L +3.52u
 
 === Record ===
-== board Thu Nov 19 22:39:15 UTC 2026 ==
+== board Fri Nov 20 02:36:58 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  C. Gauthier             ANA  COL  F     4.5  18.7  0.532   -114        0.703       
 2  K. Connor               WPG  NYI  F    4.15  21.8  0.503   -101        0.677       
@@ -42,7 +43,7 @@ TOTAL    13/46  P&L +3.52u
 25 W. Nylander             TOR  LAK  F     2.6  20.0  0.328   +205        0.412       
 
 460 players, 12 games -> docs/index.html
-== parlays Thu Nov 19 22:39:58 UTC 2026 ==
+== parlays Fri Nov 20 02:37:36 UTC 2026 ==
 
 [core] fair +224 (30.840%)  (no book prices)
    C. Gauthier     ANA sog3 70%         4.5 SOG/g · L5 5.8 · 18.7 min · PP 22% · vs COL B (27.2)
@@ -66,5 +67,5 @@ TOTAL    13/46  P&L +3.52u
    N. Kucherov     TBL goal 38%         3.25 SOG/g · L5 3.2 · 20.9 min · PP 25% · vs EDM B (27.4) · sh% 10.3
    J. Robertson    DAL goal 37%         3.3 SOG/g · L5 3.2 · 19.5 min · vs VGK C (26.2) · sh% 12.0
 
-logged 4 tickets to parlays.csv
+logged 0 tickets to parlays.csv
 page re-rendered with parlays
