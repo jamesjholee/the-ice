@@ -1,71 +1,22 @@
-== grade Fri Nov 20 04:03:27 UTC 2026 ==
+== grade Fri Nov 20 22:14:03 UTC 2026 ==
 nothing to grade
-  parlays 2026-11-19: slate not final yet (9/12 games) — left ungraded
+graded 4 parlay tickets
 
 === Parlays ===
-core     4/11  P&L +2.10u
+core     4/12  P&L +1.10u
 core2    2/6  P&L +3.42u
-goals4   0/7  P&L -7.00u
+goals4   0/8  P&L -8.00u
 goals6   0/1  P&L -1.00u
-ladder4  1/9  P&L +1.69u
+ladder4  1/10  P&L +0.69u
 mix      0/1  P&L -1.00u
 shots6   3/5  P&L +5.32u
-stack    3/6  P&L -0.01u
-TOTAL    13/46  P&L +3.52u
+stack    3/7  P&L -1.01u
+TOTAL    13/50  P&L -0.48u
 
 === Record ===
-== board Fri Nov 20 04:03:27 UTC 2026 ==
-#  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
-1  C. Gauthier             ANA  COL  F     4.5  18.7  0.532   -114        0.703       
-2  K. Connor               WPG  NYI  F    4.15  21.8  0.503   -101        0.677       
-3  M. Boldy                MIN  CGY  F     3.9  21.3  0.488   +105        0.647       
-4  L. Draisaitl            EDM  TBL  F    3.55  21.7  0.475   +111        0.549       
-5  B. Hagel                TBL  EDM  F    4.05  20.4  0.471   +112        0.646       
-6  T. Thompson             BUF  WSH  F    4.05  19.7  0.457   +119        0.648       
-7  K. Kaprizov             MIN  CGY  F     3.2  21.3  0.444   +125        0.538       
-8  A. Panarin              LAK  TOR  F    3.38  21.5  0.423   +137        0.563       
-9  B. Horvat               NYI  WPG  F    3.21  20.9  0.403   +148         0.52       
-10 C. McDavid              EDM  TBL  F    2.85  23.5  0.394   +154        0.435       
-11 N. MacKinnon            COL  ANA  F    3.26  20.3  0.392   +155        0.516       
-12 J. Guentzel             TBL  EDM  F    2.75  21.1  0.391   +156        0.439       
-13 A. Matthews             TOR  LAK  F     3.1  20.4   0.38   +163          0.5       
-14 N. Kucherov             TBL  EDM  F    3.25  20.9  0.377   +165        0.525       
-15 J. Robertson            DAL  VGK  F     3.3  19.5  0.366   +173        0.521       
-16 A. Kempe                LAK  TOR  F    3.12  20.1  0.363   +176         0.52       
-17 J. Eriksson Ek          MIN  CGY  F     3.4  19.1   0.36   +178        0.571       
-18 C. Bedard               CHI  CBJ  F    2.87  20.1  0.356   +181        0.468       
-19 S. Aho                  CAR  MTL  F    2.74  19.7  0.355   +182        0.442       
-20 B. Sennecke             ANA  COL  F     2.6  20.5  0.354   +183        0.411       
-21 A. Fantilli             CBJ  CHI  F    2.78  20.5  0.346   +189        0.467       
-22 T. Stützle              OTT  PHI  F     2.4  21.9  0.344   +191        0.358       
-23 A. Svechnikov           CAR  MTL  F    2.89  17.5  0.335   +198         0.47       
-24 M. Scheifele            WPG  NYI  F    2.35  21.6  0.333   +201         0.38       
-25 W. Nylander             TOR  LAK  F     2.6  20.0  0.328   +205        0.412       
-
-460 players, 12 games -> docs/index.html
-== parlays Fri Nov 20 04:04:10 UTC 2026 ==
-
-[core] fair +224 (30.840%)  (no book prices)
-   C. Gauthier     ANA sog3 70%         4.5 SOG/g · L5 5.8 · 18.7 min · PP 22% · vs COL B (27.2)
-   K. Connor       WPG sog3 68%         4.15 SOG/g · L5 5.4 · 21.8 min · vs NYI A (29.2)
-   T. Thompson     BUF sog3 65%         4.05 SOG/g · L5 3.4 · 19.7 min · vs WSH B (27.6)
-
-[stack] fair -100 (50.001%)  (no book prices)
-   M. Boldy        MIN sog2 84%         3.9 SOG/g · L5 3.0 · 21.3 min · vs CGY A (29.7)
-   J. Eriksson Ek  MIN sog2 78%         3.4 SOG/g · L5 2.6 · 19.1 min · vs CGY A (29.7)
-   K. Kaprizov     MIN sog2 76%         3.2 SOG/g · L5 3.4 · 21.3 min · vs CGY A (29.7)
-
-[ladder4] fair +2166 (4.413%)  (no book prices)
-   C. Gauthier     ANA sog4 50%         4.5 SOG/g · L5 5.8 · 18.7 min · PP 22% · vs COL B (27.2)
-   K. Connor       WPG sog4 47%         4.15 SOG/g · L5 5.4 · 21.8 min · vs NYI A (29.2)
-   M. Boldy        MIN sog4 44%         3.9 SOG/g · L5 3.0 · 21.3 min · vs CGY A (29.7)
-   T. Thompson     BUF sog4 44%         4.05 SOG/g · L5 3.4 · 19.7 min · vs WSH B (27.6)
-
-[goals4] fair +4632 (2.113%)  (no book prices)
-   B. Horvat       NYI goal 40%         3.21 SOG/g · L5 3.6 · 20.9 min · PP 21% · vs WPG B (27.6) · sh% 11.8
-   A. Matthews     TOR goal 38%         3.1 SOG/g · L5 3.6 · 20.4 min · vs LAK B (27.4) · sh% 13.0
-   N. Kucherov     TBL goal 38%         3.25 SOG/g · L5 3.2 · 20.9 min · PP 25% · vs EDM B (27.4) · sh% 10.3
-   J. Robertson    DAL goal 37%         3.3 SOG/g · L5 3.2 · 19.5 min · vs VGK C (26.2) · sh% 12.0
+== board Fri Nov 20 22:14:05 UTC 2026 ==
+no regular-season games on 2026-11-20
+== parlays Fri Nov 20 22:14:06 UTC 2026 ==
 
 logged 0 tickets to parlays.csv
 page re-rendered with parlays
