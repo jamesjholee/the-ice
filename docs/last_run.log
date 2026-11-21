@@ -1,4 +1,4 @@
-== grade Sat Nov 21 04:02:16 UTC 2026 ==
+== grade Sat Nov 21 20:53:29 UTC 2026 ==
 nothing to grade
 
 === Parlays ===
@@ -13,9 +13,71 @@ stack    3/7  P&L -1.01u
 TOTAL    13/50  P&L -0.48u
 
 === Record ===
-== board Sat Nov 21 04:02:16 UTC 2026 ==
-no regular-season games on 2026-11-20
-== parlays Sat Nov 21 04:02:17 UTC 2026 ==
+== board Sat Nov 21 20:53:29 UTC 2026 ==
+#  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
+1  M. Celebrini            SJS  SEA  F     4.2  23.2  0.519   -108        0.695       
+2  M. Boldy                MIN  VAN  F     3.9  21.2  0.516   -107        0.667       
+3  C. Gauthier             ANA  UTA  F    4.45  18.7  0.511   -105        0.684       
+4  K. Connor               WPG  VGK  F    3.95  21.7  0.479   +109        0.617       
+5  K. Kaprizov             MIN  VAN  F    3.25  21.3  0.479   +109        0.566       
+6  T. Thompson             BUF  FLA  F    4.05  19.7   0.44   +127         0.63       
+7  L. Draisaitl            EDM  CAR  F     3.7  21.8  0.435   +130        0.529       
+8  D. Pastrnak             BOS  WSH  F    3.75  20.3  0.433   +131          0.6       
+9  J. Hughes               NJD  STL  F    3.85  20.4  0.433   +131        0.634       
+10 S. Reinhart             FLA  BUF  F    3.25  19.7  0.414   +141        0.536       
+11 A. Panarin              LAK  OTT  F    3.38  21.5  0.401   +149        0.526       
+12 B. Horvat               NYI  DET  F    3.05  20.8   0.39   +156        0.485       
+13 A. DeBrincat            DET  NYI  F     3.6  19.5  0.388   +158        0.595       
+14 A. Matthews             TOR  CBJ  F    3.15  20.4  0.381   +163        0.515       
+15 B. Tkachuk              FLA  BUF  F    3.65  16.4  0.375   +167        0.599       
+16 J. Eriksson Ek          MIN  VAN  F     3.2  18.9  0.373   +168        0.557       
+17 F. Forsberg             NSH  PIT  F     2.8  20.4  0.366   +174        0.461       
+18 L. Raymond              DET  NYI  F     2.9  19.6  0.364   +174        0.479       
+19 A. Fantilli             CBJ  TOR  F    2.89  20.5  0.358   +179        0.482       
+20 N. Suzuki               MTL  PHI  F    2.75  21.0  0.358   +179         0.42       
+21 C. Bedard               CHI  CGY  F    2.87  20.1  0.354   +182        0.478       
+22 C. McDavid              EDM  CAR  F     2.9  23.4  0.343   +191        0.406       
+23 S. Aho                  CAR  EDM  F    2.65  19.7   0.34   +194        0.416       
+24 R. Rakell               PIT  NSH  F    2.65  19.9  0.339   +195        0.442       
+25 B. Sennecke             ANA  UTA  F    2.45  20.3  0.338   +196        0.372       
 
-logged 0 tickets to parlays.csv
+543 players, 14 games -> docs/index.html
+== parlays Sat Nov 21 20:54:14 UTC 2026 ==
+
+[core] fair +215 (31.708%)  (no book prices)
+   M. Celebrini    SJS sog3 70%         4.2 SOG/g · L5 4.4 · 23.2 min · vs SEA A (30.4)
+   C. Gauthier     ANA sog3 68%         4.45 SOG/g · L5 5.2 · 18.7 min · PP 18% · vs UTA C (26.0)
+   M. Boldy        MIN sog3 67%         3.9 SOG/g · L5 3.2 · 21.2 min · vs VAN A (31.9)
+
+[stack] fair -106 (51.388%)  (no book prices)
+   M. Boldy        MIN sog2 85%         3.9 SOG/g · L5 3.2 · 21.2 min · vs VAN A (31.9)
+   K. Kaprizov     MIN sog2 78%         3.25 SOG/g · L5 2.6 · 21.3 min · vs VAN A (31.9)
+   J. Eriksson Ek  MIN sog2 78%         3.2 SOG/g · L5 2.6 · 18.9 min · vs VAN A (31.9)
+
+[ladder4] fair +2346 (4.089%)  (no book prices)
+   M. Celebrini    SJS sog4 49%         4.2 SOG/g · L5 4.4 · 23.2 min · vs SEA A (30.4)
+   C. Gauthier     ANA sog4 48%         4.45 SOG/g · L5 5.2 · 18.7 min · PP 18% · vs UTA C (26.0)
+   J. Hughes       NJD sog4 42%         3.85 SOG/g · L5 3.0 · 20.4 min · PP 25% · vs STL A (29.0)
+   T. Thompson     BUF sog4 42%         4.05 SOG/g · L5 3.8 · 19.7 min · vs FLA C (25.9)
+
+[shots6] fair +254 (28.209%)  (no book prices)
+   J. Hughes       NJD sog2 83%         3.85 SOG/g · L5 3.0 · 20.4 min · PP 25% · vs STL A (29.0)
+   T. Thompson     BUF sog2 83%         4.05 SOG/g · L5 3.8 · 19.7 min · vs FLA C (25.9)
+   K. Connor       WPG sog2 82%         3.95 SOG/g · L5 5.0 · 21.7 min · vs VGK C (25.9)
+   D. Pastrnak     BOS sog2 80%         3.75 SOG/g · L5 4.4 · 20.3 min · PP 20% · vs WSH B (27.1)
+   M. Schaefer     NYI sog2 80%         3.75 SOG/g · L5 4.2 · 26.8 min · PP 18% · vs DET C (26.7)
+   K. Kaprizov     MIN sog2 78%         3.25 SOG/g · L5 2.6 · 21.3 min · vs VAN A (31.9)
+
+[core2] fair +347 (22.360%)  (no book prices)
+   K. Connor       WPG sog3 62%         3.95 SOG/g · L5 5.0 · 21.7 min · vs VGK C (25.9)
+   T. Meier        NJD sog3 60%         3.65 SOG/g · L5 3.6 · 16.5 min · PP 21% · vs STL A (29.0)
+   D. Pastrnak     BOS sog3 60%         3.75 SOG/g · L5 4.4 · 20.3 min · PP 20% · vs WSH B (27.1)
+
+[goals4] fair +4258 (2.295%)  (no book prices)
+   S. Reinhart     FLA goal 41%         3.25 SOG/g · L5 3.0 · 19.7 min · PP 31% · vs BUF B (28.5) · sh% 13.3
+   B. Horvat       NYI goal 39%         3.05 SOG/g · L5 3.2 · 20.8 min · PP 21% · vs DET C (26.7) · sh% 11.8
+   A. Matthews     TOR goal 38%         3.15 SOG/g · L5 3.8 · 20.4 min · vs CBJ B (28.1) · sh% 12.9
+   J. Eriksson Ek  MIN goal 37%         3.2 SOG/g · L5 2.6 · 18.9 min · vs VAN A (31.9) · sh% 11.0
+
+logged 6 tickets to parlays.csv
 page re-rendered with parlays
