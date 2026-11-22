@@ -1,5 +1,6 @@
-== grade Sat Nov 21 20:53:29 UTC 2026 ==
+== grade Sun Nov 22 01:35:24 UTC 2026 ==
 nothing to grade
+  parlays 2026-11-21: slate not final yet (2/14 games) — left ungraded
 
 === Parlays ===
 core     4/12  P&L +1.10u
@@ -13,7 +14,7 @@ stack    3/7  P&L -1.01u
 TOTAL    13/50  P&L -0.48u
 
 === Record ===
-== board Sat Nov 21 20:53:29 UTC 2026 ==
+== board Sun Nov 22 01:35:24 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  M. Celebrini            SJS  SEA  F     4.2  23.2  0.519   -108        0.695       
 2  M. Boldy                MIN  VAN  F     3.9  21.2  0.516   -107        0.667       
@@ -42,7 +43,7 @@ TOTAL    13/50  P&L -0.48u
 25 B. Sennecke             ANA  UTA  F    2.45  20.3  0.338   +196        0.372       
 
 543 players, 14 games -> docs/index.html
-== parlays Sat Nov 21 20:54:14 UTC 2026 ==
+== parlays Sun Nov 22 01:36:08 UTC 2026 ==
 
 [core] fair +215 (31.708%)  (no book prices)
    M. Celebrini    SJS sog3 70%         4.2 SOG/g · L5 4.4 · 23.2 min · vs SEA A (30.4)
@@ -79,5 +80,5 @@ TOTAL    13/50  P&L -0.48u
    A. Matthews     TOR goal 38%         3.15 SOG/g · L5 3.8 · 20.4 min · vs CBJ B (28.1) · sh% 12.9
    J. Eriksson Ek  MIN goal 37%         3.2 SOG/g · L5 2.6 · 18.9 min · vs VAN A (31.9) · sh% 11.0
 
-logged 6 tickets to parlays.csv
+logged 0 tickets to parlays.csv
 page re-rendered with parlays
