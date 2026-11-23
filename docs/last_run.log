@@ -1,20 +1,20 @@
-== grade Mon Nov 23 01:58:31 UTC 2026 ==
+== grade Mon Nov 23 03:47:10 UTC 2026 ==
 nothing to grade
-  parlays 2026-11-22: slate not final yet (2/5 games) — left ungraded
+graded 1 parlay tickets
 
 === Parlays ===
 core     4/13  P&L +0.10u
-core2    2/7  P&L +2.42u
+core2    2/8  P&L +1.42u
 goals4   0/9  P&L -9.00u
 goals6   0/1  P&L -1.00u
 ladder4  1/11  P&L -0.31u
 mix      0/1  P&L -1.00u
 shots6   3/6  P&L +4.32u
 stack    3/8  P&L -2.01u
-TOTAL    13/56  P&L -6.48u
+TOTAL    13/57  P&L -7.48u
 
 === Record ===
-== board Mon Nov 23 01:58:31 UTC 2026 ==
+== board Mon Nov 23 03:47:10 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  L. Draisaitl            EDM  STL  F    3.75  22.0  0.533   -114        0.629       
 2  B. Hagel                TBL  BUF  F    4.05  20.4  0.498   +101        0.662       
@@ -43,7 +43,7 @@ TOTAL    13/56  P&L -6.48u
 25 J. DeBrusk              VAN  CHI  F    2.15  17.0  0.253   +296        0.351       
 
 193 players, 5 games -> docs/index.html
-== parlays Mon Nov 23 01:58:49 UTC 2026 ==
+== parlays Mon Nov 23 03:47:26 UTC 2026 ==
 
 [core2] fair +391 (20.364%)  (no book prices)
    L. Draisaitl    EDM sog3 63%         3.75 SOG/g · L5 3.6 · 22.0 min · PP 18% · vs STL A (30.1)
