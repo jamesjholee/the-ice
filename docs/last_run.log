@@ -1,5 +1,6 @@
-== grade Tue Nov 24 02:10:23 UTC 2026 ==
+== grade Tue Nov 24 05:32:13 UTC 2026 ==
 nothing to grade
+  parlays 2026-11-23: slate not final yet (6/7 games) — left ungraded
 
 === Parlays ===
 core     4/13  P&L +0.10u
@@ -13,58 +14,32 @@ stack    3/8  P&L -2.01u
 TOTAL    13/57  P&L -7.48u
 
 === Record ===
-== board Tue Nov 24 02:10:23 UTC 2026 ==
+== board Tue Nov 24 05:32:13 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
-1  C. Gauthier             ANA  SEA  F    4.15  18.4   0.52   -108        0.688       
-2  M. Boldy                MIN  SJS  F     3.8  21.4  0.513   -105         0.65       
-3  K. Connor               WPG  UTA  F    3.85  21.8  0.469   +113        0.602       
-4  M. Celebrini            SJS  MIN  F    4.25  23.1  0.465   +115        0.653       
-5  K. Kaprizov             MIN  SJS  F     3.1  21.5  0.445   +125        0.538       
-6  A. Panarin              LAK  MTL  F    3.38  21.5    0.4   +150        0.548       
-7  J. Hughes               NJD  CBJ  F     3.7  20.4  0.394   +154        0.602       
-8  A. Matthews             TOR  NYI  F    3.25  20.5  0.394   +154        0.531       
-9  T. Stützle              OTT  CGY  F    2.45  22.0  0.385   +160        0.402       
-10 B. Horvat               NYI  TOR  F    2.95  20.9  0.385   +159        0.488       
-11 J. Eriksson Ek          MIN  SJS  F     3.2  19.1  0.374   +167        0.555       
-12 B. Sennecke             ANA  SEA  F    2.45  20.3  0.373   +168        0.408       
-13 D. Larkin               MTL  LAK  F     3.2  21.7  0.365   +174        0.517       
-14 N. Suzuki               MTL  LAK  F    2.65  20.9  0.359   +179        0.421       
-15 A. Fantilli             CBJ  NJD  F    3.15  20.5  0.339   +195        0.489       
-16 C. Caufield             MTL  LAK  F     3.3  18.3  0.332   +201        0.533       
-17 M. Scheifele            WPG  UTA  F    2.35  21.8  0.326   +207        0.353       
-18 A. Kempe                LAK  MTL  F    2.89  20.0  0.322   +210        0.468       
-19 M. Granlund             ANA  SEA  F     2.0  20.6  0.321   +212        0.318       
-20 C. Keller               UTA  WPG  F     2.6  19.4  0.315   +218        0.411       
-21 A. Laferriere           LAK  MTL  F    3.15  19.8  0.314   +219        0.511       
-22 L. Cooley               UTA  WPG  F    1.75  19.0  0.306   +226        0.248       
-23 Q. Byfield              LAK  MTL  F     2.5  19.5  0.299   +235        0.396       
-24 S. Pinto                OTT  CGY  F    1.75  20.3  0.299   +235        0.263       
-25 T. Meier                NJD  CBJ  F     3.4  16.5  0.297   +237        0.555       
+1  L. Draisaitl            EDM  VGK  F     3.7  22.3  0.518   -107        0.584       
+2  C. McDavid              EDM  VGK  F     2.7  23.7  0.384   +160         0.42       
+3  J. Eichel               VGK  EDM  F    2.75  20.5  0.298   +235        0.435       
+4  M. Marner               VGK  EDM  F     2.5  20.4   0.29   +245         0.39       
+5  V. Olofsson             VGK  EDM  F     2.5  15.7  0.255   +293         0.39       
+6  M. Stone                VGK  EDM  F     1.5  18.9  0.231   +334        0.198       
+7  W. Karlsson             VGK  EDM  F     2.1  17.5  0.223   +348        0.314       
+8  T. Hertl                VGK  EDM  F    2.35  15.6  0.216   +363        0.362       
+9  V. Podkolzin            EDM  VGK  F    1.55  17.6  0.213   +370        0.204       
+10 R. Nugent-Hopkins       EDM  VGK  F    1.58  18.2  0.212   +371         0.21       
+11 T. Connelly             VGK  EDM  F    2.35  15.3  0.202   +396        0.362       
+12 Z. Hyman                EDM  VGK  F    1.62  17.0  0.197   +408        0.216       
+13 K. Kapanen              EDM  VGK  F     1.2  18.5  0.197   +409        0.138       
+14 B. Howden               VGK  EDM  F    1.65  14.9  0.176   +470        0.227       
+15 C. Dach                 EDM  VGK  F    1.67  14.0  0.171   +484        0.226       
+16 I. Barbashev            VGK  EDM  F     1.2  15.4  0.154   +551         0.14       
+17 E. Bouchard             EDM  VGK  D    2.35  25.7  0.148   +575        0.356       
+18 B. Bowman               VGK  EDM  F     1.1  12.7  0.123   +714        0.122       
+19 J. Dickinson            EDM  VGK  F    0.88  12.8  0.111   +799        0.082       
+20 M. Joseph               EDM  VGK  F    0.75  12.0   0.11   +811        0.061       
+21 F. Hallander            EDM  VGK  F     1.0  10.8  0.098   +925        0.102       
+22 A. Formenton            EDM  VGK  F     0.8  11.7  0.096   +941        0.069       
+23 M. Gatcomb              VGK  EDM  F    1.25  10.5  0.093   +973         0.15       
+24 R. Lavoie               VGK  EDM  F    0.92  10.1  0.089  +1018        0.091       
+25 O. Michaels             EDM  VGK  F     0.5  10.8  0.085  +1080        0.029       
 
-276 players, 7 games -> docs/index.html
-== parlays Tue Nov 24 02:10:48 UTC 2026 ==
-
-[core] fair +260 (27.765%)  (no book prices)
-   C. Gauthier     ANA sog3 69%         4.15 SOG/g · L5 4.0 · 18.4 min · PP 18% · vs SEA A (30.3)
-   M. Celebrini    SJS sog3 65%         4.25 SOG/g · L5 3.8 · 23.1 min · vs MIN C (25.5)
-   M. Schaefer     NYI sog3 62%         3.75 SOG/g · L5 3.6 · 27.0 min · PP 19% · vs TOR B (28.9)
-
-[stack] fair +103 (49.354%)  (no book prices)
-   M. Boldy        MIN sog2 84%         3.8 SOG/g · L5 3.2 · 21.4 min · vs SJS A (31.6)
-   J. Eriksson Ek  MIN sog2 77%         3.2 SOG/g · L5 2.8 · 19.1 min · vs SJS A (31.6)
-   K. Kaprizov     MIN sog2 76%         3.1 SOG/g · L5 2.6 · 21.5 min · vs SJS A (31.6)
-
-[ladder4] fair +2883 (3.352%)  (no book prices)
-   C. Gauthier     ANA sog4 48%         4.15 SOG/g · L5 4.0 · 18.4 min · PP 18% · vs SEA A (30.3)
-   M. Celebrini    SJS sog4 44%         4.25 SOG/g · L5 3.8 · 23.1 min · vs MIN C (25.5)
-   M. Schaefer     NYI sog4 41%         3.75 SOG/g · L5 3.6 · 27.0 min · PP 19% · vs TOR B (28.9)
-   K. Connor       WPG sog4 39%         3.85 SOG/g · L5 4.0 · 21.8 min · vs UTA C (25.9)
-
-[goals4] fair +4206 (2.322%)  (no book prices)
-   A. Panarin      LAK goal 40%         3.38 SOG/g · L5 3.4 · 21.5 min · PP 23% · vs MTL B (27.7) · sh% 11.0
-   J. Hughes       NJD goal 39%         3.7 SOG/g · L5 2.8 · 20.4 min · vs CBJ B (28.0) · sh% 10.9
-   A. Matthews     TOR goal 39%         3.25 SOG/g · L5 3.8 · 20.5 min · vs NYI B (28.0) · sh% 13.3
-   J. Eriksson Ek  MIN goal 37%         3.2 SOG/g · L5 2.8 · 19.1 min · vs SJS A (31.6) · sh% 11.0
-
-logged 4 tickets to parlays.csv
-page re-rendered with parlays
+41 players, 1 games -> docs/index.html
