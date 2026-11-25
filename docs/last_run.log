@@ -1,4 +1,4 @@
-== grade Wed Nov 25 04:36:18 UTC 2026 ==
+== grade Wed Nov 25 05:29:52 UTC 2026 ==
 nothing to grade
 
 === Parlays ===
@@ -13,36 +13,32 @@ stack    3/9  P&L -3.01u
 TOTAL    13/61  P&L -11.48u
 
 === Record ===
-== board Wed Nov 25 04:36:18 UTC 2026 ==
+== board Wed Nov 25 05:29:52 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
-1  L. Draisaitl            EDM  VGK  F     3.7  22.3  0.518   -107        0.584       
-2  C. McDavid              EDM  VGK  F     2.7  23.7  0.384   +160         0.42       
-3  J. Eichel               VGK  EDM  F    2.75  20.5  0.298   +235        0.435       
-4  M. Marner               VGK  EDM  F     2.5  20.4   0.29   +245         0.39       
-5  V. Olofsson             VGK  EDM  F     2.5  15.7  0.255   +293         0.39       
-6  M. Stone                VGK  EDM  F     1.5  18.9  0.231   +334        0.198       
-7  W. Karlsson             VGK  EDM  F     2.1  17.5  0.223   +348        0.314       
-8  T. Hertl                VGK  EDM  F    2.35  15.6  0.216   +363        0.362       
-9  V. Podkolzin            EDM  VGK  F    1.55  17.6  0.213   +370        0.204       
-10 R. Nugent-Hopkins       EDM  VGK  F    1.58  18.2  0.212   +371         0.21       
-11 T. Connelly             VGK  EDM  F    2.35  15.3  0.202   +396        0.362       
-12 Z. Hyman                EDM  VGK  F    1.62  17.0  0.197   +408        0.216       
-13 K. Kapanen              EDM  VGK  F     1.2  18.5  0.197   +409        0.138       
-14 B. Howden               VGK  EDM  F    1.65  14.9  0.176   +470        0.227       
-15 C. Dach                 EDM  VGK  F    1.67  14.0  0.171   +484        0.226       
-16 I. Barbashev            VGK  EDM  F     1.2  15.4  0.154   +551         0.14       
-17 E. Bouchard             EDM  VGK  D    2.35  25.7  0.148   +575        0.356       
-18 B. Bowman               VGK  EDM  F     1.1  12.7  0.123   +714        0.122       
-19 J. Dickinson            EDM  VGK  F    0.88  12.8  0.111   +799        0.082       
-20 M. Joseph               EDM  VGK  F    0.75  12.0   0.11   +811        0.061       
-21 F. Hallander            EDM  VGK  F     1.0  10.8  0.098   +925        0.102       
-22 A. Formenton            EDM  VGK  F     0.8  11.7  0.096   +941        0.069       
-23 M. Gatcomb              VGK  EDM  F    1.25  10.5  0.093   +973         0.15       
-24 R. Lavoie               VGK  EDM  F    0.92  10.1  0.089  +1018        0.091       
-25 O. Michaels             EDM  VGK  F     0.5  10.8  0.085  +1080        0.029       
+1  C. Gauthier             ANA  SJS  F     4.3  18.5  0.544   -119         0.72       
+2  M. Celebrini            SJS  ANA  F    4.05  23.2  0.474   +111        0.631       
+3  K. Connor               WPG  BOS  F     3.8  21.7  0.466   +115        0.614       
+4  M. Boldy                MIN  UTA  F     3.9  21.5  0.459   +118        0.606       
+5  D. Pastrnak             BOS  WPG  F     3.7  20.2  0.439   +128        0.604       
+6  T. Thompson             BUF  NYR  F     3.6  19.8  0.427   +134        0.583       
+7  B. Hagel                TBL  CAR  F    4.05  20.4  0.424   +136        0.581       
+8  K. Kaprizov             MIN  UTA  F    2.95  21.5  0.402   +149        0.457       
+9  A. DeBrincat            DET  VAN  F    3.75  19.6  0.401   +150        0.638       
+10 N. MacKinnon            COL  MTL  F    3.26  20.3  0.397   +152        0.526       
+11 J. Hughes               NJD  CBJ  F     3.6  20.7  0.392   +155        0.586       
+12 B. Sennecke             ANA  SJS  F    2.45  20.3  0.379   +164        0.419       
+13 C. Bedard               CHI  SEA  F    2.87  20.1  0.374   +167        0.483       
+14 J. Robertson            DAL  NSH  F     3.3  19.9  0.368   +172        0.552       
+15 D. Larkin               MTL  COL  F    3.18  21.5  0.367   +172        0.516       
+16 B. Horvat               NYI  STL  F    2.95  20.9  0.359   +178          0.5       
+17 L. Raymond              DET  VAN  F     2.6  19.6  0.353   +183        0.442       
+18 R. Rakell               PIT  CGY  F    2.85  19.9  0.352   +184        0.477       
+19 N. Suzuki               MTL  COL  F    2.61  20.9  0.351   +185        0.416       
+20 J. Eriksson Ek          MIN  UTA  F    3.25  19.0  0.345   +190        0.507       
+21 S. Reinhart             FLA  OTT  F    3.15  19.6  0.344   +190        0.495       
+22 M. Scheifele            WPG  BOS  F     2.4  21.7  0.333   +200        0.378       
+23 A. Fantilli             CBJ  NJD  F    3.15  20.6   0.33   +203        0.489       
+24 F. Nazar                CHI  SEA  F     2.2  18.3   0.33   +203        0.357       
+25 R. Kantserov            CHI  SEA  F     2.0  18.4  0.329   +204        0.317       
 
-41 players, 1 games -> docs/index.html
-== parlays Wed Nov 25 04:36:22 UTC 2026 ==
-
-logged 0 tickets to parlays.csv
-page re-rendered with parlays
+551 players, 14 games -> docs/index.html
