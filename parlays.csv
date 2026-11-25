@@ -60,3 +60,8 @@ id,date,kind,legs,n_legs,fair_p,fair_odds,book_odds,book_p,stake,result,pnl,note
 70,2026-11-23,stack,8481557:M. Boldy:sog2:1.5::0.839|8478493:J. Eriksson Ek:sog2:1.5::0.773|8478864:K. Kaprizov:sog2:1.5::0.761,3,0.49354,+103,,,1.0,0,-1.0000,
 71,2026-11-23,ladder4,8483445:C. Gauthier:sog4:3.5::0.479|8484801:M. Celebrini:sog4:3.5::0.442|8485366:M. Schaefer:sog4:3.5::0.406|8478398:K. Connor:sog4:3.5::0.390,4,0.03352,+2883,,,1.0,0,-1.0000,
 72,2026-11-23,goals4,8478550:A. Panarin:goal:0.5::0.400|8481559:J. Hughes:goal:0.5::0.394|8479318:A. Matthews:goal:0.5::0.394|8478493:J. Eriksson Ek:goal:0.5::0.374,4,0.02322,+4206,,,1.0,0,-1.0000,
+73,2026-11-25,core,8483445:C. Gauthier:sog3:2.5::0.720|8479337:A. DeBrincat:sog3:2.5::0.638|8485366:M. Schaefer:sog3:2.5::0.623,3,0.28618,+249,,,1.0,,,
+74,2026-11-25,ladder4,8483445:C. Gauthier:sog4:3.5::0.516|8479337:A. DeBrincat:sog4:3.5::0.426|8485366:M. Schaefer:sog4:3.5::0.411|8478398:K. Connor:sog4:3.5::0.402,4,0.03632,+2653,,,1.0,,,
+75,2026-11-25,shots6,8484801:M. Celebrini:sog2:1.5::0.826|8478398:K. Connor:sog2:1.5::0.815|8481557:M. Boldy:sog2:1.5::0.809|8481559:J. Hughes:sog2:1.5::0.796|8479420:T. Thompson:sog2:1.5::0.794|8480801:B. Tkachuk:sog2:1.5::0.781,6,0.26883,+272,,,1.0,,,
+76,2026-11-25,core2,8481557:M. Boldy:sog3:2.5::0.606|8477956:D. Pastrnak:sog3:2.5::0.604|8481559:J. Hughes:sog3:2.5::0.586,3,0.21449,+366,,,1.0,,,
+77,2026-11-25,goals4,8480027:J. Robertson:goal:0.5::0.368|8477946:D. Larkin:goal:0.5::0.367|8478493:J. Eriksson Ek:goal:0.5::0.345|8477933:S. Reinhart:goal:0.5::0.344,4,0.01603,+6139,,,1.0,,,

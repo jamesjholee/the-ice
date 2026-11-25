@@ -1,4 +1,4 @@
-== grade Wed Nov 25 05:29:52 UTC 2026 ==
+== grade Wed Nov 25 23:36:16 UTC 2026 ==
 nothing to grade
 
 === Parlays ===
@@ -13,7 +13,7 @@ stack    3/9  P&L -3.01u
 TOTAL    13/61  P&L -11.48u
 
 === Record ===
-== board Wed Nov 25 05:29:52 UTC 2026 ==
+== board Wed Nov 25 23:36:17 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  C. Gauthier             ANA  SJS  F     4.3  18.5  0.544   -119         0.72       
 2  M. Celebrini            SJS  ANA  F    4.05  23.2  0.474   +111        0.631       
@@ -42,3 +42,37 @@ TOTAL    13/61  P&L -11.48u
 25 R. Kantserov            CHI  SEA  F     2.0  18.4  0.329   +204        0.317       
 
 551 players, 14 games -> docs/index.html
+== parlays Wed Nov 25 23:37:06 UTC 2026 ==
+
+[core] fair +249 (28.618%)  (no book prices)
+   C. Gauthier     ANA sog3 72%         4.3 SOG/g · L5 4.2 · 18.5 min · PP 18% · vs SJS A (31.8)
+   A. DeBrincat    DET sog3 64%         3.75 SOG/g · L5 3.4 · 19.6 min · vs VAN A (31.1)
+   M. Schaefer     NYI sog3 62%         3.7 SOG/g · L5 3.2 · 27.0 min · vs STL A (30.2)
+
+[ladder4] fair +2653 (3.632%)  (no book prices)
+   C. Gauthier     ANA sog4 52%         4.3 SOG/g · L5 4.2 · 18.5 min · PP 18% · vs SJS A (31.8)
+   A. DeBrincat    DET sog4 43%         3.75 SOG/g · L5 3.4 · 19.6 min · vs VAN A (31.1)
+   M. Schaefer     NYI sog4 41%         3.7 SOG/g · L5 3.2 · 27.0 min · vs STL A (30.2)
+   K. Connor       WPG sog4 40%         3.8 SOG/g · L5 3.6 · 21.7 min · vs BOS B (27.8)
+
+[shots6] fair +272 (26.883%)  (no book prices)
+   M. Celebrini    SJS sog2 83%         4.05 SOG/g · L5 3.6 · 23.2 min · vs ANA C (26.0)
+   K. Connor       WPG sog2 82%         3.8 SOG/g · L5 3.6 · 21.7 min · vs BOS B (27.8)
+   M. Boldy        MIN sog2 81%         3.9 SOG/g · L5 3.2 · 21.5 min · vs UTA C (25.6)
+   J. Hughes       NJD sog2 80%         3.6 SOG/g · L5 2.2 · 20.7 min · vs CBJ B (27.9)
+   T. Thompson     BUF sog2 79%         3.6 SOG/g · L5 4.0 · 19.8 min · vs NYR B (27.6)
+   B. Tkachuk      FLA sog2 78%         3.6 SOG/g · L5 3.0 · 16.4 min · vs OTT C (26.0)
+
+[core2] fair +366 (21.449%)  (no book prices)
+   M. Boldy        MIN sog3 61%         3.9 SOG/g · L5 3.2 · 21.5 min · vs UTA C (25.6)
+   D. Pastrnak     BOS sog3 60%         3.7 SOG/g · L5 4.6 · 20.2 min · PP 18% · vs WPG B (28.2)
+   J. Hughes       NJD sog3 59%         3.6 SOG/g · L5 2.2 · 20.7 min · vs CBJ B (27.9)
+
+[goals4] fair +6139 (1.603%)  (no book prices)
+   J. Robertson    DAL goal 37%         3.3 SOG/g · L5 3.2 · 19.9 min · vs NSH A (29.4) · sh% 11.4
+   D. Larkin       MTL goal 37%         3.18 SOG/g · L5 4.2 · 21.5 min · PP 29% · vs COL B (27.6) · sh% 8.9
+   J. Eriksson Ek  MIN goal 34%         3.25 SOG/g · L5 3.0 · 19.0 min · vs UTA C (25.6) · sh% 11.5
+   S. Reinhart     FLA goal 34%         3.15 SOG/g · L5 2.6 · 19.6 min · vs OTT C (26.0) · sh% 13.5
+
+logged 5 tickets to parlays.csv
+page re-rendered with parlays
