@@ -1,4 +1,4 @@
-== grade Fri Nov 27 05:09:27 UTC 2026 ==
+== grade Fri Nov 27 23:24:36 UTC 2026 ==
 nothing to grade
 
 === Parlays ===
@@ -13,7 +13,7 @@ stack    3/9  P&L -3.01u
 TOTAL    13/66  P&L -16.48u
 
 === Record ===
-== board Fri Nov 27 05:09:27 UTC 2026 ==
+== board Fri Nov 27 23:24:36 UTC 2026 ==
 #  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
 1  L. Draisaitl            EDM  SEA  F     3.6  22.3  0.539   -117        0.603       
 2  C. Gauthier             ANA  LAK  F     4.4  19.4  0.528   -112        0.695       
@@ -41,4 +41,38 @@ TOTAL    13/66  P&L -16.48u
 24 A. Laferriere           LAK  ANA  F    3.35  20.0  0.348   +187        0.521       
 25 T. Meier                NJD  CGY  F     3.5  16.9  0.342   +192        0.589       
 
-600 players, 15 games -> docs/index.html
+599 players, 15 games -> docs/index.html
+== parlays Fri Nov 27 23:25:27 UTC 2026 ==
+
+[core] fair +258 (27.933%)  (no book prices)
+   C. Gauthier     ANA sog3 70%         4.4 SOG/g · L5 3.6 · 19.4 min · PP 20% · vs LAK B (27.6)
+   M. Boldy        MIN sog3 64%         4.0 SOG/g · L5 3.2 · 21.6 min · vs COL B (27.6)
+   J. Hughes       NJD sog3 63%         3.75 SOG/g · L5 2.6 · 20.9 min · vs CGY A (29.9)
+
+[ladder4] fair +2693 (3.581%)  (no book prices)
+   C. Gauthier     ANA sog4 49%         4.4 SOG/g · L5 3.6 · 19.4 min · PP 20% · vs LAK B (27.6)
+   M. Boldy        MIN sog4 43%         4.0 SOG/g · L5 3.2 · 21.6 min · vs COL B (27.6)
+   J. Hughes       NJD sog4 42%         3.75 SOG/g · L5 2.6 · 20.9 min · vs CGY A (29.9)
+   M. Celebrini    SJS sog4 41%         4.0 SOG/g · L5 3.2 · 23.0 min · vs VGK C (26.1)
+
+[shots6] fair +246 (28.904%)  (no book prices)
+   M. Celebrini    SJS sog2 82%         4.0 SOG/g · L5 3.2 · 23.0 min · vs VGK C (26.1)
+   B. Hagel        TBL sog2 82%         4.0 SOG/g · L5 4.2 · 20.3 min · PP 24% · vs OTT C (26.1)
+   K. Connor       WPG sog2 81%         3.75 SOG/g · L5 3.2 · 21.9 min · vs NYI B (28.4)
+   A. DeBrincat    DET sog2 81%         3.7 SOG/g · L5 3.6 · 19.7 min · vs CBJ B (28.1)
+   L. Draisaitl    EDM sog2 81%         3.6 SOG/g · L5 2.8 · 22.3 min · PP 18% · vs SEA A (29.7)
+   D. Pastrnak     BOS sog2 80%         3.65 SOG/g · L5 4.2 · 20.1 min · vs TOR B (28.4)
+
+[core2] fair +332 (23.139%)  (no book prices)
+   B. Hagel        TBL sog3 63%         4.0 SOG/g · L5 4.2 · 20.3 min · PP 24% · vs OTT C (26.1)
+   K. Connor       WPG sog3 61%         3.75 SOG/g · L5 3.2 · 21.9 min · vs NYI B (28.4)
+   L. Draisaitl    EDM sog3 60%         3.6 SOG/g · L5 2.8 · 22.3 min · PP 18% · vs SEA A (29.7)
+
+[goals4] fair +4238 (2.305%)  (no book prices)
+   D. Pastrnak     BOS goal 42%         3.65 SOG/g · L5 4.2 · 20.1 min · vs TOR B (28.4) · sh% 12.1
+   S. Reinhart     FLA goal 39%         3.35 SOG/g · L5 3.0 · 19.6 min · vs WSH C (26.4) · sh% 13.2
+   A. Panarin      LAK goal 39%         3.24 SOG/g · L5 3.0 · 21.4 min · PP 23% · vs ANA C (25.4) · sh% 11.0
+   J. Robertson    DAL goal 37%         3.15 SOG/g · L5 2.4 · 20.3 min · vs STL A (30.6) · sh% 11.0
+
+logged 5 tickets to parlays.csv
+page re-rendered with parlays
