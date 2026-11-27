@@ -1,4 +1,4 @@
-== grade Fri Nov 27 03:47:54 UTC 2026 ==
+== grade Fri Nov 27 05:09:27 UTC 2026 ==
 nothing to grade
 
 === Parlays ===
@@ -13,9 +13,32 @@ stack    3/9  P&L -3.01u
 TOTAL    13/66  P&L -16.48u
 
 === Record ===
-== board Fri Nov 27 03:47:54 UTC 2026 ==
-no regular-season games on 2026-11-26
-== parlays Fri Nov 27 03:47:54 UTC 2026 ==
+== board Fri Nov 27 05:09:27 UTC 2026 ==
+#  player                  tm   opp  G   SOG/g   toi   P(G)   fair   book   P3+  book3
+1  L. Draisaitl            EDM  SEA  F     3.6  22.3  0.539   -117        0.603       
+2  C. Gauthier             ANA  LAK  F     4.4  19.4  0.528   -112        0.695       
+3  M. Boldy                MIN  COL  F     4.0  21.6  0.464   +116        0.641       
+4  K. Connor               WPG  NYI  F    3.75  21.9  0.463   +116        0.613       
+5  M. Celebrini            SJS  VGK  F     4.0  23.0  0.452   +121        0.626       
+6  B. Hagel                TBL  OTT  F     4.0  20.3  0.445   +125        0.626       
+7  C. McDavid              EDM  SEA  F     2.8  23.6  0.434   +130        0.468       
+8  J. Hughes               NJD  CGY  F    3.75  20.9  0.431   +132        0.627       
+9  T. Thompson             BUF  PIT  F     3.4  19.8  0.424   +136        0.559       
+10 D. Pastrnak             BOS  TOR  F    3.65  20.1  0.415   +141        0.598       
+11 K. Kaprizov             MIN  COL  F    2.95  21.8  0.389   +157        0.476       
+12 S. Reinhart             FLA  WSH  F    3.35  19.6  0.388   +157        0.532       
+13 A. Panarin              LAK  ANA  F    3.24  21.4  0.388   +157        0.502       
+14 J. Robertson            DAL  STL  F    3.15  20.3  0.369   +171        0.538       
+15 J. Eichel               VGK  SJS  F    2.75  20.4  0.369   +171        0.475       
+16 A. Matthews             TOR  BOS  F    3.05  20.4  0.367   +172        0.492       
+17 A. DeBrincat            DET  CBJ  F     3.7  19.7  0.364   +175        0.603       
+18 R. Rakell               PIT  BUF  F    2.95  19.9  0.364   +174        0.495       
+19 N. Kucherov             TBL  OTT  F    3.35  20.8  0.357   +180        0.528       
+20 N. MacKinnon            COL  MIN  F    3.26  20.3  0.356   +181        0.506       
+21 W. Johnston             DAL  STL  F     2.7  19.4  0.353   +183        0.457       
+22 J. Eriksson Ek          MIN  COL  F    3.35  19.2  0.351   +185        0.543       
+23 J. Quinn                BUF  PIT  F    2.95  18.3  0.351   +185        0.484       
+24 A. Laferriere           LAK  ANA  F    3.35  20.0  0.348   +187        0.521       
+25 T. Meier                NJD  CGY  F     3.5  16.9  0.342   +192        0.589       
 
-logged 0 tickets to parlays.csv
-page re-rendered with parlays
+600 players, 15 games -> docs/index.html
